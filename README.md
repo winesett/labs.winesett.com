@@ -10,7 +10,8 @@ This repository owns:
 - the exact deploy tree under `public/`;
 - the shared `/.well-known/assetlinks.json`;
 - artifact import, provenance, and public-release verification;
-- the Cloudflare Pages project and `labs.winesett.com` binding.
+- the Cloudflare Workers Static Assets deployment and `labs.winesett.com`
+  binding.
 
 Demo repositories own their source, tests, build, signing material, and a
 deterministic audited artifact rooted at their assigned slug. They do not write
@@ -29,13 +30,14 @@ replaces one exact demo directory.
 
 ## Deployment
 
-Cloudflare Pages should use:
+The site deploys as an asset-only Cloudflare Worker from the audited `public/`
+tree. It has no Worker script, server code, analytics, or paid services.
 
-- production branch: `main`
-- framework preset: none
-- build command: `npm ci && npm run verify`
-- output directory: `public`
-- custom domain: `labs.winesett.com`
+```bash
+npm ci
+npm run deploy
+```
 
-No Pages Functions, Worker scripts, analytics, secrets, or paid services are
-required.
+`wrangler.jsonc` owns the Worker name, static asset directory, 404 behavior,
+and custom-domain declaration. Wrangler creates and maintains the Cloudflare
+DNS/custom-domain association during deployment.
