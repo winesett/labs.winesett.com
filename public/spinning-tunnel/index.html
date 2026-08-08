@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="manifest" href="/spinning-tunnel/manifest.webmanifest" />
+    <meta name="theme-color" content="#09051f" />
+    <link rel="icon" href="/spinning-tunnel/icons/icon-192.png" />
+    <title>Spinning Tunnel</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        overflow: hidden;
+        background: #05060a;
+      }
+
+      #scene-container {
+        position: fixed;
+        inset: 0;
+      }
+
+      .controls {
+        position: fixed;
+        z-index: 10;
+        top: 20px;
+        left: 20px;
+        width: min(390px, calc(100vw - 40px));
+        padding: 20px;
+        border: 1px solid rgb(181 205 255 / 22%);
+        border-radius: 18px;
+        background: rgb(8 11 20 / 88%);
+        box-shadow: 0 16px 48px rgb(0 0 0 / 42%);
+        backdrop-filter: blur(18px);
+      }
+
+      .eyebrow {
+        margin: 0 0 5px;
+        color: #8bb8ff;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(25px, 5vw, 36px);
+        letter-spacing: -0.04em;
+        line-height: 1;
+      }
+
+      .status {
+        margin: 12px 0 16px;
+        color: #aab5c9;
+        font-size: 14px;
+      }
+
+      .status[data-running="true"] {
+        color: #71f6bd;
+      }
+
+      .button-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+      }
+
+      button {
+        min-height: 42px;
+        border: 1px solid rgb(190 213 255 / 22%);
+        border-radius: 11px;
+        color: #f5f7ff;
+        background: #171e2e;
+        font: inherit;
+        font-size: 13px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      button:hover {
+        border-color: #84b7ff;
+        background: #202b41;
+      }
+
+      button.primary {
+        grid-column: span 2;
+        color: #081016;
+        border-color: #8cf3cf;
+        background: #72deb8;
+      }
+
+      button.stop {
+        color: #ffd6db;
+        border-color: rgb(255 94 112 / 42%);
+        background: #411923;
+      }
+
+      #enter-xr {
+        width: 100%;
+        margin-top: 10px;
+        border-color: #709dff;
+        background: #2857b9;
+      }
+
+      .mapping {
+        margin: 14px 0 0;
+        color: #8792a8;
+        font-size: 12px;
+        line-height: 1.5;
+      }
+
+      .warning {
+        color: #e6bf6e;
+      }
+
+      @media (max-width: 620px) {
+        .controls {
+          top: auto;
+          right: 12px;
+          bottom: 12px;
+          left: 12px;
+          width: auto;
+          padding: 15px;
+        }
+
+        .mapping {
+          display: none;
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="/spinning-tunnel/assets/index-d_sfiSSD.js"></script>
+  </head>
+  <body>
+    <div id="scene-container"></div>
+    <aside class="controls" aria-label="Spinning tunnel controls">
+      <p class="eyebrow">Quest 3 WebXR experiment</p>
+      <h1>Spinning Tunnel</h1>
+      <p id="tunnel-status" class="status" data-running="false">
+        Stopped · 1.50 RPM · clockwise
+      </p>
+      <div class="button-grid">
+        <button class="primary" data-tunnel-command="toggle">Start / pause</button>
+        <button class="stop" data-tunnel-command="stop">Stop</button>
+        <button data-tunnel-command="slower">Slower</button>
+        <button data-tunnel-command="reverse">Reverse</button>
+        <button data-tunnel-command="faster">Faster</button>
+      </div>
+      <button id="enter-xr">Enter VR</button>
+      <p class="mapping">
+        Right trigger: start/pause · B: emergency stop · right stick up/down:
+        speed (0.75–12 RPM) · left/right: reverse.<br />
+        <span class="warning">Starts stopped. Stay seated or hold a real-world support if you feel unsteady.</span>
+      </p>
+    </aside>
+  </body>
+</html>

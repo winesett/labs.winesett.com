@@ -1,0 +1,31 @@
+{
+  "name": "Spinning Tunnel",
+  "short_name": "Tunnel",
+  "description": "An endless galaxy spinning-tunnel experience for Meta Quest.",
+  "start_url": "/spinning-tunnel/",
+  "scope": "/spinning-tunnel/",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#03020b",
+  "theme_color": "#09051f",
+  "icons": [
+    {
+      "src": "/spinning-tunnel/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/spinning-tunnel/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/spinning-tunnel/icons/icon-512-maskable.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ]
+}

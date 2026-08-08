@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.winesett.spinningtunnel",
+      "sha256_cert_fingerprints": [
+        "86:19:82:96:75:38:96:9F:D7:D5:2B:1E:5D:AD:3C:74:40:21:C8:48:C8:4D:9C:B9:08:02:B6:89:E9:A9:3F:D6"
+      ]
+    }
+  }
+]

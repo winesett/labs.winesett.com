@@ -1,4 +1,17 @@
 {
   "schemaVersion": 1,
-  "labs": []
+  "labs": [
+    {
+      "slug": "spinning-tunnel",
+      "title": "Spinning Tunnel",
+      "description": "An immersive WebXR flight through a luminous, rotating tunnel.",
+      "status": "live",
+      "technologies": [
+        "WebXR",
+        "Meta Quest"
+      ],
+      "iconPath": "/spinning-tunnel/icons/icon-512.png",
+      "launchPath": "/spinning-tunnel/"
+    }
+  ]
 }

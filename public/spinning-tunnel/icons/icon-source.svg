@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="space" cx="50%" cy="48%" r="74%">
+      <stop offset="0" stop-color="#02030b"/>
+      <stop offset="0.42" stop-color="#11104b"/>
+      <stop offset="0.72" stop-color="#421064"/>
+      <stop offset="1" stop-color="#08031a"/>
+    </radialGradient>
+    <radialGradient id="portal" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#02030a"/>
+      <stop offset="0.52" stop-color="#06051e"/>
+      <stop offset="0.73" stop-color="#40d7ff"/>
+      <stop offset="0.84" stop-color="#a928f2"/>
+      <stop offset="1" stop-color="#ff4ccf" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="walkway" x1="0" y1="1" x2="0.5" y2="0">
+      <stop offset="0" stop-color="#10121c"/>
+      <stop offset="1" stop-color="#4b5268"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#space)"/>
+  <g fill="#fff">
+    <circle cx="71" cy="83" r="3"/><circle cx="120" cy="54" r="1.8"/><circle cx="175" cy="96" r="2.4"/>
+    <circle cx="247" cy="52" r="2"/><circle cx="331" cy="74" r="3.2"/><circle cx="425" cy="62" r="2"/>
+    <circle cx="463" cy="139" r="2.6"/><circle cx="52" cy="171" r="1.8"/><circle cx="111" cy="228" r="2.5"/>
+    <circle cx="443" cy="258" r="2"/><circle cx="61" cy="323" r="3"/><circle cx="421" cy="362" r="2.8"/>
+    <circle cx="104" cy="417" r="2"/><circle cx="176" cy="455" r="3"/><circle cx="337" cy="444" r="2.2"/>
+  </g>
+  <g fill="none" stroke-linecap="round">
+    <circle cx="256" cy="242" r="182" stroke="#57dfff" stroke-width="13" opacity=".75"/>
+    <circle cx="256" cy="242" r="151" stroke="#cf4dff" stroke-width="10" stroke-dasharray="58 25" opacity=".85" transform="rotate(-18 256 242)"/>
+    <circle cx="256" cy="242" r="116" stroke="#ff4eaf" stroke-width="8" stroke-dasharray="36 19" opacity=".78" transform="rotate(28 256 242)"/>
+    <path d="M92 199C162 110 355 91 427 199" stroke="#fff" stroke-width="4" opacity=".45"/>
+  </g>
+  <circle cx="256" cy="242" r="102" fill="url(#portal)"/>
+  <path d="M134 512L226 269H286L378 512Z" fill="url(#walkway)"/>
+  <path d="M169 512L239 269M343 512L273 269" stroke="#8cf4ff" stroke-width="6" opacity=".86"/>
+  <path d="M202 436H310M216 383H296M228 337H284M237 301H275" stroke="#ccd6f7" stroke-width="5" opacity=".52"/>
+</svg>

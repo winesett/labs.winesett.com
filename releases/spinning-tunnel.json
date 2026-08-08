@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "slug": "spinning-tunnel",
+  "sourceRepo": "https://github.com/winesett/spinning-tunnel.git",
+  "sourceCommit": "6fc5fd49c8698f141c7ebe5455f46d78293ada57",
+  "archiveFile": "spinning-tunnel-6fc5fd49c869.tar.gz",
+  "archiveSha256": "2340631e115765c8b11bdee90dcc64ca8dae61dde51c2dc526dbe49848af926c",
+  "archiveRoot": "spinning-tunnel/",
+  "fileCount": 38,
+  "files": [
+    {
+      "path": "spinning-tunnel/assets/crimsonText-DKwdbbX1.js",
+      "sha256": "8ff47711637748bdb9af1bc125f147fe2b57f0f4bf757300fccd31d59936bc23"
+    },
+    {
+      "path": "spinning-tunnel/assets/firaCode-CPGi_dTk.js",
+      "sha256": "aaeeb22b395fea4124220976eaee93fab1ce5bf6fa83d277c0dd8bcce65a39a3"
+    },
+    {
+      "path": "spinning-tunnel/assets/HavokPhysics_es-CdhtZoT5.js",
+      "sha256": "bf42ce70e7ba789ad3f06347e578e445713960937d5ad204e07ec81dfcd53e04"
+    },
+    {
+      "path": "spinning-tunnel/assets/HavokPhysics-BqNY-4N9.wasm",
+      "sha256": "026917766f534c156286f07975850978dabf17c42e742bbfaaebbcb2215e4e11"
+    },
+    {
+      "path": "spinning-tunnel/assets/inconsolata-OaCJF_Rp.js",
+      "sha256": "81e08b87bced83eb29ede00bd516a583d2666e09f03f8ff577904e8298a1314d"
+    },
+    {
+      "path": "spinning-tunnel/assets/index-d_sfiSSD.js",
+      "sha256": "644c2617059db5a80dddcb3f4b9a586e92896991c1cdab2006bde685edfdbb8a"
+    },
+    {
+      "path": "spinning-tunnel/assets/index-iGkBJlEy.js",
+      "sha256": "b2929e701190a8a4414c66294e0de6a50bb0186c71efb2773eb8053f7aa3b9be"
+    },
+    {
+      "path": "spinning-tunnel/assets/index-Q3DE8tMy.js",
+      "sha256": "1988e5e7a15763a864be6d247fd748efa36de1332f293eb9a1b7e17539ad3b22"
+    },
+    {
+      "path": "spinning-tunnel/assets/inter-BNVRAYFH.js",
+      "sha256": "9159b2ed54dfb23ebadd61a9b91deb26fc652b0a6b1748784e9c4b4315f1da31"
+    },
+    {
+      "path": "spinning-tunnel/assets/lato-Dbeb9-8A.js",
+      "sha256": "59c5d61470114c4b87fdda6883b76eee1d1b34381a144545e04cf8cb82f06d92"
+    },
+    {
+      "path": "spinning-tunnel/assets/libreBaskerville-B4LNrPqt.js",
+      "sha256": "e7d4eb50bbfeecfcacf59e3d011933353d46b825aaf49c52db0b29d958a9e2a1"
+    },
+    {
+      "path": "spinning-tunnel/assets/merriweather-DMXV4vMg.js",
+      "sha256": "eab11d15d21bb1ae5c320c4c695ef96f8a142a3c06922f3b71ff9f3a03bb3298"
+    },
+    {
+      "path": "spinning-tunnel/assets/montserrat-BbePxp6i.js",
+      "sha256": "c382b2157a51c7f718a013f1633cd0955c82abf2ea207c52ce7fcd46a2697914"
+    },
+    {
+      "path": "spinning-tunnel/assets/msdf-worker-BUaSHgMS.js",
+      "sha256": "320d3d5619bcc7ab27ee700e3448f5c8d3807a7e55796bbc0567074fd90604a0"
+    },
+    {
+      "path": "spinning-tunnel/assets/nunito-B1wXnF4h.js",
+      "sha256": "62ab7e81deb380d4604283cb50b0af7fede095ad9366297891cdd8a503dbf19a"
+    },
+    {
+      "path": "spinning-tunnel/assets/openSans-Jk_2t0YU.js",
+      "sha256": "5d0e20be77d76443faecd7b605b218dffe278cfb79beee3b34260cacaafe6475"
+    },
+    {
+      "path": "spinning-tunnel/assets/playfairDisplay-CyGsuIEm.js",
+      "sha256": "e45c14f462b57c763cab6668830fe58427c19f154e99c72c4b4208773d4292ed"
+    },
+    {
+      "path": "spinning-tunnel/assets/poppins-BhqVNCxH.js",
+      "sha256": "94383a5e5c8048b0e50da8bf9559b3c84c8c0475a67bd23605d5dd778f4aefab"
+    },
+    {
+      "path": "spinning-tunnel/assets/raleway-CMTiBd4l.js",
+      "sha256": "29a248ce436b2544bffb1204bda51777548043324697435b59b77ca0f1b3f944"
+    },
+    {
+      "path": "spinning-tunnel/assets/roboto-B1Zlc7NB.js",
+      "sha256": "1dd79cdd6f7fa73b4ea3b6da7717187abc27a15bd25d0f3794a5ca033f25b378"
+    },
+    {
+      "path": "spinning-tunnel/assets/sourceCodePro-Drc7Wx_n.js",
+      "sha256": "332ab2f83135bd26d1d3cff2df84e22d1a9fca7e90ad05de70c9d611496dd225"
+    },
+    {
+      "path": "spinning-tunnel/assets/spaceMono-B4CYWYnD.js",
+      "sha256": "b7617f72541249214409a98bda89f3b0d1178c5c015816b909468e1b8d3db162"
+    },
+    {
+      "path": "spinning-tunnel/assets/worker-_Lh8Vt-i.js",
+      "sha256": "430e4c9e12f79a4c6c5fb3c410bcd85d4661151d098080713b5df3ac8b275001"
+    },
+    {
+      "path": "spinning-tunnel/assets/worker-BA_pRWEz.js",
+      "sha256": "74827a34c8e289966c901723233109d912a74f8302a79a7549b729a0a62e4ca3"
+    },
+    {
+      "path": "spinning-tunnel/assets/workSans-CL7PpxF9.js",
+      "sha256": "1a979b6bb196e67d0d167bd96e63d5444faec5678e8aca76562a7f40e5ff50a6"
+    },
+    {
+      "path": "spinning-tunnel/assets/world-initializer-WquvtRIA.js",
+      "sha256": "a6d12e6323072dfd4383370327ef18908f38f713584774aa6e4f28259c9c6fff"
+    },
+    {
+      "path": "spinning-tunnel/audio/chime.mp3",
+      "sha256": "be5e1bbb6e08c65a31ab7df425da7f3a7cdd59481ce966711bab09b41da7428d"
+    },
+    {
+      "path": "spinning-tunnel/gltf/webxr-banner/banner.gltf",
+      "sha256": "9430c98f4bc40fe7153a414e4e6325540005edf75426a19076363c9f499f9004"
+    },
+    {
+      "path": "spinning-tunnel/icons/icon-192.png",
+      "sha256": "a1df266017c92a537ca7179ad6b66bc832cd3a89b9e122de1a6f95dcf3bcbd21"
+    },
+    {
+      "path": "spinning-tunnel/icons/icon-512-maskable.png",
+      "sha256": "cdb5436409554e84d41c5fed119fc1e5ff0929f40ba83567e2bec2ec5fa8f119"
+    },
+    {
+      "path": "spinning-tunnel/icons/icon-512.png",
+      "sha256": "eeb4640986024213267659cf27e26d46d3c818b7d2fb2b79dfa278b48de442ea"
+    },
+    {
+      "path": "spinning-tunnel/icons/icon-source.svg",
+      "sha256": "765916aeed297d0c2984e9b400d0a9898efcfc5d3c10337787e216359dd61cb2"
+    },
+    {
+      "path": "spinning-tunnel/index.html",
+      "sha256": "e03fda9e49e388541a87cd4af4efe8f673d509a5a635ec0d28683a50005a23b5"
+    },
+    {
+      "path": "spinning-tunnel/manifest.webmanifest",
+      "sha256": "4df529a6e2e0e2954404a8ab3db56312524b494cf55b2560ad0f128170d20fbd"
+    },
+    {
+      "path": "spinning-tunnel/scenes/main.iwsdk.scene.json",
+      "sha256": "c2997b0b303e19d1dc63c1bd8199b5892b4af2158fdaef45f402979eaa632216"
+    },
+    {
+      "path": "spinning-tunnel/textures/vortex-galaxy-v1.png",
+      "sha256": "79bed6456cee77a8def5886ffb2f967dc6ab00bee30136a6e80b5a2d7a5cabef"
+    },
+    {
+      "path": "spinning-tunnel/textures/webxr.png",
+      "sha256": "ea668f1267b83ad717ad94025ad9a584e8d21f2bb68f447417b3f74aab64eda8"
+    },
+    {
+      "path": "spinning-tunnel/ui/welcome.uikitml",
+      "sha256": "ad27a0ac75ea1fe0b29139153205a601a689ca14000e47066faae6c450923b10"
+    }
+  ],
+  "expectedEntrypointPath": "spinning-tunnel/index.html",
+  "expectedManifestPath": "spinning-tunnel/manifest.webmanifest",
+  "expectedPublicUrl": "https://labs.winesett.com/spinning-tunnel/",
+  "expectedManifestUrl": "https://labs.winesett.com/spinning-tunnel/manifest.webmanifest",
+  "androidPackageName": "com.winesett.spinningtunnel",
+  "signingCertificateSha256": "86:19:82:96:75:38:96:9F:D7:D5:2B:1E:5D:AD:3C:74:40:21:C8:48:C8:4D:9C:B9:08:02:B6:89:E9:A9:3F:D6",
+  "assetlinksOwner": "winesett/labs.winesett.com"
+}

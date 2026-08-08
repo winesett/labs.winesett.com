@@ -5,13 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Small experiments in interfaces, hardware, games, and strange machines.">
     <title>Winesett Labs</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
     <main>
-      <p class="eyebrow">Winesett Labs</p>
-      <h1>Small experiments in interfaces, hardware, games, and strange machines.</h1>
-      <p class="empty">The first experiment is being prepared.</p>
+      <header class="intro">
+        <p class="eyebrow">Winesett Labs</p>
+        <h1>Small experiments in interfaces, hardware, games, and strange machines.</h1>
+      </header>
+
+      <section class="featured" aria-labelledby="featured-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Featured experiment</p>
+          <h2 id="featured-heading">Now running</h2>
+        </div>
+
+        <article class="lab-card">
+          <div class="lab-card__art" aria-hidden="true">
+            <img src="/spinning-tunnel/icons/icon-512.png" alt="" width="512" height="512">
+          </div>
+          <div class="lab-card__body">
+            <div class="labels" aria-label="Technologies">
+              <span>WebXR</span>
+              <span>Meta Quest</span>
+            </div>
+            <h3>Spinning Tunnel</h3>
+            <p>An immersive flight through a luminous, rotating tunnel.</p>
+            <p class="comfort-note"><strong>Comfort note:</strong> continuous forward motion and rotation.</p>
+            <div class="actions">
+              <a class="button button--primary" href="/spinning-tunnel/">Launch experiment</a>
+              <a class="button" href="https://github.com/winesett/spinning-tunnel">View source</a>
+            </div>
+          </div>
+        </article>
+      </section>
     </main>
     <footer>
       <a href="https://winesett.com">winesett.com</a>
