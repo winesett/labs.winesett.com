@@ -1,0 +1,101 @@
+{
+  "version": "iwsdk.scene.v1",
+  "units": "meters",
+  "components": {
+    "com.iwsdk.components.DomeGradient": {
+      "sky": [0.024, 0.012, 0.06, 1],
+      "equator": [0.055, 0.026, 0.09, 1],
+      "ground": [0.009, 0.004, 0.022, 1],
+      "intensity": 0.54
+    },
+    "com.iwsdk.components.IBLGradient": {
+      "sky": [0.28, 0.12, 0.36, 1],
+      "equator": [0.15, 0.08, 0.22, 1],
+      "ground": [0.03, 0.012, 0.06, 1],
+      "intensity": 1.1
+    }
+  },
+  "resources": {},
+  "nodes": [
+    {
+      "id": "breathing-room",
+      "name": "Breathing Room",
+      "content": {
+        "type": "asset",
+        "asset": "breathing-room"
+      },
+      "transform": {
+        "position": [0, 0, 0]
+      },
+      "components": {
+        "BreathingRoom": {
+          "running": false,
+          "cycleSeconds": 6,
+          "strength": 0.35,
+          "phase": 0
+        }
+      }
+    },
+    {
+      "id": "ambient-light",
+      "name": "Warm ambient light",
+      "transform": {},
+      "components": {
+        "com.iwsdk.components.AmbientLight": {
+          "color": [0.42, 0.23, 0.48, 1],
+          "intensity": 1.2
+        }
+      }
+    },
+    {
+      "id": "room-fill-light",
+      "name": "Room fill light",
+      "transform": {
+        "position": [1.7, 2.5, -0.8]
+      },
+      "components": {
+        "com.iwsdk.components.PointLight": {
+          "color": [0.72, 0.42, 1, 1],
+          "intensity": 18,
+          "distance": 8,
+          "decay": 2,
+          "castShadow": false,
+          "shadowMapSize": "256",
+          "shadowBias": 0,
+          "shadowNormalBias": 0,
+          "shadowRadius": 1,
+          "shadowCameraNear": 0.1,
+          "shadowCameraFar": 10
+        }
+      }
+    }
+  ],
+  "authoring": {
+    "views": [
+      {
+        "id": "hero",
+        "role": "hero",
+        "projection": "perspective",
+        "position": [0, 1.63, 1.35],
+        "target": [0, 1.45, -2.9],
+        "fov": 64
+      },
+      {
+        "id": "corner",
+        "role": "diagnostic",
+        "projection": "perspective",
+        "position": [2.4, 2.35, 1.8],
+        "target": [0, 1.4, -3.2],
+        "fov": 56
+      },
+      {
+        "id": "top",
+        "role": "diagnostic",
+        "projection": "orthographic",
+        "position": [0, 7, 0],
+        "target": [0, 0.8, -1],
+        "height": 8
+      }
+    ]
+  }
+}

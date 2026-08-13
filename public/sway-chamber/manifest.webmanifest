@@ -1,0 +1,31 @@
+{
+  "name": "Sway Chamber",
+  "short_name": "Sway",
+  "description": "A stationary WebXR optic-flow illusion with bounded, seated-friendly motion.",
+  "start_url": "/sway-chamber/",
+  "scope": "/sway-chamber/",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#050a18",
+  "theme_color": "#0a1125",
+  "icons": [
+    {
+      "src": "/sway-chamber/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/sway-chamber/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/sway-chamber/icons/icon-512-maskable.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ]
+}

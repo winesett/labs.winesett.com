@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "slug": "scale-shift",
+  "sourceRepo": "local-source:scale-shift",
+  "sourceCommit": "7f7b38d04e98a351405756c9cc6e1eba85a488a6",
+  "archiveFile": "scale-shift-7f7b38d04e98.tar.gz",
+  "archiveSha256": "85d20dafdc70bd292080fef1cc0b1594d2aa12c5105c7ca9ba4b2f957082a0bb",
+  "archiveRoot": "scale-shift/",
+  "fileCount": 33,
+  "files": [
+    {
+      "path": "scale-shift/assets/crimsonText-DKwdbbX1.js",
+      "sha256": "8ff47711637748bdb9af1bc125f147fe2b57f0f4bf757300fccd31d59936bc23"
+    },
+    {
+      "path": "scale-shift/assets/firaCode-CPGi_dTk.js",
+      "sha256": "aaeeb22b395fea4124220976eaee93fab1ce5bf6fa83d277c0dd8bcce65a39a3"
+    },
+    {
+      "path": "scale-shift/assets/HavokPhysics_es-eRT5cQuv.js",
+      "sha256": "228e27783ba4c1691722d2c778c1daf63de3ab2cd23ce3e677c82dbfe89d4d7e"
+    },
+    {
+      "path": "scale-shift/assets/HavokPhysics-BqNY-4N9.wasm",
+      "sha256": "026917766f534c156286f07975850978dabf17c42e742bbfaaebbcb2215e4e11"
+    },
+    {
+      "path": "scale-shift/assets/inconsolata-OaCJF_Rp.js",
+      "sha256": "81e08b87bced83eb29ede00bd516a583d2666e09f03f8ff577904e8298a1314d"
+    },
+    {
+      "path": "scale-shift/assets/index-CnUrnli6.js",
+      "sha256": "c17c47c15bd4153e1df0f5106d390280bf8395c8d5e640a1e5e1cb20d9e9cecd"
+    },
+    {
+      "path": "scale-shift/assets/index-CVK9VqmY.js",
+      "sha256": "8d2fceff22a6bc556363fe4e70f086a3f42c38a4ae940718c6a2ab7005d1b2f6"
+    },
+    {
+      "path": "scale-shift/assets/index-DBOqfwfm.js",
+      "sha256": "d2b27787c960f41fd43b0acb2309ca1942265fcc69200b713a83f44f8c597bcf"
+    },
+    {
+      "path": "scale-shift/assets/inter-BNVRAYFH.js",
+      "sha256": "9159b2ed54dfb23ebadd61a9b91deb26fc652b0a6b1748784e9c4b4315f1da31"
+    },
+    {
+      "path": "scale-shift/assets/lato-Dbeb9-8A.js",
+      "sha256": "59c5d61470114c4b87fdda6883b76eee1d1b34381a144545e04cf8cb82f06d92"
+    },
+    {
+      "path": "scale-shift/assets/libreBaskerville-B4LNrPqt.js",
+      "sha256": "e7d4eb50bbfeecfcacf59e3d011933353d46b825aaf49c52db0b29d958a9e2a1"
+    },
+    {
+      "path": "scale-shift/assets/merriweather-DMXV4vMg.js",
+      "sha256": "eab11d15d21bb1ae5c320c4c695ef96f8a142a3c06922f3b71ff9f3a03bb3298"
+    },
+    {
+      "path": "scale-shift/assets/montserrat-BbePxp6i.js",
+      "sha256": "c382b2157a51c7f718a013f1633cd0955c82abf2ea207c52ce7fcd46a2697914"
+    },
+    {
+      "path": "scale-shift/assets/msdf-worker-BUaSHgMS.js",
+      "sha256": "320d3d5619bcc7ab27ee700e3448f5c8d3807a7e55796bbc0567074fd90604a0"
+    },
+    {
+      "path": "scale-shift/assets/nunito-B1wXnF4h.js",
+      "sha256": "62ab7e81deb380d4604283cb50b0af7fede095ad9366297891cdd8a503dbf19a"
+    },
+    {
+      "path": "scale-shift/assets/openSans-Jk_2t0YU.js",
+      "sha256": "5d0e20be77d76443faecd7b605b218dffe278cfb79beee3b34260cacaafe6475"
+    },
+    {
+      "path": "scale-shift/assets/playfairDisplay-CyGsuIEm.js",
+      "sha256": "e45c14f462b57c763cab6668830fe58427c19f154e99c72c4b4208773d4292ed"
+    },
+    {
+      "path": "scale-shift/assets/poppins-BhqVNCxH.js",
+      "sha256": "94383a5e5c8048b0e50da8bf9559b3c84c8c0475a67bd23605d5dd778f4aefab"
+    },
+    {
+      "path": "scale-shift/assets/raleway-CMTiBd4l.js",
+      "sha256": "29a248ce436b2544bffb1204bda51777548043324697435b59b77ca0f1b3f944"
+    },
+    {
+      "path": "scale-shift/assets/roboto-B1Zlc7NB.js",
+      "sha256": "1dd79cdd6f7fa73b4ea3b6da7717187abc27a15bd25d0f3794a5ca033f25b378"
+    },
+    {
+      "path": "scale-shift/assets/sourceCodePro-Drc7Wx_n.js",
+      "sha256": "332ab2f83135bd26d1d3cff2df84e22d1a9fca7e90ad05de70c9d611496dd225"
+    },
+    {
+      "path": "scale-shift/assets/spaceMono-B4CYWYnD.js",
+      "sha256": "b7617f72541249214409a98bda89f3b0d1178c5c015816b909468e1b8d3db162"
+    },
+    {
+      "path": "scale-shift/assets/worker-_Lh8Vt-i.js",
+      "sha256": "430e4c9e12f79a4c6c5fb3c410bcd85d4661151d098080713b5df3ac8b275001"
+    },
+    {
+      "path": "scale-shift/assets/worker-BA_pRWEz.js",
+      "sha256": "74827a34c8e289966c901723233109d912a74f8302a79a7549b729a0a62e4ca3"
+    },
+    {
+      "path": "scale-shift/assets/workSans-CL7PpxF9.js",
+      "sha256": "1a979b6bb196e67d0d167bd96e63d5444faec5678e8aca76562a7f40e5ff50a6"
+    },
+    {
+      "path": "scale-shift/assets/world-initializer-D9LiRkYj.js",
+      "sha256": "91b55dbf41eed059975e9e7d70968aa9e2efe0bb14ad93e3f9f23627d02b72eb"
+    },
+    {
+      "path": "scale-shift/icons/icon-192.png",
+      "sha256": "fe4d455c3c13309b3991f8b1c8b92afdd194d0be4d8da0ce6787c02711f95251"
+    },
+    {
+      "path": "scale-shift/icons/icon-512-maskable.png",
+      "sha256": "523668797b78d124c562add68a4e6a04a632ccb062fd76b9f3ec02ed3c47a6ec"
+    },
+    {
+      "path": "scale-shift/icons/icon-512.png",
+      "sha256": "523668797b78d124c562add68a4e6a04a632ccb062fd76b9f3ec02ed3c47a6ec"
+    },
+    {
+      "path": "scale-shift/icons/icon-source.svg",
+      "sha256": "49583b83793fa7e494c24d6ab341057a08f37af3295ab53fc80f46d32d74e5d0"
+    },
+    {
+      "path": "scale-shift/index.html",
+      "sha256": "589fdd9465baf5d555546b2c24be0d5f95c97a26d86dea4e964eed8fc563983f"
+    },
+    {
+      "path": "scale-shift/manifest.webmanifest",
+      "sha256": "1d095fd050b2602112f86b5bf4ec457144602e0411ad1b814a6e2e71b8184c1e"
+    },
+    {
+      "path": "scale-shift/scenes/main.iwsdk.scene.json",
+      "sha256": "c87ba2b7b8249f1135929c6690b4eba82250990f5e7fa47de92a0d01eedd0c8e"
+    }
+  ],
+  "expectedEntrypointPath": "scale-shift/index.html",
+  "expectedManifestPath": "scale-shift/manifest.webmanifest",
+  "expectedPublicUrl": "https://labs.winesett.com/scale-shift/",
+  "expectedManifestUrl": "https://labs.winesett.com/scale-shift/manifest.webmanifest",
+  "androidPackageName": "com.winesett.spinningtunnel",
+  "signingCertificateSha256": "86:19:82:96:75:38:96:9F:D7:D5:2B:1E:5D:AD:3C:74:40:21:C8:48:C8:4D:9C:B9:08:02:B6:89:E9:A9:3F:D6",
+  "assetlinksOwner": "winesett/labs.winesett.com"
+}

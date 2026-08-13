@@ -1,0 +1,16 @@
+{
+  "name": "Someone Behind You",
+  "short_name": "Behind You",
+  "description": "A controlled spatial-audio and peripheral-presence illusion for Meta Quest.",
+  "start_url": "/someone-behind-you/",
+  "scope": "/someone-behind-you/",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#04060d",
+  "theme_color": "#101827",
+  "icons": [
+    { "src": "/someone-behind-you/icons/icon-192.png", "type": "image/png", "sizes": "192x192", "purpose": "any" },
+    { "src": "/someone-behind-you/icons/icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "any" },
+    { "src": "/someone-behind-you/icons/icon-512-maskable.png", "type": "image/png", "sizes": "512x512", "purpose": "maskable" }
+  ]
+}

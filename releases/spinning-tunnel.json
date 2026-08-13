@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "slug": "spinning-tunnel",
-  "sourceRepo": "https://github.com/winesett/spinning-tunnel.git",
-  "sourceCommit": "6fc5fd49c8698f141c7ebe5455f46d78293ada57",
-  "archiveFile": "spinning-tunnel-6fc5fd49c869.tar.gz",
-  "archiveSha256": "2340631e115765c8b11bdee90dcc64ca8dae61dde51c2dc526dbe49848af926c",
+  "sourceRepo": "local-source:spinning-tunnel",
+  "sourceCommit": "c9bf81a8c83bea602546f5515c122dbcfe6e0efc",
+  "archiveFile": "spinning-tunnel-c9bf81a8c83b.tar.gz",
+  "archiveSha256": "ebfeb32235d9bacbde3c95ece7de63dcf19f71efa99885a6be5d1ea1c124c25b",
   "archiveRoot": "spinning-tunnel/",
   "fileCount": 38,
   "files": [
@@ -29,12 +29,12 @@
       "sha256": "81e08b87bced83eb29ede00bd516a583d2666e09f03f8ff577904e8298a1314d"
     },
     {
-      "path": "spinning-tunnel/assets/index-d_sfiSSD.js",
-      "sha256": "644c2617059db5a80dddcb3f4b9a586e92896991c1cdab2006bde685edfdbb8a"
+      "path": "spinning-tunnel/assets/index-CGTflbcx.js",
+      "sha256": "f288209f293d31e72a14ffa74404a19540cf3868eff30e18a645500e732f6fc0"
     },
     {
-      "path": "spinning-tunnel/assets/index-iGkBJlEy.js",
-      "sha256": "b2929e701190a8a4414c66294e0de6a50bb0186c71efb2773eb8053f7aa3b9be"
+      "path": "spinning-tunnel/assets/index-Dlu-BUEy.js",
+      "sha256": "4dd638775e2d192ccd241040609c613c8e99943e83820ccef6e39b5ec906f1b0"
     },
     {
       "path": "spinning-tunnel/assets/index-Q3DE8tMy.js",
@@ -109,8 +109,8 @@
       "sha256": "1a979b6bb196e67d0d167bd96e63d5444faec5678e8aca76562a7f40e5ff50a6"
     },
     {
-      "path": "spinning-tunnel/assets/world-initializer-WquvtRIA.js",
-      "sha256": "a6d12e6323072dfd4383370327ef18908f38f713584774aa6e4f28259c9c6fff"
+      "path": "spinning-tunnel/assets/world-initializer-5e9cbWEF.js",
+      "sha256": "d4db0ed356eb087481c3e8432de13e77fc5518f68828cea5ca947ff5e3e68794"
     },
     {
       "path": "spinning-tunnel/audio/chime.mp3",
@@ -138,7 +138,7 @@
     },
     {
       "path": "spinning-tunnel/index.html",
-      "sha256": "e03fda9e49e388541a87cd4af4efe8f673d509a5a635ec0d28683a50005a23b5"
+      "sha256": "bb995d1e5ccdfbc2a2972b0be44fffbf6458c15186eefeefaafa20dc016f9248"
     },
     {
       "path": "spinning-tunnel/manifest.webmanifest",

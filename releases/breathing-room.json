@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "slug": "breathing-room",
+  "sourceRepo": "local-source:breathing-room",
+  "sourceCommit": "bddb6fc7d57e259ebb0152cc6cefa52a9385f11a",
+  "archiveFile": "breathing-room-bddb6fc7d57e.tar.gz",
+  "archiveSha256": "5bcc0c04b0e0bcd1d2e4e408fe8c7324fc26c6f04f30d613af676df5ad6c353c",
+  "archiveRoot": "breathing-room/",
+  "fileCount": 34,
+  "files": [
+    {
+      "path": "breathing-room/assets/crimsonText-DKwdbbX1.js",
+      "sha256": "8ff47711637748bdb9af1bc125f147fe2b57f0f4bf757300fccd31d59936bc23"
+    },
+    {
+      "path": "breathing-room/assets/firaCode-CPGi_dTk.js",
+      "sha256": "aaeeb22b395fea4124220976eaee93fab1ce5bf6fa83d277c0dd8bcce65a39a3"
+    },
+    {
+      "path": "breathing-room/assets/HavokPhysics_es-C591c5wi.js",
+      "sha256": "340e875611c9d03fe94b82727cda62bc6a61fa743c41d72129059b6f073a9c58"
+    },
+    {
+      "path": "breathing-room/assets/HavokPhysics-BqNY-4N9.wasm",
+      "sha256": "026917766f534c156286f07975850978dabf17c42e742bbfaaebbcb2215e4e11"
+    },
+    {
+      "path": "breathing-room/assets/inconsolata-OaCJF_Rp.js",
+      "sha256": "81e08b87bced83eb29ede00bd516a583d2666e09f03f8ff577904e8298a1314d"
+    },
+    {
+      "path": "breathing-room/assets/index-BiPf_1Fd.js",
+      "sha256": "8dcfb8aaa82c9496310f31ea02f50d5229ca9609aace8a09c6b8ba65b2af0812"
+    },
+    {
+      "path": "breathing-room/assets/index-CTTuiobs.js",
+      "sha256": "dbde84f411fa5cee05e2cf9bfe1a053b9829d9d4c974a9aaf7e230e5486dfffc"
+    },
+    {
+      "path": "breathing-room/assets/index-uqjeCENN.js",
+      "sha256": "8990fe8864496d27437677a56e1c18375a1b8d488c21b4f3da931052e708e1be"
+    },
+    {
+      "path": "breathing-room/assets/inter-BNVRAYFH.js",
+      "sha256": "9159b2ed54dfb23ebadd61a9b91deb26fc652b0a6b1748784e9c4b4315f1da31"
+    },
+    {
+      "path": "breathing-room/assets/inter-CH6sfz2L.js",
+      "sha256": "9159b2ed54dfb23ebadd61a9b91deb26fc652b0a6b1748784e9c4b4315f1da31"
+    },
+    {
+      "path": "breathing-room/assets/lato-Dbeb9-8A.js",
+      "sha256": "59c5d61470114c4b87fdda6883b76eee1d1b34381a144545e04cf8cb82f06d92"
+    },
+    {
+      "path": "breathing-room/assets/libreBaskerville-B4LNrPqt.js",
+      "sha256": "e7d4eb50bbfeecfcacf59e3d011933353d46b825aaf49c52db0b29d958a9e2a1"
+    },
+    {
+      "path": "breathing-room/assets/merriweather-DMXV4vMg.js",
+      "sha256": "eab11d15d21bb1ae5c320c4c695ef96f8a142a3c06922f3b71ff9f3a03bb3298"
+    },
+    {
+      "path": "breathing-room/assets/montserrat-BbePxp6i.js",
+      "sha256": "c382b2157a51c7f718a013f1633cd0955c82abf2ea207c52ce7fcd46a2697914"
+    },
+    {
+      "path": "breathing-room/assets/msdf-worker-BUaSHgMS.js",
+      "sha256": "320d3d5619bcc7ab27ee700e3448f5c8d3807a7e55796bbc0567074fd90604a0"
+    },
+    {
+      "path": "breathing-room/assets/nunito-B1wXnF4h.js",
+      "sha256": "62ab7e81deb380d4604283cb50b0af7fede095ad9366297891cdd8a503dbf19a"
+    },
+    {
+      "path": "breathing-room/assets/openSans-Jk_2t0YU.js",
+      "sha256": "5d0e20be77d76443faecd7b605b218dffe278cfb79beee3b34260cacaafe6475"
+    },
+    {
+      "path": "breathing-room/assets/playfairDisplay-CyGsuIEm.js",
+      "sha256": "e45c14f462b57c763cab6668830fe58427c19f154e99c72c4b4208773d4292ed"
+    },
+    {
+      "path": "breathing-room/assets/poppins-BhqVNCxH.js",
+      "sha256": "94383a5e5c8048b0e50da8bf9559b3c84c8c0475a67bd23605d5dd778f4aefab"
+    },
+    {
+      "path": "breathing-room/assets/raleway-CMTiBd4l.js",
+      "sha256": "29a248ce436b2544bffb1204bda51777548043324697435b59b77ca0f1b3f944"
+    },
+    {
+      "path": "breathing-room/assets/roboto-B1Zlc7NB.js",
+      "sha256": "1dd79cdd6f7fa73b4ea3b6da7717187abc27a15bd25d0f3794a5ca033f25b378"
+    },
+    {
+      "path": "breathing-room/assets/sourceCodePro-Drc7Wx_n.js",
+      "sha256": "332ab2f83135bd26d1d3cff2df84e22d1a9fca7e90ad05de70c9d611496dd225"
+    },
+    {
+      "path": "breathing-room/assets/spaceMono-B4CYWYnD.js",
+      "sha256": "b7617f72541249214409a98bda89f3b0d1178c5c015816b909468e1b8d3db162"
+    },
+    {
+      "path": "breathing-room/assets/worker-_Lh8Vt-i.js",
+      "sha256": "430e4c9e12f79a4c6c5fb3c410bcd85d4661151d098080713b5df3ac8b275001"
+    },
+    {
+      "path": "breathing-room/assets/worker-BA_pRWEz.js",
+      "sha256": "74827a34c8e289966c901723233109d912a74f8302a79a7549b729a0a62e4ca3"
+    },
+    {
+      "path": "breathing-room/assets/workSans-CL7PpxF9.js",
+      "sha256": "1a979b6bb196e67d0d167bd96e63d5444faec5678e8aca76562a7f40e5ff50a6"
+    },
+    {
+      "path": "breathing-room/assets/world-initializer-BfSz-OYW.js",
+      "sha256": "a8f0a567c2b887ac3d942ad8fd27f59c322c9deb415d7d81f35dfbb8c88acdfc"
+    },
+    {
+      "path": "breathing-room/icons/icon-192.png",
+      "sha256": "ba6afbf5a79278ddfa372cf0c3216b585bcaff625e9998b67fbf59454c23df18"
+    },
+    {
+      "path": "breathing-room/icons/icon-512-maskable.png",
+      "sha256": "d77251ace7297881c28ac66638eed82202a5a205b8a84be195b787b85175c166"
+    },
+    {
+      "path": "breathing-room/icons/icon-512.png",
+      "sha256": "eac6f91b52e93f62808748811a795edb9404f6c45a545ded0261b1f8c2603ea6"
+    },
+    {
+      "path": "breathing-room/icons/icon-source.svg",
+      "sha256": "961ea7a603bd7becac3324b68e4868da11822957ff42d5cbbdf04154f33c6663"
+    },
+    {
+      "path": "breathing-room/index.html",
+      "sha256": "a87cd04ead68d6628df21fc7f40daec8644a8f583c236240558a22c14507648f"
+    },
+    {
+      "path": "breathing-room/manifest.webmanifest",
+      "sha256": "224448896a271688ef63b6595637c7328eac2f693417f239dd0fb9a69973815b"
+    },
+    {
+      "path": "breathing-room/scenes/main.iwsdk.scene.json",
+      "sha256": "9a55b4176214c2d1276ed419f3f01763040eaa2a4619674d03ab5fa7c837d7a5"
+    }
+  ],
+  "expectedEntrypointPath": "breathing-room/index.html",
+  "expectedManifestPath": "breathing-room/manifest.webmanifest",
+  "expectedPublicUrl": "https://labs.winesett.com/breathing-room/",
+  "expectedManifestUrl": "https://labs.winesett.com/breathing-room/manifest.webmanifest",
+  "androidPackageName": "com.winesett.spinningtunnel",
+  "signingCertificateSha256": "86:19:82:96:75:38:96:9F:D7:D5:2B:1E:5D:AD:3C:74:40:21:C8:48:C8:4D:9C:B9:08:02:B6:89:E9:A9:3F:D6",
+  "assetlinksOwner": "winesett/labs.winesett.com"
+}

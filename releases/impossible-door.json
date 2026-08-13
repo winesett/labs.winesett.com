@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "slug": "impossible-door",
+  "sourceRepo": "local-source:impossible-door",
+  "sourceCommit": "6b7b9bf8c593e3247aa87c8c02537b19b3294da0",
+  "archiveFile": "impossible-door-6b7b9bf8c593.tar.gz",
+  "archiveSha256": "30dc1d7fed60af7bc196c5c631186720f16a55c97c365989824c74f5efb4ea0c",
+  "archiveRoot": "impossible-door/",
+  "fileCount": 33,
+  "files": [
+    {
+      "path": "impossible-door/assets/crimsonText-DKwdbbX1.js",
+      "sha256": "8ff47711637748bdb9af1bc125f147fe2b57f0f4bf757300fccd31d59936bc23"
+    },
+    {
+      "path": "impossible-door/assets/firaCode-CPGi_dTk.js",
+      "sha256": "aaeeb22b395fea4124220976eaee93fab1ce5bf6fa83d277c0dd8bcce65a39a3"
+    },
+    {
+      "path": "impossible-door/assets/HavokPhysics_es-BQBYKWRv.js",
+      "sha256": "dcbcc4c8ade3adf59cf78e5f51aa340cf760840532f9154ee48c96617513fd8f"
+    },
+    {
+      "path": "impossible-door/assets/HavokPhysics-BqNY-4N9.wasm",
+      "sha256": "026917766f534c156286f07975850978dabf17c42e742bbfaaebbcb2215e4e11"
+    },
+    {
+      "path": "impossible-door/assets/inconsolata-OaCJF_Rp.js",
+      "sha256": "81e08b87bced83eb29ede00bd516a583d2666e09f03f8ff577904e8298a1314d"
+    },
+    {
+      "path": "impossible-door/assets/index-a-ZsWwF9.js",
+      "sha256": "228a207eda6f0629fb6dfc49deef28bf16b494c4020a950b59fb8e17c430db1a"
+    },
+    {
+      "path": "impossible-door/assets/index-BhDV86ND.js",
+      "sha256": "a5fae6370adc5d62b62344a6e502c4cf9efa7cc4865dfed5ba72522fffead605"
+    },
+    {
+      "path": "impossible-door/assets/index-CnuZnF1F.js",
+      "sha256": "d228c6e0837c7ca0f94846781699191d2bad75d8a41f2f854e613dfe6dec9d5c"
+    },
+    {
+      "path": "impossible-door/assets/inter-BNVRAYFH.js",
+      "sha256": "9159b2ed54dfb23ebadd61a9b91deb26fc652b0a6b1748784e9c4b4315f1da31"
+    },
+    {
+      "path": "impossible-door/assets/lato-Dbeb9-8A.js",
+      "sha256": "59c5d61470114c4b87fdda6883b76eee1d1b34381a144545e04cf8cb82f06d92"
+    },
+    {
+      "path": "impossible-door/assets/libreBaskerville-B4LNrPqt.js",
+      "sha256": "e7d4eb50bbfeecfcacf59e3d011933353d46b825aaf49c52db0b29d958a9e2a1"
+    },
+    {
+      "path": "impossible-door/assets/merriweather-DMXV4vMg.js",
+      "sha256": "eab11d15d21bb1ae5c320c4c695ef96f8a142a3c06922f3b71ff9f3a03bb3298"
+    },
+    {
+      "path": "impossible-door/assets/montserrat-BbePxp6i.js",
+      "sha256": "c382b2157a51c7f718a013f1633cd0955c82abf2ea207c52ce7fcd46a2697914"
+    },
+    {
+      "path": "impossible-door/assets/msdf-worker-BUaSHgMS.js",
+      "sha256": "320d3d5619bcc7ab27ee700e3448f5c8d3807a7e55796bbc0567074fd90604a0"
+    },
+    {
+      "path": "impossible-door/assets/nunito-B1wXnF4h.js",
+      "sha256": "62ab7e81deb380d4604283cb50b0af7fede095ad9366297891cdd8a503dbf19a"
+    },
+    {
+      "path": "impossible-door/assets/openSans-Jk_2t0YU.js",
+      "sha256": "5d0e20be77d76443faecd7b605b218dffe278cfb79beee3b34260cacaafe6475"
+    },
+    {
+      "path": "impossible-door/assets/playfairDisplay-CyGsuIEm.js",
+      "sha256": "e45c14f462b57c763cab6668830fe58427c19f154e99c72c4b4208773d4292ed"
+    },
+    {
+      "path": "impossible-door/assets/poppins-BhqVNCxH.js",
+      "sha256": "94383a5e5c8048b0e50da8bf9559b3c84c8c0475a67bd23605d5dd778f4aefab"
+    },
+    {
+      "path": "impossible-door/assets/raleway-CMTiBd4l.js",
+      "sha256": "29a248ce436b2544bffb1204bda51777548043324697435b59b77ca0f1b3f944"
+    },
+    {
+      "path": "impossible-door/assets/roboto-B1Zlc7NB.js",
+      "sha256": "1dd79cdd6f7fa73b4ea3b6da7717187abc27a15bd25d0f3794a5ca033f25b378"
+    },
+    {
+      "path": "impossible-door/assets/sourceCodePro-Drc7Wx_n.js",
+      "sha256": "332ab2f83135bd26d1d3cff2df84e22d1a9fca7e90ad05de70c9d611496dd225"
+    },
+    {
+      "path": "impossible-door/assets/spaceMono-B4CYWYnD.js",
+      "sha256": "b7617f72541249214409a98bda89f3b0d1178c5c015816b909468e1b8d3db162"
+    },
+    {
+      "path": "impossible-door/assets/worker-_Lh8Vt-i.js",
+      "sha256": "430e4c9e12f79a4c6c5fb3c410bcd85d4661151d098080713b5df3ac8b275001"
+    },
+    {
+      "path": "impossible-door/assets/worker-BA_pRWEz.js",
+      "sha256": "74827a34c8e289966c901723233109d912a74f8302a79a7549b729a0a62e4ca3"
+    },
+    {
+      "path": "impossible-door/assets/workSans-CL7PpxF9.js",
+      "sha256": "1a979b6bb196e67d0d167bd96e63d5444faec5678e8aca76562a7f40e5ff50a6"
+    },
+    {
+      "path": "impossible-door/assets/world-initializer-DatHQr8o.js",
+      "sha256": "bf6f72cf1f731a2feab741f5d6da02f998d8870dc2d0b2c4595c7db991cf1ce1"
+    },
+    {
+      "path": "impossible-door/icons/icon-192.png",
+      "sha256": "f292523e4af90bfae3c176d6c68378e7da0c95d673c85d0663a2cf09b86a5b79"
+    },
+    {
+      "path": "impossible-door/icons/icon-512-maskable.png",
+      "sha256": "f78151954e1000d0be43445fc54e05647f75cd4538021e343e05b9ad9d3f72b9"
+    },
+    {
+      "path": "impossible-door/icons/icon-512.png",
+      "sha256": "f78151954e1000d0be43445fc54e05647f75cd4538021e343e05b9ad9d3f72b9"
+    },
+    {
+      "path": "impossible-door/icons/icon-source.svg",
+      "sha256": "1772891861cd86476f7e9f63942ef063a599be68acc9a1a8312eca5a2a49c1eb"
+    },
+    {
+      "path": "impossible-door/index.html",
+      "sha256": "d89e74208007bc95aa07bfe3f9cdc376c48a4bd9f5c3076674669cdc69c82c95"
+    },
+    {
+      "path": "impossible-door/manifest.webmanifest",
+      "sha256": "4d0522289785e96c2aac3779264f4651cc6935b2c2d2082db036d0005638cae9"
+    },
+    {
+      "path": "impossible-door/scenes/main.iwsdk.scene.json",
+      "sha256": "3ec4ae2785f8619dd187eac7ee45f746a968ad4fa725162a6fd21b91314bab8c"
+    }
+  ],
+  "expectedEntrypointPath": "impossible-door/index.html",
+  "expectedManifestPath": "impossible-door/manifest.webmanifest",
+  "expectedPublicUrl": "https://labs.winesett.com/impossible-door/",
+  "expectedManifestUrl": "https://labs.winesett.com/impossible-door/manifest.webmanifest",
+  "androidPackageName": "com.winesett.spinningtunnel",
+  "signingCertificateSha256": "86:19:82:96:75:38:96:9F:D7:D5:2B:1E:5D:AD:3C:74:40:21:C8:48:C8:4D:9C:B9:08:02:B6:89:E9:A9:3F:D6",
+  "assetlinksOwner": "winesett/labs.winesett.com"
+}

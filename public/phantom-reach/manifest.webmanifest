@@ -1,0 +1,16 @@
+{
+  "name": "Phantom Reach",
+  "short_name": "Reach",
+  "description": "A local Quest XR proprioceptive-drift study with true and displaced hand/controller proxies.",
+  "start_url": "/phantom-reach/",
+  "scope": "/phantom-reach/",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#07060d",
+  "theme_color": "#130c1f",
+  "icons": [
+    { "src": "/phantom-reach/icons/icon-192.png", "type": "image/png", "sizes": "192x192", "purpose": "any" },
+    { "src": "/phantom-reach/icons/icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "any" },
+    { "src": "/phantom-reach/icons/icon-512-maskable.png", "type": "image/png", "sizes": "512x512", "purpose": "maskable" }
+  ]
+}

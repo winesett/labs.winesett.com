@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "slug": "edge-of-nothing",
+  "sourceRepo": "local-source:edge-of-nothing",
+  "sourceCommit": "96d0bb445ddb8e6143fcd9806473db34f59b9382",
+  "archiveFile": "edge-of-nothing-96d0bb445ddb.tar.gz",
+  "archiveSha256": "d0133f508cae6e5c3463c8fb24c462483286ab840e98e52bf1dd0bea44fb196f",
+  "archiveRoot": "edge-of-nothing/",
+  "fileCount": 33,
+  "files": [
+    {
+      "path": "edge-of-nothing/assets/crimsonText-DKwdbbX1.js",
+      "sha256": "8ff47711637748bdb9af1bc125f147fe2b57f0f4bf757300fccd31d59936bc23"
+    },
+    {
+      "path": "edge-of-nothing/assets/firaCode-CPGi_dTk.js",
+      "sha256": "aaeeb22b395fea4124220976eaee93fab1ce5bf6fa83d277c0dd8bcce65a39a3"
+    },
+    {
+      "path": "edge-of-nothing/assets/HavokPhysics_es-FTrKMwyC.js",
+      "sha256": "14a2e0b256cb815e455a2ccf8df9143523d4a81686b4556a9d5afecef78eb74d"
+    },
+    {
+      "path": "edge-of-nothing/assets/HavokPhysics-BqNY-4N9.wasm",
+      "sha256": "026917766f534c156286f07975850978dabf17c42e742bbfaaebbcb2215e4e11"
+    },
+    {
+      "path": "edge-of-nothing/assets/inconsolata-OaCJF_Rp.js",
+      "sha256": "81e08b87bced83eb29ede00bd516a583d2666e09f03f8ff577904e8298a1314d"
+    },
+    {
+      "path": "edge-of-nothing/assets/index-Ba8cDZjU.js",
+      "sha256": "953b2377ec86b1ff28dd6d6a11bfc7a0d853543ee47415964a90d1866c2f08ae"
+    },
+    {
+      "path": "edge-of-nothing/assets/index-DthJV8zq.js",
+      "sha256": "37b9031938cdb9252819a1bace279f852796a6d9189e4c5bbe95975dee7838e2"
+    },
+    {
+      "path": "edge-of-nothing/assets/index-e3Jb1gP1.js",
+      "sha256": "91acfb6352720613257ff5d52f802d767dbd3e6712cf88a58ba9d1f644ef5d16"
+    },
+    {
+      "path": "edge-of-nothing/assets/inter-BNVRAYFH.js",
+      "sha256": "9159b2ed54dfb23ebadd61a9b91deb26fc652b0a6b1748784e9c4b4315f1da31"
+    },
+    {
+      "path": "edge-of-nothing/assets/lato-Dbeb9-8A.js",
+      "sha256": "59c5d61470114c4b87fdda6883b76eee1d1b34381a144545e04cf8cb82f06d92"
+    },
+    {
+      "path": "edge-of-nothing/assets/libreBaskerville-B4LNrPqt.js",
+      "sha256": "e7d4eb50bbfeecfcacf59e3d011933353d46b825aaf49c52db0b29d958a9e2a1"
+    },
+    {
+      "path": "edge-of-nothing/assets/merriweather-DMXV4vMg.js",
+      "sha256": "eab11d15d21bb1ae5c320c4c695ef96f8a142a3c06922f3b71ff9f3a03bb3298"
+    },
+    {
+      "path": "edge-of-nothing/assets/montserrat-BbePxp6i.js",
+      "sha256": "c382b2157a51c7f718a013f1633cd0955c82abf2ea207c52ce7fcd46a2697914"
+    },
+    {
+      "path": "edge-of-nothing/assets/msdf-worker-BUaSHgMS.js",
+      "sha256": "320d3d5619bcc7ab27ee700e3448f5c8d3807a7e55796bbc0567074fd90604a0"
+    },
+    {
+      "path": "edge-of-nothing/assets/nunito-B1wXnF4h.js",
+      "sha256": "62ab7e81deb380d4604283cb50b0af7fede095ad9366297891cdd8a503dbf19a"
+    },
+    {
+      "path": "edge-of-nothing/assets/openSans-Jk_2t0YU.js",
+      "sha256": "5d0e20be77d76443faecd7b605b218dffe278cfb79beee3b34260cacaafe6475"
+    },
+    {
+      "path": "edge-of-nothing/assets/playfairDisplay-CyGsuIEm.js",
+      "sha256": "e45c14f462b57c763cab6668830fe58427c19f154e99c72c4b4208773d4292ed"
+    },
+    {
+      "path": "edge-of-nothing/assets/poppins-BhqVNCxH.js",
+      "sha256": "94383a5e5c8048b0e50da8bf9559b3c84c8c0475a67bd23605d5dd778f4aefab"
+    },
+    {
+      "path": "edge-of-nothing/assets/raleway-CMTiBd4l.js",
+      "sha256": "29a248ce436b2544bffb1204bda51777548043324697435b59b77ca0f1b3f944"
+    },
+    {
+      "path": "edge-of-nothing/assets/roboto-B1Zlc7NB.js",
+      "sha256": "1dd79cdd6f7fa73b4ea3b6da7717187abc27a15bd25d0f3794a5ca033f25b378"
+    },
+    {
+      "path": "edge-of-nothing/assets/sourceCodePro-Drc7Wx_n.js",
+      "sha256": "332ab2f83135bd26d1d3cff2df84e22d1a9fca7e90ad05de70c9d611496dd225"
+    },
+    {
+      "path": "edge-of-nothing/assets/spaceMono-B4CYWYnD.js",
+      "sha256": "b7617f72541249214409a98bda89f3b0d1178c5c015816b909468e1b8d3db162"
+    },
+    {
+      "path": "edge-of-nothing/assets/worker-_Lh8Vt-i.js",
+      "sha256": "430e4c9e12f79a4c6c5fb3c410bcd85d4661151d098080713b5df3ac8b275001"
+    },
+    {
+      "path": "edge-of-nothing/assets/worker-BA_pRWEz.js",
+      "sha256": "74827a34c8e289966c901723233109d912a74f8302a79a7549b729a0a62e4ca3"
+    },
+    {
+      "path": "edge-of-nothing/assets/workSans-CL7PpxF9.js",
+      "sha256": "1a979b6bb196e67d0d167bd96e63d5444faec5678e8aca76562a7f40e5ff50a6"
+    },
+    {
+      "path": "edge-of-nothing/assets/world-initializer-DQGAQlAF.js",
+      "sha256": "9f66afdd1ddbe323d17bed155af702b1933095709cef192618e7f9d9154ed7a9"
+    },
+    {
+      "path": "edge-of-nothing/icons/icon-192.png",
+      "sha256": "1fd2e7cc3f6be92aa20de43a7f5f1a3d668bc0486584b5b45f49619129e925ae"
+    },
+    {
+      "path": "edge-of-nothing/icons/icon-512-maskable.png",
+      "sha256": "c3c7a42b951e976e381fad91294aa9c1cd1d60b4e0e597288ed9f5aae0a8b3dd"
+    },
+    {
+      "path": "edge-of-nothing/icons/icon-512.png",
+      "sha256": "c3c7a42b951e976e381fad91294aa9c1cd1d60b4e0e597288ed9f5aae0a8b3dd"
+    },
+    {
+      "path": "edge-of-nothing/icons/icon-source.svg",
+      "sha256": "90cc22a0c4da30d669d44f9733156a7e9f5d63e48300103c1be597fff54995f0"
+    },
+    {
+      "path": "edge-of-nothing/index.html",
+      "sha256": "a78bb25b564c5428be2a5b5c86b776b6203a22b3534d7db0003f1d3c11969542"
+    },
+    {
+      "path": "edge-of-nothing/manifest.webmanifest",
+      "sha256": "07a8fad6061ae2807f276a590b081f159db5bb2417dd4c496e4517cce64eea94"
+    },
+    {
+      "path": "edge-of-nothing/scenes/main.iwsdk.scene.json",
+      "sha256": "f7fcb0fce22c44e1d00a9ea9f2049c76f1988e19b53fca8a104b08e6872dc086"
+    }
+  ],
+  "expectedEntrypointPath": "edge-of-nothing/index.html",
+  "expectedManifestPath": "edge-of-nothing/manifest.webmanifest",
+  "expectedPublicUrl": "https://labs.winesett.com/edge-of-nothing/",
+  "expectedManifestUrl": "https://labs.winesett.com/edge-of-nothing/manifest.webmanifest",
+  "androidPackageName": "com.winesett.spinningtunnel",
+  "signingCertificateSha256": "86:19:82:96:75:38:96:9F:D7:D5:2B:1E:5D:AD:3C:74:40:21:C8:48:C8:4D:9C:B9:08:02:B6:89:E9:A9:3F:D6",
+  "assetlinksOwner": "winesett/labs.winesett.com"
+}

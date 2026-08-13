@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="manifest" href="/breathing-room/manifest.webmanifest" />
+    <meta name="theme-color" content="#171126" />
+    <link rel="icon" href="/breathing-room/icons/icon-192.png" />
+    <title>Breathing Room</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        --ink: #fff9f0;
+        --muted: #cfc5d7;
+        --line: rgb(255 212 164 / 25%);
+        --panel: rgb(24 16 40 / 91%);
+        --accent: #ffd29a;
+        --lilac: #bba9ff;
+        --warn: #ffcf94;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        overflow: hidden;
+        color: var(--ink);
+        background: #0c0818;
+      }
+
+      #scene-container {
+        position: fixed;
+        inset: 0;
+      }
+
+      .controls {
+        position: fixed;
+        z-index: 10;
+        top: 18px;
+        left: 18px;
+        width: min(424px, calc(100vw - 36px));
+        padding: 22px;
+        border: 1px solid var(--line);
+        border-radius: 24px;
+        background: var(--panel);
+        box-shadow: 0 22px 76px rgb(0 0 0 / 52%);
+        backdrop-filter: blur(22px);
+      }
+
+      .eyebrow {
+        margin: 0 0 7px;
+        color: var(--accent);
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(30px, 6vw, 44px);
+        letter-spacing: -0.055em;
+        line-height: 0.98;
+      }
+
+      .lede {
+        margin: 12px 0 0;
+        color: #e2d8e8;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .status {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 8px 14px;
+        align-items: baseline;
+        margin: 18px 0 15px;
+        padding: 13px 14px;
+        border: 1px solid rgb(255 210 154 / 21%);
+        border-radius: 13px;
+        color: var(--muted);
+        background: rgb(50 26 46 / 76%);
+        font-size: 13px;
+      }
+
+      .status strong {
+        color: var(--accent);
+        font-size: 16px;
+      }
+
+      .status small {
+        grid-column: 1 / -1;
+        color: #bba9ff;
+        font-size: 12px;
+      }
+
+      .button-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 8px;
+      }
+
+      button {
+        min-height: 43px;
+        border: 1px solid rgb(236 210 255 / 25%);
+        border-radius: 12px;
+        color: var(--ink);
+        background: #2a1d45;
+        font: inherit;
+        font-size: 13px;
+        font-weight: 750;
+        cursor: pointer;
+        transition: background 120ms ease, border-color 120ms ease,
+          transform 120ms ease;
+      }
+
+      button:hover,
+      button:focus-visible {
+        border-color: var(--accent);
+        background: #3d2a5c;
+        outline: none;
+      }
+
+      button:active {
+        transform: translateY(1px);
+      }
+
+      button.primary {
+        grid-column: span 2;
+        color: #24142a;
+        border-color: var(--accent);
+        background: var(--accent);
+      }
+
+      button.stop {
+        color: #ffe4e4;
+        border-color: rgb(255 124 152 / 52%);
+        background: #54233b;
+      }
+
+      #enter-xr {
+        width: 100%;
+        margin-top: 10px;
+        border-color: var(--lilac);
+        background: #50428e;
+      }
+
+      .mapping,
+      .warning {
+        margin: 15px 0 0;
+        color: #b6aac3;
+        font-size: 12px;
+        line-height: 1.55;
+      }
+
+      .warning {
+        color: var(--warn);
+      }
+
+      .labs-home { position: fixed; z-index: 20; top: 20px; right: 20px; padding: 10px 14px; border: 1px solid rgb(190 220 255 / 28%); border-radius: 999px; color: #edf6ff; background: rgb(9 16 29 / 90%); font-size: 13px; font-weight: 750; text-decoration: none; backdrop-filter: blur(14px); }
+
+      @media (max-width: 620px) {
+        .controls {
+          top: auto;
+          right: 12px;
+          bottom: 12px;
+          left: 12px;
+          width: auto;
+          padding: 16px;
+        }
+
+        .lede,
+        .mapping {
+          display: none;
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="/breathing-room/assets/index-CTTuiobs.js"></script>
+  </head>
+  <body>
+    <a class="labs-home" href="/" aria-label="Return to Winesett Labs">← Labs</a>
+    <div id="scene-container"></div>
+    <aside class="controls" aria-label="Breathing Room controls">
+      <p class="eyebrow">Quiet visual pacing · no sensor input</p>
+      <h1>Breathing Room</h1>
+      <p class="lede">
+        A soft room of light, particles, and a central orb expands and settles
+        at a calm rhythm. Follow the phase if it feels comfortable; there is
+        no microphone and no medical measurement.
+      </p>
+      <p id="breath-status" class="status" aria-live="polite">
+        <strong>Paused</strong><span>6.0 s cycle</span><small>Ready · reset</small>
+      </p>
+      <div class="button-grid">
+        <button class="primary" data-breath-command="toggle">Begin / pause</button>
+        <button class="stop" data-breath-command="stop">Stop</button>
+        <button data-breath-command="slower">Slower</button>
+        <button data-breath-command="calmer">Calmer</button>
+        <button data-breath-command="faster">Faster</button>
+        <button data-breath-command="stronger">Stronger</button>
+        <button data-breath-command="reset">Reset</button>
+      </div>
+      <button id="enter-xr">Enter VR</button>
+      <p class="mapping">
+        Right trigger: begin/pause · B or Y: emergency stop · right stick
+        up/down: rate · left/right: visual strength.<br />
+        <span class="warning">
+          This is a visual pacing aid, not medical or physiological feedback.
+          Choose your own comfortable rhythm and stop if you feel uncomfortable.
+        </span>
+      </p>
+    </aside>
+  </body>
+</html>

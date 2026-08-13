@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="manifest" href="/edge-of-nothing/manifest.webmanifest" />
+    <meta name="theme-color" content="#071318" />
+    <link rel="icon" href="/edge-of-nothing/icons/icon-192.png" />
+    <title>Edge of Nothing · Quest MR study</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        background: #05080a;
+        color: #effffb;
+      }
+
+      * { box-sizing: border-box; }
+      body { margin: 0; min-height: 100vh; overflow: hidden; background: #05080a; }
+      #scene-container { position: fixed; inset: 0; }
+
+      .controls {
+        position: fixed;
+        z-index: 10;
+        top: 18px;
+        left: 18px;
+        width: min(430px, calc(100vw - 36px));
+        padding: 21px;
+        border: 1px solid rgb(105 234 202 / 25%);
+        border-radius: 22px;
+        background: linear-gradient(150deg, rgb(7 21 24 / 94%), rgb(5 10 15 / 91%));
+        box-shadow: 0 20px 70px rgb(0 0 0 / 55%), inset 0 1px 0 rgb(255 255 255 / 7%);
+        backdrop-filter: blur(18px);
+      }
+
+      .eyebrow {
+        margin: 0 0 7px;
+        color: #6be6c5;
+        font-size: 11px;
+        font-weight: 850;
+        letter-spacing: .18em;
+        text-transform: uppercase;
+      }
+
+      h1 { margin: 0; font-size: clamp(28px, 5.2vw, 42px); letter-spacing: -.055em; line-height: .98; }
+      .lede { margin: 11px 0 0; color: #b9cec9; font-size: 13px; line-height: 1.48; }
+
+      .status {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        margin: 17px 0 15px;
+        padding: 10px 12px;
+        border: 1px solid rgb(107 230 197 / 20%);
+        border-radius: 12px;
+        color: #8fb8b0;
+        background: rgb(13 44 43 / 48%);
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      .status::before {
+        width: 8px;
+        height: 8px;
+        flex: 0 0 auto;
+        border-radius: 50%;
+        background: #748887;
+        box-shadow: 0 0 0 4px rgb(116 136 135 / 14%);
+        content: "";
+      }
+
+      .status[data-open="true"] { color: #8ff5d4; }
+      .status[data-open="true"]::before { background: #6be6c5; box-shadow: 0 0 0 4px rgb(107 230 197 / 17%), 0 0 18px #6be6c5; }
+
+      .button-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+      button {
+        min-height: 43px;
+        border: 1px solid rgb(168 220 211 / 20%);
+        border-radius: 11px;
+        color: #eafff8;
+        background: #142326;
+        font: inherit;
+        font-size: 12px;
+        font-weight: 760;
+        cursor: pointer;
+        transition: border-color .16s ease, background .16s ease, transform .16s ease;
+      }
+      button:hover { border-color: #6be6c5; background: #1b3735; transform: translateY(-1px); }
+      button:active { transform: translateY(0); }
+      button.primary { grid-column: span 2; color: #04130f; border-color: #7bf3d2; background: #6be6c5; }
+      button.primary:hover { background: #8df8db; }
+      button.stop { color: #ffdfe4; border-color: rgb(255 110 130 / 42%); background: #3a1822; }
+      button.stop:hover { border-color: #ff7188; background: #53212d; }
+      #enter-xr { width: 100%; margin-top: 10px; color: #e5f6ff; border-color: #71bbff; background: #164873; }
+      #enter-xr:hover { background: #205f95; }
+
+      .readout { margin: 14px 0 0; color: #9bb8b3; font-size: 12px; line-height: 1.5; }
+      .readout strong { color: #dffcf4; font-weight: 760; }
+
+      .safety {
+        margin: 14px 0 0;
+        padding: 11px 12px;
+        border-left: 2px solid #f4c76f;
+        border-radius: 0 9px 9px 0;
+        color: #e9d7a4;
+        background: rgb(74 55 20 / 34%);
+        font-size: 11px;
+        line-height: 1.5;
+      }
+      .safety strong { color: #ffdc88; }
+
+      .mapping { margin: 12px 0 0; color: #78928e; font-size: 11px; line-height: 1.5; }
+      .fallback { margin: 8px 0 0; color: #7fabc0; font-size: 11px; }
+
+      .labs-home { position: fixed; z-index: 20; top: 20px; right: 20px; padding: 10px 14px; border: 1px solid rgb(164 232 220 / 28%); border-radius: 999px; color: #e4fff9; background: rgb(5 13 16 / 90%); font-size: 13px; font-weight: 750; text-decoration: none; backdrop-filter: blur(14px); }
+
+      @media (max-width: 620px) {
+        .controls { top: auto; right: 12px; bottom: 12px; left: 12px; width: auto; padding: 16px; }
+        .lede, .mapping { display: none; }
+        h1 { font-size: 29px; }
+      }
+    </style>
+    <script type="module" crossorigin src="/edge-of-nothing/assets/index-DthJV8zq.js"></script>
+  </head>
+  <body>
+    <a class="labs-home" href="/" aria-label="Return to Winesett Labs">← Labs</a>
+    <div id="scene-container"></div>
+    <aside class="controls" aria-label="Edge of Nothing controls">
+      <p class="eyebrow">Quest 3 mixed-reality study</p>
+      <h1>Edge of Nothing</h1>
+      <p class="lede">A floor-level hatch that suggests impossible depth without moving the real room. Start closed, seated, and a few steps back.</p>
+      <p id="edge-status" class="status" data-open="false">Hatch closed · 3.4 m ahead · compact</p>
+      <div class="button-grid">
+        <button class="primary" data-edge-command="toggle">Open / close hatch</button>
+        <button class="stop" data-edge-command="reset">Reset / stop</button>
+        <button data-edge-command="nearer">Bring nearer</button>
+        <button data-edge-command="farther">Send farther</button>
+        <button data-edge-command="smaller">Size down</button>
+        <button data-edge-command="larger">Size up</button>
+        <button data-edge-command="style">Depth style</button>
+      </div>
+      <button id="enter-xr">Enter MR</button>
+      <p id="edge-fallback" class="fallback">Passthrough is requested when supported. If it is unavailable, this study uses a dim dark-room VR fallback.</p>
+      <p class="readout">The luminous ring is a <strong>real-floor reference</strong>, not a surface scan. The hatch is always positioned ahead of you and cannot move under your body.</p>
+      <p class="mapping">Right trigger: open / close · B: emergency close · stick up/down: size · stick left/right: distance · A: depth style · left Y: reset.</p>
+      <p class="safety"><strong>Seated mode recommended.</strong> Do not walk toward the hatch, step onto it, or use it near stairs, edges, pets, or other people. Stop immediately if depth cues feel uncomfortable.</p>
+    </aside>
+  </body>
+</html>

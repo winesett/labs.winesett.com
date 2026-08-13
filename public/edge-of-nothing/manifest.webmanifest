@@ -1,0 +1,16 @@
+{
+  "name": "Edge of Nothing",
+  "short_name": "Edge",
+  "description": "A seated, world-locked mixed-reality depth illusion with an explicit real-floor reference.",
+  "start_url": "/edge-of-nothing/",
+  "scope": "/edge-of-nothing/",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#05080a",
+  "theme_color": "#071318",
+  "icons": [
+    { "src": "/edge-of-nothing/icons/icon-192.png", "type": "image/png", "sizes": "192x192", "purpose": "any" },
+    { "src": "/edge-of-nothing/icons/icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "any" },
+    { "src": "/edge-of-nothing/icons/icon-512-maskable.png", "type": "image/png", "sizes": "512x512", "purpose": "maskable" }
+  ]
+}

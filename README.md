@@ -6,7 +6,8 @@ Static hosting hub for audited Winesett Labs demos.
 
 This repository owns:
 
-- the landing page and public lab registry;
+- the installable Winesett Labs launcher manifest, icons, landing page, and
+  public lab registry;
 - the exact deploy tree under `public/`;
 - the shared `/.well-known/assetlinks.json`;
 - artifact import, provenance, and public-release verification;
@@ -32,6 +33,10 @@ replaces one exact demo directory.
 
 The site deploys as an asset-only Cloudflare Worker from the audited `public/`
 tree. It has no Worker script, server code, analytics, or paid services.
+
+The Quest package is a 2D launcher scoped to the entire origin. Individual
+experiments remain immersive WebXR routes and enter VR or MR after the user
+selects the route's explicit Enter button.
 
 ```bash
 npm ci

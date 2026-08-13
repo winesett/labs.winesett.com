@@ -1,0 +1,31 @@
+{
+  "name": "Impossible Door",
+  "short_name": "Impossible Door",
+  "description": "A stationary doorway with three incompatible procedural destinations.",
+  "start_url": "/impossible-door/",
+  "scope": "/impossible-door/",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#100719",
+  "theme_color": "#e889ff",
+  "icons": [
+    {
+      "src": "/impossible-door/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/impossible-door/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/impossible-door/icons/icon-512-maskable.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ]
+}

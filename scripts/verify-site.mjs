@@ -10,6 +10,10 @@ const requiredFiles = [
   '404.html',
   'styles.css',
   'labs.json',
+  'manifest.webmanifest',
+  'labs-icon-192.png',
+  'labs-icon-512.png',
+  'labs-icon-512-maskable.png',
   '_headers',
   '.well-known/assetlinks.json',
 ];
@@ -96,6 +100,16 @@ for (const lab of registry.labs) {
 const assetlinks = JSON.parse(
   await readFile(resolve(publicRoot, '.well-known', 'assetlinks.json'), 'utf8'),
 );
+
+const launcherManifest = JSON.parse(
+  await readFile(resolve(publicRoot, 'manifest.webmanifest'), 'utf8'),
+);
+if (launcherManifest.start_url !== '/' || launcherManifest.scope !== '/') {
+  throw new Error('The Winesett Labs launcher manifest must use root start_url and scope.');
+}
+if (launcherManifest.name !== 'Winesett Labs') {
+  throw new Error('Unexpected launcher manifest name.');
+}
 if (!Array.isArray(assetlinks)) throw new Error('assetlinks.json must contain an array.');
 const packages = new Set();
 for (const statement of assetlinks) {

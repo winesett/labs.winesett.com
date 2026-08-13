@@ -1,0 +1,31 @@
+{
+  "name": "Scale Shift",
+  "short_name": "Scale Shift",
+  "description": "A stationary room that gently changes scale around a stable personal-space marker.",
+  "start_url": "/scale-shift/",
+  "scope": "/scale-shift/",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#08101c",
+  "theme_color": "#2de2b2",
+  "icons": [
+    {
+      "src": "/scale-shift/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/scale-shift/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/scale-shift/icons/icon-512-maskable.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ]
+}

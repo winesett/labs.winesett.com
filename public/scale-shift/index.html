@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="manifest" href="/scale-shift/manifest.webmanifest" />
+    <meta name="theme-color" content="#08101c" />
+    <link rel="icon" href="/scale-shift/icons/icon-192.png" />
+    <title>Scale Shift · a stationary size study</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        --ink: #f4fbfa;
+        --muted: #a9c4c6;
+        --line: rgb(174 238 229 / 22%);
+        --panel: rgb(7 18 29 / 89%);
+        --mint: #2de2b2;
+        --amber: #ffce6b;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; min-height: 100vh; overflow: hidden; background: #050d17; color: var(--ink); }
+      #scene-container { position: fixed; inset: 0; }
+      .controls {
+        position: fixed; z-index: 10; top: 18px; left: 18px; width: min(414px, calc(100vw - 36px));
+        padding: 20px 20px 17px; border: 1px solid var(--line); border-radius: 22px; background: var(--panel);
+        box-shadow: 0 22px 65px rgb(0 0 0 / 42%); backdrop-filter: blur(19px);
+      }
+      .eyebrow { margin: 0 0 7px; color: var(--mint); font-size: 11px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+      h1 { margin: 0; font-size: clamp(27px, 5vw, 39px); letter-spacing: -.05em; line-height: 1; }
+      .lede { margin: 12px 0 14px; color: var(--muted); font-size: 13px; line-height: 1.48; }
+      .readout { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin: 0 0 16px; }
+      .scale-value { color: var(--amber); font-size: 29px; font-variant-numeric: tabular-nums; font-weight: 780; letter-spacing: -.04em; }
+      .scale-label { color: var(--muted); font-size: 12px; text-align: right; }
+      .button-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+      button { min-height: 42px; border: 1px solid var(--line); border-radius: 12px; color: var(--ink); background: #132b35; font: inherit; font-size: 13px; font-weight: 750; cursor: pointer; transition: border-color .16s ease, background .16s ease, transform .16s ease; }
+      button:hover, button:focus-visible { border-color: var(--mint); background: #1b4146; outline: none; transform: translateY(-1px); }
+      button.primary { color: #031613; border-color: var(--mint); background: var(--mint); }
+      button.secondary { color: #081713; border-color: var(--amber); background: var(--amber); }
+      button.danger { color: #ffe0c0; border-color: rgb(255 149 83 / 45%); background: #42261d; }
+      #enter-xr { width: 100%; margin-top: 10px; border-color: #8bbcff; background: #22477e; }
+      .status-line { margin: 14px 0 0; color: var(--muted); font-size: 12px; line-height: 1.45; }
+      .status-line strong { color: var(--ink); font-weight: 750; }
+      .mapping { margin: 10px 0 0; color: #7e9da1; font-size: 11px; line-height: 1.5; }
+      .comfort { color: #d7b877; }
+      .labs-home { position: fixed; z-index: 20; top: 20px; right: 20px; padding: 10px 14px; border: 1px solid rgb(96 238 198 / 30%); border-radius: 999px; color: #e5fff7; background: rgb(7 17 27 / 90%); font-size: 13px; font-weight: 750; text-decoration: none; backdrop-filter: blur(14px); }
+
+      @media (max-width: 620px) {
+        .controls { top: auto; right: 12px; bottom: 12px; left: 12px; width: auto; padding: 15px; }
+        .lede, .mapping { display: none; }
+      }
+    </style>
+    <script type="module" crossorigin src="/scale-shift/assets/index-CnUrnli6.js"></script>
+  </head>
+  <body>
+    <a class="labs-home" href="/" aria-label="Return to Winesett Labs">← Labs</a>
+    <div id="scene-container"></div>
+    <aside class="controls" aria-label="Scale Shift controls">
+      <p class="eyebrow">Quest 3 · stationary perception study</p>
+      <h1>Scale Shift</h1>
+      <p class="lede">The room changes around a fixed horizon and a small personal-space ring. You stay planted; only the familiar architecture changes size.</p>
+      <div class="readout">
+        <span id="scale-value" class="scale-value">1.00×</span>
+        <span id="scale-label" class="scale-label">Neutral room<br />camera locked</span>
+      </div>
+      <div class="button-grid">
+        <button class="secondary" data-scale-command="tiny">Tiny</button>
+        <button class="primary" data-scale-command="normal">Normal</button>
+        <button class="secondary" data-scale-command="giant">Giant</button>
+        <button data-scale-command="gentler">Gentler</button>
+        <button data-scale-command="stronger">Stronger</button>
+        <button class="danger" data-scale-command="freeze">Freeze</button>
+        <button data-scale-command="reset">Reset now</button>
+      </div>
+      <button id="enter-xr">Enter VR</button>
+      <p id="scale-status" class="status-line"><strong>Ready.</strong> Neutral 1× · transition is gentle.</p>
+      <p class="mapping">Right stick ↑/↓ changes presets · B or Y resets immediately · A toggles freeze.<br /><span class="comfort">Stay seated or standing with a real-world support. Stop at the first hint of discomfort.</span></p>
+    </aside>
+  </body>
+</html>

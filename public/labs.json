@@ -4,14 +4,74 @@
     {
       "slug": "spinning-tunnel",
       "title": "Spinning Tunnel",
-      "description": "An immersive WebXR flight through a luminous, rotating tunnel.",
+      "description": "A fixed bridge inside an endless rotating galaxy tunnel.",
       "status": "live",
-      "technologies": [
-        "WebXR",
-        "Meta Quest"
-      ],
+      "technologies": ["WebXR", "Meta Quest", "Optic flow"],
       "iconPath": "/spinning-tunnel/icons/icon-512.png",
       "launchPath": "/spinning-tunnel/"
+    },
+    {
+      "slug": "sway-chamber",
+      "title": "Sway Chamber",
+      "description": "A stationary optic-flow room that can create a subtle feeling of sway.",
+      "status": "live",
+      "technologies": ["WebXR", "Meta Quest", "Balance"],
+      "iconPath": "/sway-chamber/icons/icon-512.png",
+      "launchPath": "/sway-chamber/"
+    },
+    {
+      "slug": "breathing-room",
+      "title": "Breathing Room",
+      "description": "A room that expands and contracts with a calm breathing rhythm.",
+      "status": "live",
+      "technologies": ["WebXR", "Meta Quest", "Web Audio"],
+      "iconPath": "/breathing-room/icons/icon-512.png",
+      "launchPath": "/breathing-room/"
+    },
+    {
+      "slug": "edge-of-nothing",
+      "title": "Edge of Nothing",
+      "description": "A safely distant mixed-reality hatch into an impossible abyss.",
+      "status": "live",
+      "technologies": ["WebXR", "Meta Quest", "Mixed reality"],
+      "iconPath": "/edge-of-nothing/icons/icon-512.png",
+      "launchPath": "/edge-of-nothing/"
+    },
+    {
+      "slug": "phantom-reach",
+      "title": "Phantom Reach",
+      "description": "A true controller marker and extended ghost proxy explore proprioceptive drift.",
+      "status": "live",
+      "technologies": ["WebXR", "Meta Quest", "Proprioception"],
+      "iconPath": "/phantom-reach/icons/icon-512.png",
+      "launchPath": "/phantom-reach/"
+    },
+    {
+      "slug": "scale-shift",
+      "title": "Scale Shift",
+      "description": "Familiar objects change scale until the viewer feels tiny or gigantic.",
+      "status": "live",
+      "technologies": ["WebXR", "Meta Quest", "Embodiment"],
+      "iconPath": "/scale-shift/icons/icon-512.png",
+      "launchPath": "/scale-shift/"
+    },
+    {
+      "slug": "impossible-door",
+      "title": "Impossible Door",
+      "description": "One fixed doorway reveals three incompatible procedural spaces.",
+      "status": "live",
+      "technologies": ["WebXR", "Meta Quest", "Impossible space"],
+      "iconPath": "/impossible-door/icons/icon-512.png",
+      "launchPath": "/impossible-door/"
+    },
+    {
+      "slug": "someone-behind-you",
+      "title": "Someone Behind You",
+      "description": "Synthetic rear audio and peripheral cues create a controlled sense of presence.",
+      "status": "live",
+      "technologies": ["WebXR", "Meta Quest", "Spatial audio"],
+      "iconPath": "/someone-behind-you/icons/icon-512.png",
+      "launchPath": "/someone-behind-you/"
     }
   ]
 }

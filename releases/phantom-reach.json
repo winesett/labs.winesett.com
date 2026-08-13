@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "slug": "phantom-reach",
+  "sourceRepo": "local-source:phantom-reach",
+  "sourceCommit": "284a99b85e5bd672d6928fa5eee3e47afedcde47",
+  "archiveFile": "phantom-reach-284a99b85e5b.tar.gz",
+  "archiveSha256": "cba7f22b8aefcee9b2f24374e416d003001861ae89ce3edae2047c99bafe35d7",
+  "archiveRoot": "phantom-reach/",
+  "fileCount": 33,
+  "files": [
+    {
+      "path": "phantom-reach/assets/crimsonText-DKwdbbX1.js",
+      "sha256": "8ff47711637748bdb9af1bc125f147fe2b57f0f4bf757300fccd31d59936bc23"
+    },
+    {
+      "path": "phantom-reach/assets/firaCode-CPGi_dTk.js",
+      "sha256": "aaeeb22b395fea4124220976eaee93fab1ce5bf6fa83d277c0dd8bcce65a39a3"
+    },
+    {
+      "path": "phantom-reach/assets/HavokPhysics_es-BaT5NhY_.js",
+      "sha256": "49ace57a735ea795041f37a421bcbe8e5a80cbe68a4922066db86a8b0f968962"
+    },
+    {
+      "path": "phantom-reach/assets/HavokPhysics-BqNY-4N9.wasm",
+      "sha256": "026917766f534c156286f07975850978dabf17c42e742bbfaaebbcb2215e4e11"
+    },
+    {
+      "path": "phantom-reach/assets/inconsolata-OaCJF_Rp.js",
+      "sha256": "81e08b87bced83eb29ede00bd516a583d2666e09f03f8ff577904e8298a1314d"
+    },
+    {
+      "path": "phantom-reach/assets/index-B9QXeDOR.js",
+      "sha256": "a05500c8e4b8452bbb573b356945c001bc27a96fec2c15ee3b3990091724426a"
+    },
+    {
+      "path": "phantom-reach/assets/index-C1nyrI4v.js",
+      "sha256": "56b9a3285ff37588b1579ca6aec26eb45eb256a09fb5c35d8a2b94a722d76c53"
+    },
+    {
+      "path": "phantom-reach/assets/index-D5pQDsyh.js",
+      "sha256": "067897f8f74eaf9865922b0987da766ef8939f1cba84293951d8623eab597e4c"
+    },
+    {
+      "path": "phantom-reach/assets/inter-BNVRAYFH.js",
+      "sha256": "9159b2ed54dfb23ebadd61a9b91deb26fc652b0a6b1748784e9c4b4315f1da31"
+    },
+    {
+      "path": "phantom-reach/assets/lato-Dbeb9-8A.js",
+      "sha256": "59c5d61470114c4b87fdda6883b76eee1d1b34381a144545e04cf8cb82f06d92"
+    },
+    {
+      "path": "phantom-reach/assets/libreBaskerville-B4LNrPqt.js",
+      "sha256": "e7d4eb50bbfeecfcacf59e3d011933353d46b825aaf49c52db0b29d958a9e2a1"
+    },
+    {
+      "path": "phantom-reach/assets/merriweather-DMXV4vMg.js",
+      "sha256": "eab11d15d21bb1ae5c320c4c695ef96f8a142a3c06922f3b71ff9f3a03bb3298"
+    },
+    {
+      "path": "phantom-reach/assets/montserrat-BbePxp6i.js",
+      "sha256": "c382b2157a51c7f718a013f1633cd0955c82abf2ea207c52ce7fcd46a2697914"
+    },
+    {
+      "path": "phantom-reach/assets/msdf-worker-BUaSHgMS.js",
+      "sha256": "320d3d5619bcc7ab27ee700e3448f5c8d3807a7e55796bbc0567074fd90604a0"
+    },
+    {
+      "path": "phantom-reach/assets/nunito-B1wXnF4h.js",
+      "sha256": "62ab7e81deb380d4604283cb50b0af7fede095ad9366297891cdd8a503dbf19a"
+    },
+    {
+      "path": "phantom-reach/assets/openSans-Jk_2t0YU.js",
+      "sha256": "5d0e20be77d76443faecd7b605b218dffe278cfb79beee3b34260cacaafe6475"
+    },
+    {
+      "path": "phantom-reach/assets/playfairDisplay-CyGsuIEm.js",
+      "sha256": "e45c14f462b57c763cab6668830fe58427c19f154e99c72c4b4208773d4292ed"
+    },
+    {
+      "path": "phantom-reach/assets/poppins-BhqVNCxH.js",
+      "sha256": "94383a5e5c8048b0e50da8bf9559b3c84c8c0475a67bd23605d5dd778f4aefab"
+    },
+    {
+      "path": "phantom-reach/assets/raleway-CMTiBd4l.js",
+      "sha256": "29a248ce436b2544bffb1204bda51777548043324697435b59b77ca0f1b3f944"
+    },
+    {
+      "path": "phantom-reach/assets/roboto-B1Zlc7NB.js",
+      "sha256": "1dd79cdd6f7fa73b4ea3b6da7717187abc27a15bd25d0f3794a5ca033f25b378"
+    },
+    {
+      "path": "phantom-reach/assets/sourceCodePro-Drc7Wx_n.js",
+      "sha256": "332ab2f83135bd26d1d3cff2df84e22d1a9fca7e90ad05de70c9d611496dd225"
+    },
+    {
+      "path": "phantom-reach/assets/spaceMono-B4CYWYnD.js",
+      "sha256": "b7617f72541249214409a98bda89f3b0d1178c5c015816b909468e1b8d3db162"
+    },
+    {
+      "path": "phantom-reach/assets/worker-_Lh8Vt-i.js",
+      "sha256": "430e4c9e12f79a4c6c5fb3c410bcd85d4661151d098080713b5df3ac8b275001"
+    },
+    {
+      "path": "phantom-reach/assets/worker-BA_pRWEz.js",
+      "sha256": "74827a34c8e289966c901723233109d912a74f8302a79a7549b729a0a62e4ca3"
+    },
+    {
+      "path": "phantom-reach/assets/workSans-CL7PpxF9.js",
+      "sha256": "1a979b6bb196e67d0d167bd96e63d5444faec5678e8aca76562a7f40e5ff50a6"
+    },
+    {
+      "path": "phantom-reach/assets/world-initializer-6Iw-GNZ1.js",
+      "sha256": "fd1decaace980d825f331c1981de04d04f595cb6454057ceefa3fd435f1ac600"
+    },
+    {
+      "path": "phantom-reach/icons/icon-192.png",
+      "sha256": "3de8990ea0ce27f6d981dd690e9aaf9097106106aa96bd00ecb1cee3bcf4f52a"
+    },
+    {
+      "path": "phantom-reach/icons/icon-512-maskable.png",
+      "sha256": "2c9b4deedbac8da89c5faee130527db465c03714408e6768d6f28f63b89ac677"
+    },
+    {
+      "path": "phantom-reach/icons/icon-512.png",
+      "sha256": "2c9b4deedbac8da89c5faee130527db465c03714408e6768d6f28f63b89ac677"
+    },
+    {
+      "path": "phantom-reach/icons/icon-source.svg",
+      "sha256": "2ac627734cf129506a4e84635a645af12808dcc69e6480d430a6bc5bbf88d4db"
+    },
+    {
+      "path": "phantom-reach/index.html",
+      "sha256": "25e05fd07d3847dd4d2d87103c175c638ee1e9815eeba00926aa9c16ccbe5dc6"
+    },
+    {
+      "path": "phantom-reach/manifest.webmanifest",
+      "sha256": "ef7bceaa90cdf7bfd5369d8fe277993b17bce361da3e679248e264879f910761"
+    },
+    {
+      "path": "phantom-reach/scenes/main.iwsdk.scene.json",
+      "sha256": "daa069719615378787a2d37c228a365473d4b4ce4b7a179ad29d1491bb7bcdaa"
+    }
+  ],
+  "expectedEntrypointPath": "phantom-reach/index.html",
+  "expectedManifestPath": "phantom-reach/manifest.webmanifest",
+  "expectedPublicUrl": "https://labs.winesett.com/phantom-reach/",
+  "expectedManifestUrl": "https://labs.winesett.com/phantom-reach/manifest.webmanifest",
+  "androidPackageName": "com.winesett.spinningtunnel",
+  "signingCertificateSha256": "86:19:82:96:75:38:96:9F:D7:D5:2B:1E:5D:AD:3C:74:40:21:C8:48:C8:4D:9C:B9:08:02:B6:89:E9:A9:3F:D6",
+  "assetlinksOwner": "winesett/labs.winesett.com"
+}

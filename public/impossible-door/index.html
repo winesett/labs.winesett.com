@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="manifest" href="/impossible-door/manifest.webmanifest" />
+    <meta name="theme-color" content="#100719" />
+    <link rel="icon" href="/impossible-door/icons/icon-192.png" />
+    <title>Impossible Door · a fixed portal</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        --ink: #fff4fd;
+        --muted: #d1b6d4;
+        --line: rgb(245 180 255 / 25%);
+        --panel: rgb(19 8 29 / 90%);
+        --pink: #f0a8ff;
+        --violet: #9b83ff;
+        --amber: #ffcf67;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; min-height: 100vh; overflow: hidden; background: #0a0611; color: var(--ink); }
+      #scene-container { position: fixed; inset: 0; }
+      .controls {
+        position: fixed; z-index: 10; top: 18px; left: 18px; width: min(414px, calc(100vw - 36px));
+        padding: 20px 20px 17px; border: 1px solid var(--line); border-radius: 22px; background: var(--panel);
+        box-shadow: 0 22px 65px rgb(0 0 0 / 45%); backdrop-filter: blur(19px);
+      }
+      .eyebrow { margin: 0 0 7px; color: var(--pink); font-size: 11px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+      h1 { margin: 0; font-size: clamp(27px, 5vw, 39px); letter-spacing: -.05em; line-height: 1; }
+      .lede { margin: 12px 0 14px; color: var(--muted); font-size: 13px; line-height: 1.48; }
+      .readout { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin: 0 0 16px; }
+      .destination { color: var(--amber); font-size: 25px; font-variant-numeric: tabular-nums; font-weight: 780; letter-spacing: -.04em; }
+      .depth-label { color: var(--muted); font-size: 12px; text-align: right; }
+      .button-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+      button { min-height: 42px; border: 1px solid var(--line); border-radius: 12px; color: var(--ink); background: #28143b; font: inherit; font-size: 13px; font-weight: 750; cursor: pointer; transition: border-color .16s ease, background .16s ease, transform .16s ease; }
+      button:hover, button:focus-visible { border-color: var(--pink); background: #45225a; outline: none; transform: translateY(-1px); }
+      button.primary { color: #1b0922; border-color: var(--pink); background: var(--pink); }
+      button.secondary { color: #160d25; border-color: var(--violet); background: var(--violet); }
+      button.danger { color: #ffe0c0; border-color: rgb(255 149 83 / 45%); background: #42261d; }
+      #enter-xr { width: 100%; margin-top: 10px; border-color: #8bbcff; background: #22477e; }
+      .status-line { margin: 14px 0 0; color: var(--muted); font-size: 12px; line-height: 1.45; }
+      .status-line strong { color: var(--ink); font-weight: 750; }
+      .mapping { margin: 10px 0 0; color: #a98aad; font-size: 11px; line-height: 1.5; }
+      .comfort { color: #d7b877; }
+      .labs-home { position: fixed; z-index: 20; top: 20px; right: 20px; padding: 10px 14px; border: 1px solid rgb(232 137 255 / 30%); border-radius: 999px; color: #fceaff; background: rgb(18 7 28 / 90%); font-size: 13px; font-weight: 750; text-decoration: none; backdrop-filter: blur(14px); }
+
+      @media (max-width: 620px) {
+        .controls { top: auto; right: 12px; bottom: 12px; left: 12px; width: auto; padding: 15px; }
+        .lede, .mapping { display: none; }
+      }
+    </style>
+    <script type="module" crossorigin src="/impossible-door/assets/index-BhDV86ND.js"></script>
+  </head>
+  <body>
+    <a class="labs-home" href="/" aria-label="Return to Winesett Labs">← Labs</a>
+    <div id="scene-container"></div>
+    <aside class="controls" aria-label="Impossible Door controls">
+      <p class="eyebrow">Quest 3 · fixed viewpoint illusion</p>
+      <h1>Impossible Door</h1>
+      <p class="lede">A single stable frame holds three spaces that cannot share a building. Look; do not walk. Open it only when you are ready, then stop immediately if the depth feels uncomfortable.</p>
+      <div class="readout">
+        <span id="destination" class="destination">Closed</span>
+        <span id="depth-label" class="depth-label">Inert portal<br />depth 0.85</span>
+      </div>
+      <div class="button-grid">
+        <button class="primary" data-door-command="toggle">Open / close</button>
+        <button class="secondary" data-door-command="cycle">Next space</button>
+        <button data-door-command="depth-down">Depth −</button>
+        <button data-door-command="depth-up">Depth +</button>
+        <button class="danger" data-door-command="reset">Reset / stop</button>
+      </div>
+      <button id="enter-xr">Enter VR</button>
+      <p id="door-status" class="status-line"><strong>Closed and inert.</strong> The frame is stable. No walking required.</p>
+      <p class="mapping">Right trigger opens/closes · X cycles spaces · thumbstick ↑/↓ adjusts depth · B or Y resets.<br /><span class="comfort">Stay seated or standing in the marked floor boundary. Keep a hand near a real-world support.</span></p>
+    </aside>
+  </body>
+</html>

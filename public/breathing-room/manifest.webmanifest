@@ -1,0 +1,31 @@
+{
+  "name": "Breathing Room",
+  "short_name": "Breathing",
+  "description": "A calm local WebXR visual pacing room with a controllable breath rhythm.",
+  "start_url": "/breathing-room/",
+  "scope": "/breathing-room/",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#0c0818",
+  "theme_color": "#171126",
+  "icons": [
+    {
+      "src": "/breathing-room/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/breathing-room/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/breathing-room/icons/icon-512-maskable.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ]
+}

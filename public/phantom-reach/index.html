@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="manifest" href="/phantom-reach/manifest.webmanifest" />
+    <meta name="theme-color" content="#130c1f" />
+    <link rel="icon" href="/phantom-reach/icons/icon-192.png" />
+    <title>Phantom Reach · Quest XR study</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        background: #07060d;
+        color: #fbf6ff;
+      }
+      * { box-sizing: border-box; }
+      body { margin: 0; min-height: 100vh; overflow: hidden; background: #07060d; }
+      #scene-container { position: fixed; inset: 0; }
+
+      .controls {
+        position: fixed;
+        z-index: 10;
+        top: 18px;
+        left: 18px;
+        width: min(430px, calc(100vw - 36px));
+        padding: 21px;
+        border: 1px solid rgb(220 135 255 / 25%);
+        border-radius: 22px;
+        background: linear-gradient(145deg, rgb(24 12 33 / 95%), rgb(8 8 18 / 92%));
+        box-shadow: 0 20px 70px rgb(0 0 0 / 54%), inset 0 1px 0 rgb(255 255 255 / 7%);
+        backdrop-filter: blur(18px);
+      }
+      .eyebrow { margin: 0 0 7px; color: #df9aff; font-size: 11px; font-weight: 850; letter-spacing: .18em; text-transform: uppercase; }
+      h1 { margin: 0; font-size: clamp(28px, 5.2vw, 42px); letter-spacing: -.055em; line-height: .98; }
+      .lede { margin: 11px 0 0; color: #cbbcd3; font-size: 13px; line-height: 1.48; }
+
+      .status {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        margin: 17px 0 15px;
+        padding: 10px 12px;
+        border: 1px solid rgb(218 146 255 / 21%);
+        border-radius: 12px;
+        color: #bfa5c9;
+        background: rgb(46 23 58 / 45%);
+        font-size: 13px;
+        font-weight: 700;
+      }
+      .status::before { width: 8px; height: 8px; flex: 0 0 auto; border-radius: 50%; background: #8c798f; box-shadow: 0 0 0 4px rgb(140 121 143 / 13%); content: ""; }
+      .status[data-enabled="true"] { color: #f2c8ff; }
+      .status[data-enabled="true"]::before { background: #e39aff; box-shadow: 0 0 0 4px rgb(227 154 255 / 16%), 0 0 18px #e39aff; }
+
+      .button-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+      button { min-height: 43px; border: 1px solid rgb(228 192 244 / 20%); border-radius: 11px; color: #fff8ff; background: #22182b; font: inherit; font-size: 12px; font-weight: 760; cursor: pointer; transition: border-color .16s ease, background .16s ease, transform .16s ease; }
+      button:hover { border-color: #e29cff; background: #352143; transform: translateY(-1px); }
+      button:active { transform: translateY(0); }
+      button.primary { grid-column: span 2; color: #170a1e; border-color: #f1b8ff; background: #df9aff; }
+      button.primary:hover { background: #efbaff; }
+      button.stop { color: #ffe6da; border-color: rgb(255 146 107 / 42%); background: #452018; }
+      button.stop:hover { border-color: #ff9d7b; background: #612b1e; }
+      #enter-xr { width: 100%; margin-top: 10px; color: #e8fcff; border-color: #6edbe7; background: #12505c; }
+      #enter-xr:hover { background: #196e7a; }
+
+      .readout { margin: 14px 0 0; color: #ae9abb; font-size: 12px; line-height: 1.5; }
+      .readout strong { color: #f6d9ff; font-weight: 760; }
+      .safety { margin: 14px 0 0; padding: 11px 12px; border-left: 2px solid #f2bd71; border-radius: 0 9px 9px 0; color: #ecd5a5; background: rgb(74 51 20 / 34%); font-size: 11px; line-height: 1.5; }
+      .safety strong { color: #ffdc88; }
+      .mapping { margin: 12px 0 0; color: #887694; font-size: 11px; line-height: 1.5; }
+      .note { margin: 8px 0 0; color: #8fbac0; font-size: 11px; line-height: 1.45; }
+
+      .labs-home { position: fixed; z-index: 20; top: 20px; right: 20px; padding: 10px 14px; border: 1px solid rgb(220 180 255 / 28%); border-radius: 999px; color: #f6eaff; background: rgb(14 8 24 / 90%); font-size: 13px; font-weight: 750; text-decoration: none; backdrop-filter: blur(14px); }
+
+      @media (max-width: 620px) {
+        .controls { top: auto; right: 12px; bottom: 12px; left: 12px; width: auto; padding: 16px; }
+        .lede, .mapping { display: none; }
+        h1 { font-size: 29px; }
+      }
+    </style>
+    <script type="module" crossorigin src="/phantom-reach/assets/index-C1nyrI4v.js"></script>
+  </head>
+  <body>
+    <a class="labs-home" href="/" aria-label="Return to Winesett Labs">← Labs</a>
+    <div id="scene-container"></div>
+    <aside class="controls" aria-label="Phantom Reach controls">
+      <p class="eyebrow">Quest 3 proprioception study</p>
+      <h1>Phantom Reach</h1>
+      <p class="lede">A ghost hand follows your tracked hand or controller with a deliberately conservative gain. The true marker stays visible so the difference remains legible.</p>
+      <p id="reach-status" class="status" data-enabled="false">Distortion off · 1.00× · calibrate first</p>
+      <div class="button-grid">
+        <button class="primary" data-reach-command="toggle">Enable / disable</button>
+        <button class="stop" data-reach-command="reset">Reset / calibrate</button>
+        <button data-reach-command="down">Gain down</button>
+        <button data-reach-command="up">Gain up</button>
+      </div>
+      <button id="enter-xr">Enter VR</button>
+      <p class="note">Works with hand tracking when available; otherwise the controller grip and ray spaces drive the same proxies.</p>
+      <p class="readout"><strong>True marker:</strong> cyan point at the tracked position. <strong>Ghost:</strong> violet point and beam. Gain is capped at 1.35× and is a local subjective illusion, not a measurement.</p>
+      <p class="mapping">Right trigger: enable / disable · B: emergency disable · stick up/down: gain · left Y: reset / calibrate.</p>
+      <p class="safety"><strong>Stay seated or planted.</strong> Do not reach beyond a comfortable range, walk while enabled, or use this as a task-performance test. Stop immediately if your body map feels unsettled.</p>
+    </aside>
+  </body>
+</html>

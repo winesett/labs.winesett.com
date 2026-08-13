@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "slug": "sway-chamber",
+  "sourceRepo": "local-source:sway-chamber",
+  "sourceCommit": "9746474ff1f4dfd907ddaf4e4c259461420aaf8f",
+  "archiveFile": "sway-chamber-9746474ff1f4.tar.gz",
+  "archiveSha256": "202c1f530bfbcc9f09deb710a9619eb23355a1fe8c92a5348496d770eff0853c",
+  "archiveRoot": "sway-chamber/",
+  "fileCount": 33,
+  "files": [
+    {
+      "path": "sway-chamber/assets/crimsonText-DKwdbbX1.js",
+      "sha256": "8ff47711637748bdb9af1bc125f147fe2b57f0f4bf757300fccd31d59936bc23"
+    },
+    {
+      "path": "sway-chamber/assets/firaCode-CPGi_dTk.js",
+      "sha256": "aaeeb22b395fea4124220976eaee93fab1ce5bf6fa83d277c0dd8bcce65a39a3"
+    },
+    {
+      "path": "sway-chamber/assets/HavokPhysics_es-BtVvjuXU.js",
+      "sha256": "8d83db0781ca1814252f0bf5c3fe6a8c5f68fa0ecb4d7fb18a8b86099813bd35"
+    },
+    {
+      "path": "sway-chamber/assets/HavokPhysics-BqNY-4N9.wasm",
+      "sha256": "026917766f534c156286f07975850978dabf17c42e742bbfaaebbcb2215e4e11"
+    },
+    {
+      "path": "sway-chamber/assets/inconsolata-OaCJF_Rp.js",
+      "sha256": "81e08b87bced83eb29ede00bd516a583d2666e09f03f8ff577904e8298a1314d"
+    },
+    {
+      "path": "sway-chamber/assets/index-B8VKjMxu.js",
+      "sha256": "3766a1b8801594a335d3118e8961e9f47c1a6e7a78c6202db6c19f306286af1f"
+    },
+    {
+      "path": "sway-chamber/assets/index-q-KAlUwd.js",
+      "sha256": "c48657db0f71f190d09564d2bf1600adc1a27d2ab3cb9c76fced5c5908d0d556"
+    },
+    {
+      "path": "sway-chamber/assets/index-XJ9IMfml.js",
+      "sha256": "e87cbf218269fa074a8f2cc34206e375ff3f63dac6bea929ffb46cb2df8903b2"
+    },
+    {
+      "path": "sway-chamber/assets/inter-BNVRAYFH.js",
+      "sha256": "9159b2ed54dfb23ebadd61a9b91deb26fc652b0a6b1748784e9c4b4315f1da31"
+    },
+    {
+      "path": "sway-chamber/assets/lato-Dbeb9-8A.js",
+      "sha256": "59c5d61470114c4b87fdda6883b76eee1d1b34381a144545e04cf8cb82f06d92"
+    },
+    {
+      "path": "sway-chamber/assets/libreBaskerville-B4LNrPqt.js",
+      "sha256": "e7d4eb50bbfeecfcacf59e3d011933353d46b825aaf49c52db0b29d958a9e2a1"
+    },
+    {
+      "path": "sway-chamber/assets/merriweather-DMXV4vMg.js",
+      "sha256": "eab11d15d21bb1ae5c320c4c695ef96f8a142a3c06922f3b71ff9f3a03bb3298"
+    },
+    {
+      "path": "sway-chamber/assets/montserrat-BbePxp6i.js",
+      "sha256": "c382b2157a51c7f718a013f1633cd0955c82abf2ea207c52ce7fcd46a2697914"
+    },
+    {
+      "path": "sway-chamber/assets/msdf-worker-BUaSHgMS.js",
+      "sha256": "320d3d5619bcc7ab27ee700e3448f5c8d3807a7e55796bbc0567074fd90604a0"
+    },
+    {
+      "path": "sway-chamber/assets/nunito-B1wXnF4h.js",
+      "sha256": "62ab7e81deb380d4604283cb50b0af7fede095ad9366297891cdd8a503dbf19a"
+    },
+    {
+      "path": "sway-chamber/assets/openSans-Jk_2t0YU.js",
+      "sha256": "5d0e20be77d76443faecd7b605b218dffe278cfb79beee3b34260cacaafe6475"
+    },
+    {
+      "path": "sway-chamber/assets/playfairDisplay-CyGsuIEm.js",
+      "sha256": "e45c14f462b57c763cab6668830fe58427c19f154e99c72c4b4208773d4292ed"
+    },
+    {
+      "path": "sway-chamber/assets/poppins-BhqVNCxH.js",
+      "sha256": "94383a5e5c8048b0e50da8bf9559b3c84c8c0475a67bd23605d5dd778f4aefab"
+    },
+    {
+      "path": "sway-chamber/assets/raleway-CMTiBd4l.js",
+      "sha256": "29a248ce436b2544bffb1204bda51777548043324697435b59b77ca0f1b3f944"
+    },
+    {
+      "path": "sway-chamber/assets/roboto-B1Zlc7NB.js",
+      "sha256": "1dd79cdd6f7fa73b4ea3b6da7717187abc27a15bd25d0f3794a5ca033f25b378"
+    },
+    {
+      "path": "sway-chamber/assets/sourceCodePro-Drc7Wx_n.js",
+      "sha256": "332ab2f83135bd26d1d3cff2df84e22d1a9fca7e90ad05de70c9d611496dd225"
+    },
+    {
+      "path": "sway-chamber/assets/spaceMono-B4CYWYnD.js",
+      "sha256": "b7617f72541249214409a98bda89f3b0d1178c5c015816b909468e1b8d3db162"
+    },
+    {
+      "path": "sway-chamber/assets/worker-_Lh8Vt-i.js",
+      "sha256": "430e4c9e12f79a4c6c5fb3c410bcd85d4661151d098080713b5df3ac8b275001"
+    },
+    {
+      "path": "sway-chamber/assets/worker-BA_pRWEz.js",
+      "sha256": "74827a34c8e289966c901723233109d912a74f8302a79a7549b729a0a62e4ca3"
+    },
+    {
+      "path": "sway-chamber/assets/workSans-CL7PpxF9.js",
+      "sha256": "1a979b6bb196e67d0d167bd96e63d5444faec5678e8aca76562a7f40e5ff50a6"
+    },
+    {
+      "path": "sway-chamber/assets/world-initializer-Bf2K5x3M.js",
+      "sha256": "2eda6e8ce4bc1348c4a399fd9b98d70664321d91317667433ab098a63831556c"
+    },
+    {
+      "path": "sway-chamber/icons/icon-192.png",
+      "sha256": "eb38898f8f67a1705c61cbb6fd866683106d035e099883446072b6257033c107"
+    },
+    {
+      "path": "sway-chamber/icons/icon-512-maskable.png",
+      "sha256": "eb931d678a66427f045942509060b0523ab59f7f60b3bbe08949ea7b574a2722"
+    },
+    {
+      "path": "sway-chamber/icons/icon-512.png",
+      "sha256": "f21eec00ba2de4471ab1bfeb199bce009efc40cceecd3200a199f240833f8012"
+    },
+    {
+      "path": "sway-chamber/icons/icon-source.svg",
+      "sha256": "a51225b20fb6627643b77eaee9cc6218423249ffa967aaca8a009cb151366335"
+    },
+    {
+      "path": "sway-chamber/index.html",
+      "sha256": "5a7f227bbfad6c52f998664161deb23b8b9e34c259fcf433e6e4f202f0214e7b"
+    },
+    {
+      "path": "sway-chamber/manifest.webmanifest",
+      "sha256": "ed73fd98ce6de2c6f39d17758919de084f98524c379424c58b8a183b2e34257b"
+    },
+    {
+      "path": "sway-chamber/scenes/main.iwsdk.scene.json",
+      "sha256": "4a33564aac172b7c7d5abc127a019ecf014bb4314ccb62243def2e4423da96c0"
+    }
+  ],
+  "expectedEntrypointPath": "sway-chamber/index.html",
+  "expectedManifestPath": "sway-chamber/manifest.webmanifest",
+  "expectedPublicUrl": "https://labs.winesett.com/sway-chamber/",
+  "expectedManifestUrl": "https://labs.winesett.com/sway-chamber/manifest.webmanifest",
+  "androidPackageName": "com.winesett.spinningtunnel",
+  "signingCertificateSha256": "86:19:82:96:75:38:96:9F:D7:D5:2B:1E:5D:AD:3C:74:40:21:C8:48:C8:4D:9C:B9:08:02:B6:89:E9:A9:3F:D6",
+  "assetlinksOwner": "winesett/labs.winesett.com"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Winesett Labs",
+  "short_name": "Labs",
+  "description": "Small immersive experiments that bend motion, scale, space, and presence.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#080b14",
+  "theme_color": "#0b1020",
+  "icons": [
+    { "src": "/labs-icon-192.png", "type": "image/png", "sizes": "192x192", "purpose": "any" },
+    { "src": "/labs-icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "any" },
+    { "src": "/labs-icon-512-maskable.png", "type": "image/png", "sizes": "512x512", "purpose": "maskable" }
+  ]
+}
