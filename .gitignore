@@ -4,3 +4,9 @@ node_modules/
 .wrangler/
 *.tar.gz
 *.tmp
+
+# Local environment and Cloudflare secrets
+.env*
+!.env.example
+.dev.vars*
+!.dev.vars.example
