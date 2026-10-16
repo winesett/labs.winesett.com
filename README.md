@@ -35,6 +35,16 @@ replaces one exact demo directory.
 
 ## Deployment
 
+Production uses Cloudflare Workers Builds connected to this repository's `main`
+branch. The deploy command is `npm run deploy`, which runs the release verifier
+before Wrangler publishes `public/`. Automatic non-production builds are disabled;
+review changes locally before merging. Keep hosting and builds on free tiers.
+Do not enable paid plans, add-ons, or paid overages without Cody's explicit approval.
+
+Winesett is the parent brand. Fold War and other studio products are **from
+Winesett Labs**, including when they acquire a separate product address.
+
+
 The site deploys as an asset-only Cloudflare Worker from the audited `public/`
 tree. It has no Worker script, server code, analytics, or paid services.
 
