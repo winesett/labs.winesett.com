@@ -1,6 +1,10 @@
 # labs.winesett.com
 
-Static hosting hub for audited Winesett Labs demos.
+Creative studio homepage, Fold War launch page, and audited Winesett Labs demos.
+
+The studio is at `/`, Fold War is at `/fold-war/`, and the earlier collection
+is preserved at `/experiments/`. Existing demo URLs and release artifacts are unchanged.
+The studio pages are maintained here; the portfolio repository is not the deployment source.
 
 ## Ownership
 

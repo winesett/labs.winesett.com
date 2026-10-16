@@ -9,6 +9,10 @@ const requiredFiles = [
   'index.html',
   '404.html',
   'styles.css',
+  'labs.css',
+  'labs-favicon.svg',
+  'fold-war/index.html',
+  'experiments/index.html',
   'labs.json',
   'manifest.webmanifest',
   'labs-icon-192.png',
@@ -140,7 +144,15 @@ const publicDirectories = (await readdir(publicRoot, { withFileTypes: true }))
   .filter((entry) => entry.isDirectory() && entry.name !== '.well-known')
   .map((entry) => entry.name)
   .sort();
+const studioDirectories = new Set(['fold-war', 'experiments']);
 for (const directory of publicDirectories) {
+  if (studioDirectories.has(directory)) {
+    const entries = await readdir(resolve(publicRoot, directory));
+    if (entries.length !== 1 || entries[0] !== 'index.html') {
+      throw new Error(`Studio page must contain only index.html: ${directory}`);
+    }
+    continue;
+  }
   if (!releaseSlugs.has(directory)) throw new Error(`Public demo has no provenance: ${directory}`);
 }
 

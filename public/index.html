@@ -1,130 +1,56 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Small immersive experiments that bend motion, scale, space, and presence.">
-    <meta name="theme-color" content="#0b1020">
-    <title>Winesett Labs</title>
-    <link rel="manifest" href="/manifest.webmanifest">
-    <link rel="icon" href="/labs-icon-192.png" type="image/png">
-    <link rel="stylesheet" href="/styles.css">
-  </head>
-  <body>
-    <main>
-      <header class="intro">
-        <img class="app-mark" src="/labs-icon-192.png" alt="" width="192" height="192">
-        <div>
-          <p class="eyebrow">Winesett Labs · Quest collection</p>
-          <h1>Eight ways to make a still room feel strange.</h1>
-          <p class="intro__copy">Experiments in optic flow, scale, spatial audio, mixed reality, and the gap between what your body knows and what your eyes believe.</p>
-        </div>
-      </header>
-
-      <section class="collection" aria-labelledby="collection-heading">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Perception collection</p>
-            <h2 id="collection-heading">Choose an experiment</h2>
-          </div>
-          <p class="collection-note">Each experience begins stopped or neutral. Use it seated when possible.</p>
-        </div>
-
-        <div class="lab-grid">
-          <article class="lab-card lab-card--featured">
-            <img src="/spinning-tunnel/icons/icon-512.png" alt="" width="512" height="512">
-            <div class="lab-card__body">
-              <div class="labels"><span>Optic flow</span><span>VR</span></div>
-              <h3>Spinning Tunnel</h3>
-              <p>A fixed bridge inside an endless rotating galaxy tunnel creates the classic vortex illusion.</p>
-              <p class="comfort-note"><strong>Strong motion:</strong> start seated or physically supported.</p>
-              <a class="button button--primary" href="/spinning-tunnel/">Launch experiment</a>
-            </div>
-          </article>
-
-          <article class="lab-card">
-            <img src="/sway-chamber/icons/icon-512.png" alt="" width="512" height="512">
-            <div class="lab-card__body">
-              <div class="labels"><span>Balance</span><span>VR</span></div>
-              <h3>Sway Chamber</h3>
-              <p>A stable room with gently drifting visual references that can make a still body feel in motion.</p>
-              <p class="comfort-note"><strong>Gentle default:</strong> fixed horizon and emergency stop included.</p>
-              <a class="button" href="/sway-chamber/">Launch experiment</a>
-            </div>
-          </article>
-
-          <article class="lab-card">
-            <img src="/breathing-room/icons/icon-512.png" alt="" width="512" height="512">
-            <div class="lab-card__body">
-              <div class="labels"><span>Entrainment</span><span>VR</span></div>
-              <h3>Breathing Room</h3>
-              <p>Light, geometry, particles, and sound expand and contract in one calm breathing rhythm.</p>
-              <p class="comfort-note"><strong>No microphone:</strong> the rhythm is suggestive, not a measurement.</p>
-              <a class="button" href="/breathing-room/">Launch experiment</a>
-            </div>
-          </article>
-
-          <article class="lab-card">
-            <img src="/edge-of-nothing/icons/icon-512.png" alt="" width="512" height="512">
-            <div class="lab-card__body">
-              <div class="labels"><span>Depth</span><span>MR</span></div>
-              <h3>Edge of Nothing</h3>
-              <p>A safely distant virtual floor hatch opens into an impossible abyss in front of you.</p>
-              <p class="comfort-note"><strong>Remain still:</strong> never step toward or onto the portal.</p>
-              <a class="button" href="/edge-of-nothing/">Launch experiment</a>
-            </div>
-          </article>
-
-          <article class="lab-card">
-            <img src="/phantom-reach/icons/icon-512.png" alt="" width="512" height="512">
-            <div class="lab-card__body">
-              <div class="labels"><span>Proprioception</span><span>VR</span></div>
-              <h3>Phantom Reach</h3>
-              <p>A visible ghost proxy gradually reaches farther than the controller that drives it.</p>
-              <p class="comfort-note"><strong>True position stays visible:</strong> distortion begins at 1:1.</p>
-              <a class="button" href="/phantom-reach/">Launch experiment</a>
-            </div>
-          </article>
-
-          <article class="lab-card">
-            <img src="/scale-shift/icons/icon-512.png" alt="" width="512" height="512">
-            <div class="lab-card__body">
-              <div class="labels"><span>Embodiment</span><span>VR</span></div>
-              <h3>Scale Shift</h3>
-              <p>Familiar furniture and architecture change scale until you feel tiny—or enormous.</p>
-              <p class="comfort-note"><strong>Stationary:</strong> transitions are slow with an immediate reset.</p>
-              <a class="button" href="/scale-shift/">Launch experiment</a>
-            </div>
-          </article>
-
-          <article class="lab-card">
-            <img src="/impossible-door/icons/icon-512.png" alt="" width="512" height="512">
-            <div class="lab-card__body">
-              <div class="labels"><span>Impossible space</span><span>VR</span></div>
-              <h3>Impossible Door</h3>
-              <p>One fixed doorway reveals three incompatible procedural spaces without requiring you to walk through it.</p>
-              <p class="comfort-note"><strong>Fixed viewpoint:</strong> stay behind the floor boundary.</p>
-              <a class="button" href="/impossible-door/">Launch experiment</a>
-            </div>
-          </article>
-
-          <article class="lab-card">
-            <img src="/someone-behind-you/icons/icon-512.png" alt="" width="512" height="512">
-            <div class="lab-card__body">
-              <div class="labels"><span>Presence</span><span>Spatial audio</span></div>
-              <h3>Someone Behind You</h3>
-              <p>Rear-positioned footsteps, breath, and peripheral shapes make an empty room feel occupied.</p>
-              <p class="comfort-note"><strong>No recording:</strong> synthetic audio only; silence is always one button away.</p>
-              <a class="button" href="/someone-behind-you/">Launch experiment</a>
-            </div>
-          </article>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>Built as small, adjustable perception studies—not medical instruments.</p>
-      <nav aria-label="Related sites"><a href="https://winesett.com">winesett.com</a><a href="https://github.com/winesett">GitHub</a></nav>
-    </footer>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Winesett Labs — A creative studio</title>
+  <meta name="description" content="An open-ended creative studio. Experiments in apps, objects, interfaces, and whatever comes next.">
+  <link rel="canonical" href="https://labs.winesett.com/">
+  <meta property="og:title" content="Winesett Labs">
+  <meta property="og:description" content="A creative studio. A place to try things.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://labs.winesett.com/">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/labs-favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/labs.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Winesett Labs home">Winesett <span class="marker-highlight">Labs</span></a>
+    <a class="quiet-link" href="https://winesett.com/">Cody Winesett ↗</a>
+  </header>
+  <main id="main" class="page">
+    <div class="intro">
+      <h1>A place to <span class="marker-highlight">try things.</span></h1>
+      <p>A creative studio. Open to wherever an idea goes.</p>
+    </div>
+    <section class="experiment-grid" aria-label="Types of experiments">
+      <article class="experiment">
+        <span class="index" aria-hidden="true">01 /</span>
+        <h2>Apps &amp; games</h2>
+        <p>Small worlds. Useful things. Something to play.</p>
+        <a class="project-link" href="/fold-war/"><span>Fold War <span class="status">In development</span></span><span aria-hidden="true">↗</span></a>
+      </article>
+      <article class="experiment">
+        <span class="index" aria-hidden="true">02 /</span>
+        <h2>Objects</h2>
+        <p>Ideas that take shape outside the screen.</p>
+      </article>
+      <article class="experiment">
+        <span class="index" aria-hidden="true">03 /</span>
+        <h2>Interfaces</h2>
+        <p>Different ways to touch, move, and make things happen.</p>
+      </article>
+      <article class="experiment open-experiment">
+        <span class="index" aria-hidden="true">04 /</span>
+        <h2>Open experiments</h2>
+        <p>The things that don’t have a category. Yet.</p>
+        <a class="text-link" href="/experiments/">Browse earlier experiments ↗</a>
+        <svg class="scribble" viewBox="0 0 64 52" fill="none" aria-hidden="true"><path d="M8 29c7-27 40-32 47-11S30 53 16 38C3 25 28 5 45 12M45 12l-2-9m2 9-10 2"/></svg>
+      </article>
+    </section>
+  </main>
+  <footer class="site-footer"><span>Always a work in progress.</span><a href="mailto:codywinesett@gmail.com">Say hello ↗</a></footer>
+</body>
 </html>
