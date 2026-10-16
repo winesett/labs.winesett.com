@@ -1,7 +1,30 @@
 {
   "schemaVersion": 1,
   "pages": [
-    { "slug": "fold-war", "title": "Fold War", "kind": "product" },
-    { "slug": "experiments", "title": "Earlier experiments", "kind": "collection" }
+    {
+      "slug": "fold-war",
+      "title": "Fold War",
+      "kind": "product",
+      "files": [
+        "assets/brand-dimensional-v1.png",
+        "assets/fredoka-license.txt",
+        "assets/fredoka-v1.ttf",
+        "assets/naval-development-v04.png",
+        "assets/nunito-sans-license.txt",
+        "assets/nunito-sans-v1.ttf",
+        "assets/symbol-v1.svg",
+        "assets/tic-tac-toe-development-v04.png",
+        "assets/wordmark-v1.svg",
+        "fold-war.css",
+        "index.html",
+        "privacy/index.html",
+        "support/index.html"
+      ]
+    },
+    {
+      "slug": "experiments",
+      "title": "Earlier experiments",
+      "kind": "collection"
+    }
   ]
 }

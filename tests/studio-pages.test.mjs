@@ -62,10 +62,44 @@ test('missing pages, extra product files, and stale sitemaps fail verification',
   const root = await fixture(t);
   passes(run(root, 'new-product', 'test-product', 'Test'));
   await writeFile(resolve(root, 'public/test-product/unreviewed.js'), 'unexpected');
-  assert.match(run(root, 'verify-site').stderr, /must contain only index.html/);
+  assert.match(run(root, 'verify-site').stderr, /must match the explicit allowlist/);
   await rm(resolve(root, 'public/test-product/unreviewed.js'));
   await writeFile(resolve(root, 'public/sitemap.xml'), 'stale');
   assert.match(run(root, 'verify-site').stderr, /sitemap.xml must match/);
   await rm(resolve(root, 'public/test-product'), { recursive: true });
   assert.match(run(root, 'verify-site').stderr, /Missing studio directory/);
+});
+
+test('explicit support pages and assets are accepted, indexed, and checked for missing files', async (t) => {
+  const root = await fixture(t);
+  const { sitemapFor } = await import('../scripts/lib/studio-pages.mjs');
+  passes(run(root, 'new-product', 'test-product', 'Test'));
+  await mkdir(resolve(root, 'public/test-product/support'));
+  await writeFile(resolve(root, 'public/test-product/support/index.html'), '<h1>Support</h1>');
+  await writeFile(resolve(root, 'public/test-product/theme.css'), 'body { color: blue; }');
+  const registry = JSON.parse(await readFile(resolve(root, 'studio-pages.json'), 'utf8'));
+  registry.pages.find((p) => p.slug === 'test-product').files = ['index.html', 'support/index.html', 'theme.css'];
+  await writeFile(resolve(root, 'studio-pages.json'), JSON.stringify(registry));
+  const sitemap = sitemapFor(registry.pages);
+  assert.match(sitemap, /\/test-product\/support\//);
+  assert.doesNotMatch(sitemap, /theme.css/);
+  await writeFile(resolve(root, 'public/sitemap.xml'), sitemap);
+  passes(run(root, 'verify-site'));
+  await rm(resolve(root, 'public/test-product/theme.css'));
+  assert.match(run(root, 'verify-site').stderr, /must match the explicit allowlist/);
+});
+
+test('product file allowlists reject traversal, unsafe types, duplicates, and absent landing page', async (t) => {
+  const root = await fixture(t);
+  const registry = JSON.parse(await readFile(resolve(root, 'studio-pages.json'), 'utf8'));
+  for (const files of [
+    ['index.html', '../secret.txt'], ['index.html', '/absolute.css'],
+    ['index.html', '.env'], ['index.html', 'unreviewed.js'],
+    ['index.html', 'index.html'], ['support/index.html'],
+    ['index.html', 'support/../../escape.html'], ['index.html', 'assets/back\\slash.png'],
+  ]) {
+    registry.pages[0].files = files;
+    await writeFile(resolve(root, 'studio-pages.json'), JSON.stringify(registry));
+    assert.match(run(root, 'verify-site').stderr, /Invalid studio file allowlist/);
+  }
 });

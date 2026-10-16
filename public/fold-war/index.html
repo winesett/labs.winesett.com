@@ -3,30 +3,53 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fold War — Winesett Labs</title>
-  <meta name="description" content="A naval guessing game for two nearby players. The first app in development at Winesett Labs.">
+  <title>Fold War — Unfold game night.</title>
+  <meta name="description" content="Two players. Two devices. Meet Fold War, a tabletop game collection in development from Winesett Labs.">
+  <meta name="theme-color" content="#FFD52A">
   <link rel="canonical" href="https://labs.winesett.com/fold-war/">
-  <meta property="og:title" content="Fold War — Winesett Labs">
-  <meta property="og:description" content="Two players. Two fleets. A little friendly rivalry. In development.">
+  <meta property="og:title" content="Fold War — Unfold game night.">
+  <meta property="og:description" content="Two players. Two devices. Meet Fold War, a tabletop game collection in development from Winesett Labs.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://labs.winesett.com/fold-war/">
-  <link rel="icon" href="/labs-favicon.svg" type="image/svg+xml">
+  <meta property="og:image" content="https://labs.winesett.com/fold-war/assets/brand-dimensional-v1.png">
+  <meta property="og:image:alt" content="Fold War dimensional brand artwork on yellow, with a folded tabletop device and ivory pawn.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/fold-war/assets/symbol-v1.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/labs.css">
+  <link rel="stylesheet" href="/fold-war/fold-war.css">
 </head>
-<body>
+<body class="fold-war ">
   <a class="skip-link" href="#main">Skip to main content</a>
-  <header class="site-header"><a class="brand" href="/">Winesett <span class="marker-highlight">Labs</span></a><a class="quiet-link" href="/">All experiments ↗</a></header>
-  <main class="page" id="main">
-    <div class="intro app-intro">
-      <div class="eyebrow">From Winesett Labs / In development</div>
-      <h1><span class="marker-highlight">Fold War</span></h1>
-      <p>Two players. Two fleets.<br>A little friendly rivalry.</p>
+  <header class="fw-header fw-wrap">
+    <a class="fw-logo" href="/fold-war/" aria-label="Fold War home"><img src="/fold-war/assets/wordmark-v1.svg" width="180" height="64" alt="Fold War"></a>
+    <nav aria-label="Fold War"><a href="/fold-war/#games">Games</a><a href="/fold-war/support/">Support</a><a href="/fold-war/privacy/">Privacy</a></nav>
+  </header>
+  <main id="main">
+  <section class="fw-hero fw-wrap" aria-labelledby="hero-title">
+    <div class="fw-hero-copy"><p class="fw-kicker">Fold War · From Winesett Labs</p>
+      <h1 id="hero-title">Unfold<br>game night.</h1>
+      <p class="fw-lead">Two players. Two devices.<br>A little friendly rivalry.</p>
+      <p class="fw-intro">Familiar games, made for playing across the table. Pick your opponent. Settle in. Make your move.</p>
+      <a class="fw-button" href="#games">Meet the games <span aria-hidden="true">↘</span></a>
+      <p class="fw-status"><span aria-hidden="true"></span> In development · Not available to download yet</p>
     </div>
-    <section class="app-content" aria-label="About Fold War">
-      <div><h2>A game across the table.</h2><p>We’re making a naval guessing game for two nearby players, exploring how a folding screen can become a tabletop playing surface.</p><p>Find the fleet. Take your shot. Pass the turn.</p></div>
-      <div><h2>Still taking shape.</h2><p>Fold War is our first app experiment. It’s in development and isn’t available to download yet. This is where it will land.</p><a class="text-link" href="mailto:codywinesett@gmail.com?subject=Fold%20War">Questions about Fold War ↗</a></div>
-    </section>
-  </main>
-  <footer class="site-footer app-footer"><a href="/">← Back to the lab</a><a href="https://winesett.com/">Cody Winesett ↗</a></footer>
+    <figure class="fw-brand-art"><img src="/fold-war/assets/brand-dimensional-v1.png" width="1536" height="1024" fetchpriority="high" alt="Chunky blue Fold War lettering, a coral folding device, and an ivory game pawn on yellow. Your Duo. Your Tabletop."><figcaption>Concept artwork · The Fold War tabletop vision.</figcaption></figure>
+  </section>
+  <div class="fw-strip" aria-label="Game features"><span>Face to face.</span><span>Turn by turn.</span><span>Just one more round.</span></div>
+  <section class="fw-games fw-wrap" id="games" aria-labelledby="games-title">
+    <div class="fw-section-heading"><p class="fw-kicker">On the table</p><h2 id="games-title">Small games.<br>Big rematch energy.</h2><p>Two games in the current build. Same table, different tactics.</p></div>
+    <div class="fw-game-grid">
+      <article class="fw-game fw-naval"><div class="fw-game-copy"><span class="fw-number">01 / HIDE. SEEK. SINK.</span><h3>Naval Duel</h3><p>Hide your fleet. Read your rival. Take a shot at the five ships hiding on the other side of the table.</p></div><figure><img src="/fold-war/assets/naval-development-v04.png" width="1668" height="2420" loading="lazy" alt="Naval Duel development screen with a target grid above the player's fleet in Tabletop layout."><figcaption>Development build · Tabletop layout</figcaption></figure></article>
+      <article class="fw-game fw-tic"><div class="fw-game-copy"><span class="fw-number">02 / THREE MAKES A WIN.</span><h3>Tic-tac-toe</h3><p>A classic little standoff. Claim your square, block their next move, and make three in a row.</p></div><figure><img src="/fold-war/assets/tic-tac-toe-development-v04.png" width="1170" height="2532" loading="lazy" alt="Tic-tac-toe development screen showing a completed game and Play Again button in Tabletop layout."><figcaption>Development build · Tabletop layout</figcaption></figure></article>
+    </div>
+  </section>
+  <section class="fw-how" aria-labelledby="how-title"><div class="fw-wrap"><p class="fw-kicker">Bring a friend</p><h2 id="how-title">Your next move is closer<br>than you think.</h2><ol class="fw-steps"><li><span>01</span><h3>Pick a game.</h3><p>Open Fold War on both devices and choose the same game.</p></li><li><span>02</span><h3>Pair up.</h3><p>One player hosts. The other joins with the six-digit code. Keep Wi-Fi on and allow Local Network access.</p></li><li><span>03</span><h3>Play it your way.</h3><p>Choose Phone or Tabletop layout on each device. Take turns. Call the rematch.</p></li></ol><p class="fw-how-note">The current build is for two nearby players, each with the app on their own device. Tabletop layout is selected manually.</p></div></section>
+  <section class="fw-next fw-wrap"><div><p class="fw-kicker">Still at the workbench</p><h2>A little more playtesting.<br>Then, game on.</h2><p>We’re getting Fold War ready for its first release. This is its home for launch news, help, and privacy information.</p></div><a class="fw-button" href="/fold-war/support/">Questions? We’re here <span aria-hidden="true">↗</span></a></section>
+</main>
+  <footer class="fw-footer fw-wrap">
+    <a class="fw-studio" href="/">From Winesett Labs <span aria-hidden="true">↗</span></a>
+    <nav aria-label="Footer"><a href="/fold-war/support/">Support</a><a href="/fold-war/privacy/">Privacy</a><a href="https://winesett.com/">Winesett</a></nav>
+    <small>© 2026 Winesett Labs</small>
+  </footer>
 </body>
 </html>

@@ -158,9 +158,13 @@ if (await readFile(resolve(publicRoot, 'sitemap.xml'), 'utf8') !== sitemapFor(st
 }
 for (const directory of publicDirectories) {
   if (studioDirectories.has(directory)) {
-    const entries = await readdir(resolve(publicRoot, directory));
-    if (entries.length !== 1 || entries[0] !== 'index.html') {
-      throw new Error(`Studio page must contain only index.html: ${directory}`);
+    const productRoot = resolve(publicRoot, directory);
+    const actual = (await collectFiles(productRoot)).map((file) =>
+      relative(productRoot, file).split(sep).join('/')).sort();
+    const expected = [...(studioRegistry.pages.find((page) => page.slug === directory).files
+      ?? ['index.html'])].sort();
+    if (JSON.stringify(actual) !== JSON.stringify(expected)) {
+      throw new Error(`Studio files must match the explicit allowlist: ${directory}`);
     }
     continue;
   }
