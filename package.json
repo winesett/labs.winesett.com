@@ -7,7 +7,9 @@
     "deploy": "npm run verify && wrangler deploy",
     "icons": "node scripts/generate-icons.mjs",
     "import-demo": "node scripts/import-demo.mjs",
-    "verify": "node scripts/verify-site.mjs"
+    "verify": "node scripts/verify-site.mjs",
+    "new-product": "node scripts/new-product.mjs",
+    "test": "node --test"
   },
   "engines": {
     "node": ">=20"

@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "pages": [
+    { "slug": "fold-war", "title": "Fold War", "kind": "product" },
+    { "slug": "experiments", "title": "Earlier experiments", "kind": "collection" }
+  ]
+}

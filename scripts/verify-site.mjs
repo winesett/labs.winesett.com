@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto';
 import { lstat, readFile, readdir } from 'node:fs/promises';
 import { basename, relative, resolve, sep } from 'node:path';
+import { readStudioPages, sitemapFor } from './lib/studio-pages.mjs';
 
 const repositoryRoot = resolve('.');
 const publicRoot = resolve(repositoryRoot, 'public');
@@ -144,7 +145,17 @@ const publicDirectories = (await readdir(publicRoot, { withFileTypes: true }))
   .filter((entry) => entry.isDirectory() && entry.name !== '.well-known')
   .map((entry) => entry.name)
   .sort();
-const studioDirectories = new Set(['fold-war', 'experiments']);
+const studioRegistry = await readStudioPages(repositoryRoot);
+const studioDirectories = new Set(studioRegistry.pages.map((page) => page.slug));
+for (const slug of studioDirectories) {
+  if (releaseSlugs.has(slug) || registryBySlug.has(slug)) {
+    throw new Error(`Studio page conflicts with audited demo: ${slug}`);
+  }
+  if (!publicDirectories.includes(slug)) throw new Error(`Missing studio directory: ${slug}`);
+}
+if (await readFile(resolve(publicRoot, 'sitemap.xml'), 'utf8') !== sitemapFor(studioRegistry.pages)) {
+  throw new Error('sitemap.xml must match studio-pages.json.');
+}
 for (const directory of publicDirectories) {
   if (studioDirectories.has(directory)) {
     const entries = await readdir(resolve(publicRoot, directory));

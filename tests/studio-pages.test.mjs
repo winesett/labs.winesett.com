@@ -1,0 +1,71 @@
+import assert from 'node:assert/strict';
+import { spawnSync } from 'node:child_process';
+import { cp, mkdtemp, mkdir, readFile, rm, writeFile } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { resolve } from 'node:path';
+import test from 'node:test';
+
+async function fixture(t) {
+  const root = await mkdtemp(resolve(tmpdir(), 'labs-studio-test-'));
+  t.after(() => rm(root, { recursive: true, force: true }));
+  for (const path of ['scripts', 'templates', 'public', 'releases', 'studio-pages.json']) {
+    await cp(resolve(path), resolve(root, path), { recursive: true });
+  }
+  return root;
+}
+function run(root, script, ...args) {
+  return spawnSync(process.execPath, [`scripts/${script}.mjs`, ...args], {
+    cwd: root, encoding: 'utf8',
+  });
+}
+function passes(result) {
+  assert.equal(result.status, 0, result.stderr || result.stdout);
+}
+
+test('new product is branded, escaped, registered, and accepted without changing demos', async (t) => {
+  const root = await fixture(t);
+  passes(run(root, 'new-product', 'test-product', 'Test <Idea> & "Co"'));
+  const html = await readFile(resolve(root, 'public/test-product/index.html'), 'utf8');
+  assert.match(html, /Test &lt;Idea&gt; &amp; &quot;Co&quot;/);
+  assert.match(html, /From Winesett Labs/);
+  assert.match(html, /https:\/\/labs\.winesett\.com\/test-product\//);
+  passes(run(root, 'verify-site'));
+  const sitemap = await readFile(resolve(root, 'public/sitemap.xml'), 'utf8');
+  assert.match(sitemap, /\/test-product\//);
+});
+
+test('collisions and traversal are rejected without modifying existing files', async (t) => {
+  const root = await fixture(t);
+  const original = await readFile(resolve(root, 'studio-pages.json'), 'utf8');
+  const fold = await readFile(resolve(root, 'public/fold-war/index.html'), 'utf8');
+  for (const slug of ['fold-war', 'spinning-tunnel', '../escape', 'Bad Name', '.well-known']) {
+    assert.notEqual(run(root, 'new-product', slug, 'Collision').status, 0);
+  }
+  assert.equal(await readFile(resolve(root, 'studio-pages.json'), 'utf8'), original);
+  assert.equal(await readFile(resolve(root, 'public/fold-war/index.html'), 'utf8'), fold);
+  passes(run(root, 'verify-site'));
+});
+
+test('unregistered pages and attempts to bypass demo provenance fail verification', async (t) => {
+  const root = await fixture(t);
+  await mkdir(resolve(root, 'public/unregistered'));
+  await writeFile(resolve(root, 'public/unregistered/index.html'), 'Unexpected');
+  assert.match(run(root, 'verify-site').stderr, /Public demo has no provenance/);
+  await rm(resolve(root, 'public/unregistered'), { recursive: true });
+  const registry = JSON.parse(await readFile(resolve(root, 'studio-pages.json'), 'utf8'));
+  registry.pages.push({ slug: 'spinning-tunnel', title: 'Bypass', kind: 'product' });
+  await writeFile(resolve(root, 'studio-pages.json'), JSON.stringify(registry));
+  assert.match(run(root, 'verify-site').stderr, /conflicts with audited demo/);
+});
+
+test('missing pages, extra product files, and stale sitemaps fail verification', async (t) => {
+  const root = await fixture(t);
+  passes(run(root, 'new-product', 'test-product', 'Test'));
+  await writeFile(resolve(root, 'public/test-product/unreviewed.js'), 'unexpected');
+  assert.match(run(root, 'verify-site').stderr, /must contain only index.html/);
+  await rm(resolve(root, 'public/test-product/unreviewed.js'));
+  await writeFile(resolve(root, 'public/sitemap.xml'), 'stale');
+  assert.match(run(root, 'verify-site').stderr, /sitemap.xml must match/);
+  await rm(resolve(root, 'public/test-product'), { recursive: true });
+  assert.match(run(root, 'verify-site').stderr, /Missing studio directory/);
+});

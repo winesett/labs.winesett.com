@@ -22,6 +22,18 @@ Demo repositories own their source, tests, build, signing material, and a
 deterministic audited artifact rooted at their assigned slug. They do not write
 the landing page or replace the shared Digital Asset Links file.
 
+## Add a product page
+
+```sh
+npm run new-product -- my-product "My Product"
+npm run verify
+```
+
+Edit the generated page and link it from the studio grid. See [maintenance](docs/maintenance.md)
+for previews, release checks, and rollback; the parent [domain registry](https://github.com/winesett/winesett.com/blob/main/docs/domain-registry.md)
+owns cross-project addresses and hosting decisions. `studio-pages.json` lists simple
+studio pages; `public/labs.json` remains the audited demo registry.
+
 ## Import a demo
 
 ```bash
@@ -43,7 +55,6 @@ Do not enable paid plans, add-ons, or paid overages without Cody's explicit appr
 
 Winesett is the parent brand. Fold War and other studio products are **from
 Winesett Labs**, including when they acquire a separate product address.
-
 
 The site deploys as an asset-only Cloudflare Worker from the audited `public/`
 tree. It has no Worker script, server code, analytics, or paid services.
