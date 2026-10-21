@@ -37,12 +37,12 @@ test('new product is branded, escaped, registered, and accepted without changing
 test('collisions and traversal are rejected without modifying existing files', async (t) => {
   const root = await fixture(t);
   const original = await readFile(resolve(root, 'studio-pages.json'), 'utf8');
-  const fold = await readFile(resolve(root, 'public/fold-war/index.html'), 'utf8');
-  for (const slug of ['fold-war', 'spinning-tunnel', '../escape', 'Bad Name', '.well-known']) {
+  const fold = await readFile(resolve(root, 'public/foldwar/index.html'), 'utf8');
+  for (const slug of ['foldwar', 'spinning-tunnel', '../escape', 'Bad Name', '.well-known']) {
     assert.notEqual(run(root, 'new-product', slug, 'Collision').status, 0);
   }
   assert.equal(await readFile(resolve(root, 'studio-pages.json'), 'utf8'), original);
-  assert.equal(await readFile(resolve(root, 'public/fold-war/index.html'), 'utf8'), fold);
+  assert.equal(await readFile(resolve(root, 'public/foldwar/index.html'), 'utf8'), fold);
   passes(run(root, 'verify-site'));
 });
 

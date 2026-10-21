@@ -1,5 +1,5 @@
-@font-face{font-family:Fredoka;src:url('/fold-war/assets/fredoka-v1.ttf') format('truetype');font-weight:300 700;font-display:swap}
-@font-face{font-family:Nunito;src:url('/fold-war/assets/nunito-sans-v1.ttf') format('truetype');font-weight:200 1000;font-display:swap}
+@font-face{font-family:Fredoka;src:url('/foldwar/assets/fredoka-v1.ttf') format('truetype');font-weight:300 700;font-display:swap}
+@font-face{font-family:Nunito;src:url('/foldwar/assets/nunito-sans-v1.ttf') format('truetype');font-weight:200 1000;font-display:swap}
 .fold-war{--blue:#142bb8;--yellow:#fddb1e;--coral:#ff684c;--ivory:#fff3dd;--ink:#172044;--deep:#0d1d79;--text:var(--ink);background:var(--yellow);color:var(--blue);font-family:Nunito,system-ui,sans-serif;font-size:17px;line-height:1.6}
 .fold-war a:hover{color:inherit;text-decoration:underline;text-underline-offset:5px}
 .fold-war a:focus-visible,.fold-war summary:focus-visible{outline:3px solid currentColor;outline-offset:5px}

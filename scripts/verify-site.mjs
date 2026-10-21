@@ -12,7 +12,7 @@ const requiredFiles = [
   'styles.css',
   'labs.css',
   'labs-favicon.svg',
-  'fold-war/index.html',
+  'foldwar/index.html',
   'experiments/index.html',
   'labs.json',
   'manifest.webmanifest',

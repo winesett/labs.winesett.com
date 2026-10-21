@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://labs.winesett.com/</loc></url>
-  <url><loc>https://labs.winesett.com/fold-war/</loc></url>
-  <url><loc>https://labs.winesett.com/fold-war/naval-duel/</loc></url>
-  <url><loc>https://labs.winesett.com/fold-war/nearby-play/</loc></url>
-  <url><loc>https://labs.winesett.com/fold-war/privacy/</loc></url>
-  <url><loc>https://labs.winesett.com/fold-war/support/</loc></url>
-  <url><loc>https://labs.winesett.com/fold-war/tic-tac-toe/</loc></url>
+  <url><loc>https://labs.winesett.com/foldwar/</loc></url>
+  <url><loc>https://labs.winesett.com/foldwar/naval-duel/</loc></url>
+  <url><loc>https://labs.winesett.com/foldwar/nearby-play/</loc></url>
+  <url><loc>https://labs.winesett.com/foldwar/privacy/</loc></url>
+  <url><loc>https://labs.winesett.com/foldwar/support/</loc></url>
+  <url><loc>https://labs.winesett.com/foldwar/tic-tac-toe/</loc></url>
   <url><loc>https://labs.winesett.com/experiments/</loc></url>
 </urlset>

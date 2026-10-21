@@ -1,6 +1,3 @@
-/foldwar /fold-war/ 301
-/foldwar/ /fold-war/ 301
-/foldwar/support /fold-war/support/ 301
-/foldwar/support/ /fold-war/support/ 301
-/foldwar/privacy /fold-war/privacy/ 301
-/foldwar/privacy/ /fold-war/privacy/ 301
+/fold-war /foldwar/ 301
+/fold-war/ /foldwar/ 301
+/fold-war/* /foldwar/:splat 301

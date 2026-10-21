@@ -4,10 +4,10 @@ Winesett → Winesett Labs → Fold War. Use **From Winesett Labs**. Hosted with
 
 ## Permanent links
 
-- Marketing: https://labs.winesett.com/fold-war/
-- Support: https://labs.winesett.com/fold-war/support/
-- Privacy: https://labs.winesett.com/fold-war/privacy/
-- `/foldwar` and its support/privacy paths redirect to the corresponding hyphenated canonical paths. The app's draft marketing URL previously used this alias.
+- Marketing: https://labs.winesett.com/foldwar/
+- Support: https://labs.winesett.com/foldwar/support/
+- Privacy: https://labs.winesett.com/foldwar/privacy/
+- `/foldwar/` is the canonical product URL. `/fold-war` and all nested legacy paths permanently redirect to their matching `/foldwar/` paths.
 - Contact: support@winesett.com → codywinesett@gmail.com via free Cloudflare Email Routing. Gmail replies use the Gmail address. Domain registration renewals are separate from free hosting/email forwarding.
 
 These URLs are ready to enter in the app distribution metadata after production verification. This website change does not submit the app or modify its store listing.
@@ -36,6 +36,6 @@ Privacy policy describes app data separately from website request processing and
 
 ## Maintenance
 
-Edit the static pages in `public/fold-war/`. The three pages share `fold-war.css` and the Labs base styles. Keep navigation/footer and contact email consistent across all three. There is no JS bundle, contact form backend, tracking, or externally loaded font.
+Edit the static pages in `public/foldwar/`. The three pages share `fold-war.css` and the Labs base styles. Keep navigation/footer and contact email consistent across all three. There is no JS bundle, contact form backend, tracking, or externally loaded font.
 
 List every new public product file explicitly in `studio-pages.json`; regenerate the sitemap using `sitemapFor`. Asset filenames include versions because `/assets/` is cached as immutable; bump the filename when bytes change. Run `npm test`, `npm run verify`, and `git diff --check`, check mobile/desktop and links, then publish through the existing GitHub main deployment. Eight demo releases remain protected by SHA-256 verification.
