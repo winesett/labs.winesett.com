@@ -1,0 +1,23 @@
+/* Editorial guides extend the existing Fold War brand. */
+.fw-guide{padding-bottom:65px}
+.fw-guide-nav{display:flex;flex-wrap:wrap;gap:12px 28px;padding:24px 0;font-size:.9rem;font-weight:900;border-bottom:1px solid #142bb835}
+.fw-guide-nav a[aria-current=page]{text-decoration:underline;text-underline-offset:6px}
+.fw-guide-hero{display:grid;grid-template-columns:1.5fr 1fr;gap:70px;align-items:center;padding:60px 0 38px}
+.fold-war .fw-guide h1{font-size:clamp(3rem,5.8vw,5.8rem)}
+.fw-guide-hero .fw-lead{max-width:620px;color:var(--ink);font-size:1.35rem;font-weight:600}
+.fw-guide-card{background:var(--blue);color:var(--ivory);padding:30px 36px;border-radius:24px;transform:rotate(2deg)}
+.fw-guide-number{font-family:Fredoka,system-ui,sans-serif;font-size:5rem;line-height:1;color:var(--yellow)}
+.fw-guide-card h2{font-size:2rem;margin:16px 0}
+.fw-guide-card p{font-size:1rem}
+.fw-guide-status{background:var(--yellow);color:var(--ink);padding:20px 26px;border-radius:12px;font-size:.9rem;max-width:940px}
+.fw-guide-body{max-width:850px;margin:50px auto 0;color:var(--ink)}
+.fw-guide-section{padding:30px 0;border-bottom:1px solid #142bb835;scroll-margin-top:25px}
+.fw-guide-section h2{font-size:clamp(1.9rem,3.4vw,2.8rem);color:var(--blue);margin-bottom:22px}
+.fw-guide-section p+p{margin-top:16px}
+.fw-guide-section a{font-weight:800;text-decoration:underline;text-underline-offset:4px}
+.fw-guide-list{padding-left:1.5em;margin:18px 0 24px}.fw-guide-list li{padding-left:8px;margin:16px 0}.fw-guide-list li::marker{color:var(--blue);font-weight:900}
+.fw-guide-example{padding:25px 28px;margin-top:28px;border-left:5px solid var(--coral);background:#fffaf0;border-radius:0 12px 12px 0}.fw-guide-example .fw-kicker{display:block;margin-bottom:12px;color:var(--blue)}
+.fw-guide-modes{display:grid;grid-template-columns:1fr 1fr;gap:30px}.fw-guide-modes h3{font-size:1.6rem;color:var(--blue)}
+.fw-guide-end{display:flex;align-items:center;justify-content:space-between;gap:40px;padding-top:65px}.fw-guide-end h2{font-size:clamp(2.3rem,4vw,3.5rem)}.fw-guide-end p:last-child{color:var(--ink);margin-top:20px}.fw-guide-end .fw-button{flex-shrink:0}
+@media(max-width:850px){.fw-guide-hero{gap:30px;grid-template-columns:1.3fr 1fr}.fw-guide-card{padding:25px;transform:none}.fw-guide-end{align-items:flex-start;flex-direction:column;gap:12px}}
+@media(max-width:600px){.fw-guide-nav{font-size:.8rem;gap:12px 20px}.fw-guide-hero{grid-template-columns:1fr;padding:38px 0 28px;gap:28px}.fw-guide-card{padding:24px}.fw-guide-number{font-size:3.7rem}.fw-guide-card h2{display:inline-block;margin:0 0 12px 16px;font-size:1.7rem}.fw-guide-hero .fw-lead{font-size:1.15rem}.fw-guide-status{padding:18px 20px}.fw-guide-body{margin-top:24px}.fw-guide-modes{grid-template-columns:1fr;gap:8px}.fw-guide-example{padding:20px}.fw-guide-end{padding-top:40px}}

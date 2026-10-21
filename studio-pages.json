@@ -16,9 +16,13 @@
         "assets/tic-tac-toe-development-v04.png",
         "assets/wordmark-v1.svg",
         "fold-war.css",
+        "guides-v1.css",
         "index.html",
+        "naval-duel/index.html",
+        "nearby-play/index.html",
         "privacy/index.html",
-        "support/index.html"
+        "support/index.html",
+        "tic-tac-toe/index.html"
       ]
     },
     {
