@@ -1,0 +1,15 @@
+{
+  "host": "labs.winesett.com",
+  "key": "cdaf60d2747c467384326fc9cd59aeb4",
+  "keyLocation": "https://labs.winesett.com/cdaf60d2747c467384326fc9cd59aeb4.txt",
+  "urlList": [
+    "https://labs.winesett.com/",
+    "https://labs.winesett.com/foldwar/",
+    "https://labs.winesett.com/foldwar/iphone-duo/",
+    "https://labs.winesett.com/foldwar/naval-duel/",
+    "https://labs.winesett.com/foldwar/tic-tac-toe/",
+    "https://labs.winesett.com/foldwar/nearby-play/",
+    "https://labs.winesett.com/foldwar/support/",
+    "https://labs.winesett.com/foldwar/privacy/"
+  ]
+}

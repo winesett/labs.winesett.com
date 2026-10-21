@@ -49,3 +49,30 @@
 @media(max-width:1000px){.fw-wrap{width:calc(100% - 48px)}.fw-hero{grid-template-columns:1fr 1.1fr}.fold-war h1{font-size:4.7rem}.fw-game{padding:28px 24px 0}.fw-next{align-items:flex-start;flex-direction:column}.fw-next .fw-button{margin-top:0}.fw-steps{gap:24px}}
 @media(max-width:700px){.fw-wrap{width:calc(100% - 36px)}.fw-header{padding-block:18px;gap:12px}.fw-logo{width:96px}.fw-logo img{height:auto}.fw-header nav{gap:16px;font-size:.75rem}.fw-hero{grid-template-columns:1fr;padding-block:38px;gap:30px}.fold-war h1{font-size:clamp(3.7rem,15vw,5rem)}.fw-hero-copy{max-width:480px}.fw-lead{font-size:1.5rem;margin-top:22px}.fw-intro{max-width:440px}.fw-kicker{margin-bottom:18px;font-size:.65rem}.fw-brand-art{max-width:540px;justify-self:center}.fw-brand-art figcaption{font-size:.63rem;max-width:290px}.fw-strip{flex-wrap:wrap;gap:7px 23px;padding:19px 15px;font-size:1.05rem}.fw-games,.fw-how{padding-block:50px}.fw-game-grid{grid-template-columns:1fr;gap:22px;margin-top:30px}.fw-game{padding:30px 26px 0}.fw-game figure img{height:390px}.fw-steps{grid-template-columns:1fr;gap:30px;margin-block:32px}.fw-steps h3{margin-top:12px}.fw-next{padding-block:50px;gap:28px}.fw-footer{align-items:flex-start;gap:22px}.fw-footer nav{gap:18px;font-size:.8rem}.fw-footer small{width:100%}.fw-document{padding-top:28px}.fw-back{margin-bottom:35px}.fw-contact{padding:25px 22px}.fw-policy-summary{padding:25px 22px;font-size:1.05rem}.fw-faq{margin-top:40px}.fw-faq>h2{font-size:2rem}}
 @media(prefers-reduced-motion:reduce){.fold-war .fw-button:hover{transform:none}}
+
+/* Direct product copy with the existing Fold War palette and wordmark. */
+.fw-home .fw-hero{padding-block:50px;grid-template-columns:1fr 1.15fr;gap:28px}
+.fw-home .fw-hero h1{font-size:clamp(3.4rem,6.5vw,6.3rem)}
+.fw-home .fw-intro{max-width:450px}.fw-home .fw-button{box-shadow:none;border-radius:4px}
+.fw-home .fw-button:hover{transform:none;box-shadow:none;text-decoration:underline}
+.fw-home .fw-strip{font-family:Nunito,system-ui,sans-serif;font-size:1rem;padding:16px 24px}
+.fw-home .fw-games{padding-block:54px}.fw-home .fw-game{border-radius:6px;padding-top:22px}
+.fw-home .fw-game h3{margin-top:0}.fw-home .fw-game-grid{margin-top:28px}
+.fw-facts{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px}.fw-facts p{margin-bottom:16px;color:var(--ink)}
+.fw-home .fw-how{padding-block:52px}.fw-home h2{font-size:clamp(2.3rem,3.8vw,3.4rem)}
+.fw-inline-link{font-weight:800;text-decoration:underline;text-underline-offset:4px}
+.fw-play{padding-block:54px}.fw-play-columns{display:grid;grid-template-columns:1fr 1fr;gap:50px;margin-top:26px}
+.fw-play h3{font-size:1.8rem}.fw-play p{color:var(--ink);margin-bottom:15px;max-width:540px}
+.fw-answers{padding-bottom:45px}.fw-answers dl{margin:30px 0}.fw-answers dl>div{border-top:1px solid #142bb840;padding:20px 0;display:grid;grid-template-columns:.8fr 1.2fr;gap:50px}
+.fw-answers dt{font-weight:900}.fw-answers dd{margin:0;color:var(--ink)}
+.fw-maker{font-size:.8rem;color:var(--ink);margin-top:32px}.fw-maker a{text-decoration:underline;text-underline-offset:3px}
+.fw-duo-article{padding-block:35px 60px}.fw-duo-article h1{font-size:clamp(3rem,6vw,5.5rem)}
+.fw-article-intro{max-width:760px;margin-top:20px;color:var(--ink)}
+.fw-duo-detail{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;margin-top:45px;align-items:start}
+.fw-duo-article h2{font-size:2rem;margin:30px 0 18px}.fw-duo-detail h2:first-child{margin-top:0}
+.fw-duo-article p{color:var(--ink);margin-bottom:16px}.fw-duo-detail figure{max-width:440px;justify-self:end}
+.fw-duo-detail figcaption{font-size:.7rem;color:var(--ink);margin-top:14px}.fw-duo-links{max-width:780px;border-top:1px solid #142bb840;margin-top:38px;padding-top:12px}
+.fw-duo-links a{font-weight:800;text-decoration:underline}
+@media(max-width:700px){.fw-home .fw-hero,.fw-facts,.fw-play-columns,.fw-answers dl>div,.fw-duo-detail{grid-template-columns:1fr;gap:22px}.fw-home .fw-hero{padding-block:32px}.fw-home .fw-hero h1{font-size:clamp(3.6rem,14vw,4.8rem)}.fw-home .fw-strip{gap:8px 20px;font-size:.85rem}.fw-home .fw-games,.fw-home .fw-how,.fw-play{padding-block:36px}.fw-answers dl>div{gap:8px}.fw-play-columns{gap:0}.fw-duo-detail figure{justify-self:center}.fw-duo-article{padding-block:25px 40px}}
+
+.fw-home .fw-brand-art img{aspect-ratio:1.45;object-fit:cover}

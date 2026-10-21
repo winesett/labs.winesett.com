@@ -7,6 +7,8 @@
       "kind": "product",
       "files": [
         "assets/brand-dimensional-v1.png",
+        "assets/brand-unfold-v2.webp",
+        "assets/duo-naval-development-v1.png",
         "assets/fredoka-license.txt",
         "assets/fredoka-v1.ttf",
         "assets/naval-development-v04.png",
@@ -19,6 +21,7 @@
         "fold-war.css",
         "guides-v1.css",
         "index.html",
+        "iphone-duo/index.html",
         "naval-duel/index.html",
         "nearby-play/index.html",
         "privacy/index.html",
