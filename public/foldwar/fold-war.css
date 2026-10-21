@@ -51,8 +51,12 @@
 @media(prefers-reduced-motion:reduce){.fold-war .fw-button:hover{transform:none}}
 
 /* Direct product copy with the existing Fold War palette and wordmark. */
-.fw-home .fw-hero{padding-block:50px;grid-template-columns:1fr 1.15fr;gap:28px}
-.fw-home .fw-hero h1{font-size:clamp(3.4rem,6.5vw,6.3rem)}
+.fw-home .fw-hero{padding-block:36px;grid-template-columns:1fr 1.15fr;gap:28px}
+.fw-home .fw-hero h1{font-size:clamp(3.4rem,6.5vw,6.3rem);line-height:.96}
+.fw-home .fw-lead{margin-top:18px;line-height:1.25}
+.fw-home .fw-hero .fw-intro{margin-top:12px;line-height:1.45}
+.fw-home .fw-hero .fw-button{margin-top:20px}
+.fw-home .fw-hero .fw-status{margin-top:16px;line-height:1.4}
 .fw-home .fw-intro{max-width:450px}.fw-home .fw-button{box-shadow:none;border-radius:4px}
 .fw-home .fw-button:hover{transform:none;box-shadow:none;text-decoration:underline}
 .fw-home .fw-strip{font-family:Nunito,system-ui,sans-serif;font-size:1rem;padding:16px 24px}
@@ -73,7 +77,7 @@
 .fw-duo-article p{color:var(--ink);margin-bottom:16px}.fw-duo-detail figure{max-width:440px;justify-self:end}
 .fw-duo-detail figcaption{font-size:.7rem;color:var(--ink);margin-top:14px}.fw-duo-links{max-width:780px;border-top:1px solid #142bb840;margin-top:38px;padding-top:12px}
 .fw-duo-links a{font-weight:800;text-decoration:underline}
-@media(max-width:700px){.fw-home .fw-hero,.fw-facts,.fw-play-columns,.fw-answers dl>div,.fw-duo-detail{grid-template-columns:1fr;gap:22px}.fw-home .fw-hero{padding-block:32px}.fw-home .fw-hero h1{font-size:clamp(3.6rem,14vw,4.8rem)}.fw-home .fw-strip{gap:8px 20px;font-size:.85rem}.fw-home .fw-games,.fw-home .fw-how,.fw-play{padding-block:36px}.fw-answers dl>div{gap:8px}.fw-play-columns{gap:0}.fw-duo-detail figure{justify-self:center}.fw-duo-article{padding-block:25px 40px}}
+@media(max-width:700px){.fw-home .fw-hero,.fw-facts,.fw-play-columns,.fw-answers dl>div,.fw-duo-detail{grid-template-columns:1fr;gap:22px}.fw-home .fw-hero{padding-block:24px}.fw-home .fw-hero h1{font-size:clamp(3.6rem,14vw,4.8rem)}.fw-home .fw-strip{gap:8px 20px;font-size:.85rem}.fw-home .fw-games,.fw-home .fw-how,.fw-play{padding-block:36px}.fw-answers dl>div{gap:8px}.fw-play-columns{gap:0}.fw-duo-detail figure{justify-self:center}.fw-duo-article{padding-block:25px 40px}}
 
 .fw-home .fw-brand-art img{aspect-ratio:1.45;object-fit:cover}
 
