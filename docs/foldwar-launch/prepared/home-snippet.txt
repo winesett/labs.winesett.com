@@ -1,0 +1,2 @@
+<meta name="apple-itunes-app" content="app-id=6823773085">
+<section class="fw-wrap fw-install" aria-labelledby="install-title"><div><h2 id="install-title">Get Fold War</h2><p>Free on the U.S. App Store. Check the listing for current device compatibility.</p><a class="fw-button" href="https://apps.apple.com/us/app/id6823773085">Download on the App Store</a></div><figure><img src="/foldwar/assets/home-app-store.png" width="240" height="240" alt="Scan to open Fold War on the U.S. App Store"><figcaption>Scan with your iPhone or iPad</figcaption></figure></section>

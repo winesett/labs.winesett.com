@@ -34,10 +34,35 @@
     <div class="fw-guide-body"><section class="fw-guide-section"><h2>Before you begin.</h2><p>This guide is for two nearby devices running the same Fold War version. Keep both apps open and choose the same game: <a href="/foldwar/naval-duel/">Naval Duel</a> or <a href="/foldwar/tic-tac-toe/">tic-tac-toe</a>.</p><p>Local Network permission lets the devices discover and connect to each other. There’s no account, developer-operated game server, or remote matchmaking.</p></section><section class="fw-guide-section"><h2>Host on the first device.</h2><ol class="fw-guide-list"><li>Open the game and tap <strong>Host game</strong>.</li><li>Allow <strong>Local Network</strong> access when prompted.</li><li>Keep the lobby open. Share its temporary host name and six-digit pairing code with the other player.</li></ol></section><section class="fw-guide-section"><h2>Join on the second device.</h2><ol class="fw-guide-list"><li>Open the same game and tap <strong>Join game</strong>. Allow Local Network access.</li><li>Select the first device’s host name under <strong>Nearby games</strong>.</li><li>Enter the six-digit code shown by that host, then tap <strong>Connect</strong>.</li></ol><div class="fw-guide-example"><span class="fw-kicker">The step that matters</span><p><strong>Select the host as well as entering the code.</strong> The code belongs to that hosting session. If you start again, use the newly displayed code.</p></div></section><section class="fw-guide-section"><h2>Take the first turn.</h2><p>In tic-tac-toe, the host is X and plays first. In Naval Duel, choose your fleet arrangements and both tap <strong>Ready</strong>; the host fires first.</p><p>Each device adapts its own layout. Compact unfolded screens use Phone, while an active fold selects Tabletop on supported iPhone Duo systems. After the match, both players tap <strong>Play again</strong> for a rematch.</p></section><section class="fw-guide-section"><h2>If the host is missing.</h2><ul class="fw-guide-list"><li>Check that both devices have the same game open and that the first device is still hosting.</li><li>Keep Wi-Fi on and check Local Network access for Fold War on both devices.</li><li>Tap <strong>Refresh</strong> on the joining device, select the host, and use its current code.</li><li>If you leave to change permissions in Settings, return and start a fresh Host/Join session.</li></ul><p>Keep Fold War in the foreground throughout the match. Leaving a game or switching apps ends the session; it does not resume when you come back. <a href="/foldwar/support/">Get more connection help →</a></p></section><section class="fw-guide-section"><h2>No rival handy?</h2><p>Choose either game and tap <strong>Vs computer</strong>. Solo play uses one device, works offline, and does not need Local Network permission.</p><p>Read the <a href="/foldwar/privacy/">privacy policy</a> for details about the app, website, and support email.</p></section></div>
     <section class="fw-guide-end"><div><p class="fw-kicker">Your next move</p><h2>Keep a seat at the table.</h2><p>The Fold War homepage will link to the official release when it’s ready.</p></div><a class="fw-button" href="/foldwar/">Back to Fold War <span aria-hidden="true">↗</span></a></section>
   </main>
+<section class="fw-share fw-wrap" data-foldwar-share aria-labelledby="share-title"><div><h2 id="share-title">Send this to your opponent</h2><p>Pick your next rival. Share this page so you can find Fold War together when it launches.</p><div class="fw-share-buttons"><button type="button" data-share hidden>Share</button><button type="button" data-copy hidden>Copy link</button></div><p role="status" aria-live="polite"></p><details><summary>Get the link</summary><label for="share-url">Link to share</label><input id="share-url" type="url" readonly value="https://labs.winesett.com/foldwar/nearby-play/"></details></div><figure class="fw-phone-qr"><img src="/foldwar/assets/open-on-phone-v1.png" width="240" height="240" loading="lazy" alt="QR code to open the Fold War homepage on your phone"><figcaption>Open Fold War’s website on your phone</figcaption></figure></section>
   <footer class="fw-footer fw-wrap">
     <a class="fw-studio" href="/">From Winesett Labs <span aria-hidden="true">↗</span></a>
-    <nav aria-label="Footer"><a href="/foldwar/support/">Support</a><a href="/foldwar/privacy/">Privacy</a><a href="https://winesett.com/">Winesett</a></nav>
+    <nav aria-label="Footer"><a href="/foldwar/press/">Press kit</a><a href="/foldwar/support/">Support</a><a href="/foldwar/privacy/">Privacy</a><a href="https://winesett.com/">Winesett</a></nav>
     <small>© 2026 Winesett Labs</small>
   </footer>
+<script type="module" id="foldwar-share-script">
+const panel = document.querySelector('[data-foldwar-share]');
+if (panel) {
+  const url = panel.querySelector('input').value;
+  const status = panel.querySelector('[role="status"]');
+  const fallback = panel.querySelector('details');
+  const manual = () => { fallback.open = true; const input = fallback.querySelector('input'); input.focus(); input.select(); status.textContent = 'Select and copy the link below.'; };
+  const copy = async () => {
+    try { if (!navigator.clipboard?.writeText) { manual(); return; } await navigator.clipboard.writeText(url); status.textContent = 'Link copied.'; }
+    catch { manual(); }
+  };
+  const copyButton = panel.querySelector('[data-copy]'); copyButton.hidden = false; copyButton.addEventListener('click', copy);
+  const shareButton = panel.querySelector('[data-share]');
+  if (typeof navigator.share === 'function') {
+    shareButton.hidden = false;
+    shareButton.addEventListener('click', async () => {
+      shareButton.disabled = true;
+      try { await navigator.share({title:'Fold War — Unfold game night.',text:'Naval Duel and tic-tac-toe, with offline solo and nearby two-player play. See the current release status.',url}); status.textContent = 'Share sheet closed.'; }
+      catch (error) { if (error.name === 'AbortError') status.textContent = 'Sharing cancelled.'; else manual(); }
+      finally { shareButton.disabled = false; }
+    });
+  }
+}
+</script>
 </body>
 </html>

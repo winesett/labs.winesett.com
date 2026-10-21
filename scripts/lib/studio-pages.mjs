@@ -21,7 +21,7 @@ export async function readStudioPages(root) {
     if (page.files !== undefined && (!Array.isArray(page.files)
       || !page.files.includes('index.html') || new Set(page.files).size !== page.files.length
       || page.files.some((file) => typeof file !== 'string'
-        || !/^(?:[a-z0-9][a-z0-9-]*\/)*[a-zA-Z0-9][a-zA-Z0-9._-]*\.(?:html|css|svg|png|jpg|webp|woff2|ttf|txt)$/.test(file)
+        || !/^(?:[a-z0-9][a-z0-9-]*\/)*[a-zA-Z0-9][a-zA-Z0-9._-]*\.(?:html|css|svg|png|jpg|webp|woff2|ttf|txt|zip|mp4|vtt)$/.test(file)
         || file.includes('..')))) {
       throw new Error(`Invalid studio file allowlist: ${page.slug}`);
     }

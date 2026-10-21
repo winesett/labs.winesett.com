@@ -1,0 +1,46 @@
+FOLD WAR — Unfold game night.
+From Winesett Labs
+Updated October 20, 2026
+
+STATUS
+In development. No public download or announced release date yet.
+The first release is planned to be free in the United States.
+
+DESCRIPTION
+Fold War brings Naval Duel and tic-tac-toe to iPhone and iPad. Play the computer
+offline on one device, or challenge someone nearby on two devices. On supported
+iPhone Duo systems, an active fold selects the Tabletop layout automatically.
+
+FACTS
+Creator and copyright owner: Cody Winesett
+Studio: Winesett Labs
+Games: Naval Duel; tic-tac-toe
+Solo: offline, one device
+Nearby multiplayer: two devices, Wi-Fi on, Local Network permission
+Joining: select the host, enter its six-digit code
+Accounts: none required
+Current build minimum: iOS 17 / iPadOS 17
+Automatic fold layout: supported iPhone Duo systems with iOS 27.1 or later
+Compact unfolded display: Phone layout
+Larger display: manual Phone / Tabletop selector when not actively folded
+Initial launch plan: free; United States; no Mac or Apple Vision Pro distribution
+Final App Store compatibility and availability will govern the public release.
+
+LINKS
+Website: https://labs.winesett.com/foldwar/
+Duo guide: https://labs.winesett.com/foldwar/iphone-duo/
+Press: https://labs.winesett.com/foldwar/press/
+Support: https://labs.winesett.com/foldwar/support/
+Privacy: https://labs.winesett.com/foldwar/privacy/
+Public contact: support@winesett.com
+
+ASSETS
+fold-war-logo.png: transparent dimensional wordmark.
+fold-war-artwork.webp: concept artwork, not a gameplay capture.
+iphone-games.png: pre-release iPhone simulator game menu.
+ipad-naval-duel.png: pre-release iPad simulator Naval Duel in Tabletop layout.
+iphone-tic-tac-toe.png: pre-release iPhone simulator completed solo round.
+Screenshots captured October 20, 2026. No physical Duo validation is claimed.
+For coverage of Fold War. Suggested credit: Fold War / Winesett Labs.
+Keep the logo proportions and colors; distinguish concept artwork from gameplay.
+© 2026 Cody Winesett

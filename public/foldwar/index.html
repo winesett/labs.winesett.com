@@ -43,12 +43,14 @@
     </div>
     <figure class="fw-brand-art"><img src="/foldwar/assets/brand-unfold-v2.webp" width="1920" height="823" fetchpriority="high" alt="Fold War logo, folded-device concept artwork, and the tagline Unfold game night."><figcaption>Concept artwork</figcaption></figure>
   </section>
+  <!-- foldwar-video-slot -->
+  <!-- foldwar-install-slot -->
   <div class="fw-strip" aria-label="Play modes"><span>Offline solo</span><span>Nearby two-player</span><span>Fold-aware Tabletop</span></div>
   <section class="fw-games fw-wrap" id="games" aria-labelledby="games-title">
     <div class="fw-section-heading"><h2 id="games-title">The games</h2></div>
     <div class="fw-game-grid">
-      <article class="fw-game fw-naval"><div class="fw-game-copy"><h3>Naval Duel</h3><p>Arrange five ships. Take turns choosing a square and firing at the opposing fleet. Sink all five ships to win.</p><p><a href="/foldwar/naval-duel/">How Naval Duel works →</a></p></div><figure><img src="/foldwar/assets/naval-development-v04.png" width="1668" height="2420" loading="lazy" alt="Naval Duel development screenshot showing the target grid and fleet in Tabletop layout."><figcaption>Development screenshot · Earlier build</figcaption></figure></article>
-      <article class="fw-game fw-tic"><div class="fw-game-copy"><h3>Tic-tac-toe</h3><p>Take turns placing X or O. Make three in a row, column, or diagonal. Play the computer or someone nearby.</p><p><a href="/foldwar/tic-tac-toe/">How tic-tac-toe works →</a></p></div><figure><img src="/foldwar/assets/tic-tac-toe-development-v04.png" width="1170" height="2532" loading="lazy" alt="Tic-tac-toe development screenshot showing a finished round and the Play Again button."><figcaption>Development screenshot · Earlier build</figcaption></figure></article>
+      <article class="fw-game fw-naval"><div class="fw-game-copy"><h3>Naval Duel</h3><p>Arrange five ships. Take turns choosing a square and firing at the opposing fleet. Sink all five ships to win.</p><p><a href="/foldwar/naval-duel/">How Naval Duel works →</a></p></div><figure><img src="/foldwar/press/assets/ipad-naval-duel.png" width="2064" height="2752" loading="lazy" alt="Pre-release iPad simulator screenshot showing the Naval Duel target grid and fleet in Tabletop layout."><figcaption>Pre-release simulator capture · October 20, 2026</figcaption></figure></article>
+      <article class="fw-game fw-tic"><div class="fw-game-copy"><h3>Tic-tac-toe</h3><p>Take turns placing X or O. Make three in a row, column, or diagonal. Play the computer or someone nearby.</p><p><a href="/foldwar/tic-tac-toe/">How tic-tac-toe works →</a></p></div><figure><img src="/foldwar/press/assets/iphone-tic-tac-toe.png" width="1206" height="2622" loading="lazy" alt="Pre-release iPhone simulator screenshot showing a finished tic-tac-toe round and the Play Again button."><figcaption>Pre-release simulator capture · October 20, 2026</figcaption></figure></article>
     </div>
   </section>
   <section class="fw-how" id="iphone-duo" aria-labelledby="duo-title"><div class="fw-wrap fw-facts">
@@ -64,9 +66,10 @@
     <p class="fw-maker">Made by <a href="https://winesett.com/">Cody Winesett</a> at Winesett Labs. Updated October 20, 2026. <a href="/foldwar/support/">Support</a> · <a href="/foldwar/privacy/">Privacy</a></p>
   </section>
 </main>
+<section class="fw-share fw-wrap" data-foldwar-share aria-labelledby="share-title"><div><h2 id="share-title">Send this to your opponent</h2><p>Pick your next rival. Share this page so you can find Fold War together when it launches.</p><div class="fw-share-buttons"><button type="button" data-share hidden>Share</button><button type="button" data-copy hidden>Copy link</button></div><p role="status" aria-live="polite"></p><details><summary>Get the link</summary><label for="share-url">Link to share</label><input id="share-url" type="url" readonly value="https://labs.winesett.com/foldwar/"></details></div><figure class="fw-phone-qr"><img src="/foldwar/assets/open-on-phone-v1.png" width="240" height="240" loading="lazy" alt="QR code to open the Fold War homepage on your phone"><figcaption>Open Fold War’s website on your phone</figcaption></figure></section>
   <footer class="fw-footer fw-wrap">
     <a class="fw-studio" href="/">From Winesett Labs <span aria-hidden="true">↗</span></a>
-    <nav aria-label="Footer"><a href="/foldwar/support/">Support</a><a href="/foldwar/privacy/">Privacy</a><a href="https://winesett.com/">Winesett</a></nav>
+    <nav aria-label="Footer"><a href="/foldwar/press/">Press kit</a><a href="/foldwar/support/">Support</a><a href="/foldwar/privacy/">Privacy</a><a href="https://winesett.com/">Winesett</a></nav>
     <small>© 2026 Winesett Labs</small>
   </footer>
   <script type="module" id="foldwar-site-tools">
@@ -78,7 +81,8 @@
       tic_tac_toe: '/foldwar/tic-tac-toe/',
       nearby_play: '/foldwar/nearby-play/',
       support: '/foldwar/support/',
-      privacy: '/foldwar/privacy/'
+      privacy: '/foldwar/privacy/',
+      press: '/foldwar/press/'
     });
     const inputSchema = {
       type: 'object',
@@ -92,7 +96,7 @@
     if (typeof document.modelContext?.registerTool === 'function') {
       const tools = [{
         name: 'read_foldwar_guide',
-        description: 'Read current public Fold War information: availability, iPhone Duo layout, game rules, nearby setup, support or privacy. Returns the published page text and links, including development limitations. Does not play the games or access device data.',
+        description: 'Read current public Fold War information: availability, iPhone Duo layout, game rules, nearby setup, support, privacy or press assets. Returns the published page text and links, including development limitations. Does not play the games or access device data.',
         inputSchema,
         annotations: { readOnlyHint: true },
         execute: async (input, { signal } = {}) => {
@@ -139,5 +143,29 @@
       }
     }
   </script>
+<script type="module" id="foldwar-share-script">
+const panel = document.querySelector('[data-foldwar-share]');
+if (panel) {
+  const url = panel.querySelector('input').value;
+  const status = panel.querySelector('[role="status"]');
+  const fallback = panel.querySelector('details');
+  const manual = () => { fallback.open = true; const input = fallback.querySelector('input'); input.focus(); input.select(); status.textContent = 'Select and copy the link below.'; };
+  const copy = async () => {
+    try { if (!navigator.clipboard?.writeText) { manual(); return; } await navigator.clipboard.writeText(url); status.textContent = 'Link copied.'; }
+    catch { manual(); }
+  };
+  const copyButton = panel.querySelector('[data-copy]'); copyButton.hidden = false; copyButton.addEventListener('click', copy);
+  const shareButton = panel.querySelector('[data-share]');
+  if (typeof navigator.share === 'function') {
+    shareButton.hidden = false;
+    shareButton.addEventListener('click', async () => {
+      shareButton.disabled = true;
+      try { await navigator.share({title:'Fold War — Unfold game night.',text:'Naval Duel and tic-tac-toe, with offline solo and nearby two-player play. See the current release status.',url}); status.textContent = 'Share sheet closed.'; }
+      catch (error) { if (error.name === 'AbortError') status.textContent = 'Sharing cancelled.'; else manual(); }
+      finally { shareButton.disabled = false; }
+    });
+  }
+}
+</script>
 </body>
 </html>

@@ -43,13 +43,40 @@
     <h2>Can I play alone?</h2><p>Yes. Open either game and choose <strong>Vs computer</strong>. Solo play works offline on one device, without an account or Local Network permission.</p>
     <h2>How does two-player work?</h2><p>Both players need the app on their own device. One hosts and shares a six-digit code. The other selects that host and enters the code. Keep Wi-Fi enabled, allow Local Network access, and keep both apps open. There is no remote matchmaking.</p><p><a class="fw-inline-link" href="/foldwar/nearby-play/">Read the host and join steps →</a></p>
   </div><figure><img src="/foldwar/assets/duo-naval-development-v1.png" width="2007" height="2853" alt="Actual iPhone Duo simulator capture of Naval Duel: target board above the hinge area and fleet setup below it." loading="lazy"><figcaption>iPhone Duo simulator capture · Development build 0.5.2 (7), October 20, 2026. This is fleet setup, not a finished match or physical-device test.</figcaption></figure></div>
+  <section class="fw-compatibility"><h2>Looking for games to try on iPhone Duo?</h2><p>Fold War is being built for quick board-game rounds: Naval Duel when you want to search and plan, tic-tac-toe when you want a shorter match. Both support offline solo play and nearby two-player play.</p><h2>What will I need?</h2><dl class="fw-press-facts"><div><dt>Current build minimum</dt><dd>iPhone with iOS 17 or later; iPad with iPadOS 17 or later.</dd></div><div><dt>Automatic fold layout</dt><dd>Supported iPhone Duo systems with iOS 27.1 or later. Simulator behavior has been checked; physical Duo testing is not claimed here.</dd></div><div><dt>Offline play</dt><dd>Choose Vs computer. One device; no account or network permission needed.</dd></div><div><dt>Nearby matches</dt><dd>Two devices running the same Fold War version, Wi-Fi enabled, and Local Network access allowed.</dd></div><div><dt>Availability</dt><dd>No public download yet. Planned free U.S. launch; final compatibility will be confirmed on the App Store.</dd></div></dl><p>You do not need a Duo to play. Smaller unfolded screens use the Phone layout; larger screens also offer a manual Tabletop selector.</p></section>
+  <!-- foldwar-install-slot -->
   <section class="fw-duo-links"><h2>Choose a game</h2><p><a href="/foldwar/naval-duel/">Naval Duel</a>: arrange five ships, then take turns searching for the opposing fleet.</p><p><a href="/foldwar/tic-tac-toe/">Tic-tac-toe</a>: take turns placing X and O to make three in a row.</p><p>Fold War is not limited to Duo. It also has a Phone layout for smaller screens. Final device compatibility and the App Store link will be published with the release.</p></section>
   <p class="fw-maker">By <a href="https://winesett.com/">Cody Winesett</a> · Updated October 20, 2026. <a href="/foldwar/">Unfold game night.</a></p>
 </main>
+<section class="fw-share fw-wrap" data-foldwar-share aria-labelledby="share-title"><div><h2 id="share-title">Send this to your opponent</h2><p>Pick your next rival. Share this page so you can find Fold War together when it launches.</p><div class="fw-share-buttons"><button type="button" data-share hidden>Share</button><button type="button" data-copy hidden>Copy link</button></div><p role="status" aria-live="polite"></p><details><summary>Get the link</summary><label for="share-url">Link to share</label><input id="share-url" type="url" readonly value="https://labs.winesett.com/foldwar/iphone-duo/"></details></div><figure class="fw-phone-qr"><img src="/foldwar/assets/open-on-phone-v1.png" width="240" height="240" loading="lazy" alt="QR code to open the Fold War homepage on your phone"><figcaption>Open Fold War’s website on your phone</figcaption></figure></section>
   <footer class="fw-footer fw-wrap">
     <a class="fw-studio" href="/">From Winesett Labs <span aria-hidden="true">↗</span></a>
-    <nav aria-label="Footer"><a href="/foldwar/support/">Support</a><a href="/foldwar/privacy/">Privacy</a><a href="https://winesett.com/">Winesett</a></nav>
+    <nav aria-label="Footer"><a href="/foldwar/press/">Press kit</a><a href="/foldwar/support/">Support</a><a href="/foldwar/privacy/">Privacy</a><a href="https://winesett.com/">Winesett</a></nav>
     <small>© 2026 Winesett Labs</small>
   </footer>
+<script type="module" id="foldwar-share-script">
+const panel = document.querySelector('[data-foldwar-share]');
+if (panel) {
+  const url = panel.querySelector('input').value;
+  const status = panel.querySelector('[role="status"]');
+  const fallback = panel.querySelector('details');
+  const manual = () => { fallback.open = true; const input = fallback.querySelector('input'); input.focus(); input.select(); status.textContent = 'Select and copy the link below.'; };
+  const copy = async () => {
+    try { if (!navigator.clipboard?.writeText) { manual(); return; } await navigator.clipboard.writeText(url); status.textContent = 'Link copied.'; }
+    catch { manual(); }
+  };
+  const copyButton = panel.querySelector('[data-copy]'); copyButton.hidden = false; copyButton.addEventListener('click', copy);
+  const shareButton = panel.querySelector('[data-share]');
+  if (typeof navigator.share === 'function') {
+    shareButton.hidden = false;
+    shareButton.addEventListener('click', async () => {
+      shareButton.disabled = true;
+      try { await navigator.share({title:'Fold War — Unfold game night.',text:'Naval Duel and tic-tac-toe, with offline solo and nearby two-player play. See the current release status.',url}); status.textContent = 'Share sheet closed.'; }
+      catch (error) { if (error.name === 'AbortError') status.textContent = 'Sharing cancelled.'; else manual(); }
+      finally { shareButton.disabled = false; }
+    });
+  }
+}
+</script>
 </body>
 </html>
