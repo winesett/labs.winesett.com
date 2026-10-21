@@ -69,5 +69,75 @@
     <nav aria-label="Footer"><a href="/foldwar/support/">Support</a><a href="/foldwar/privacy/">Privacy</a><a href="https://winesett.com/">Winesett</a></nav>
     <small>© 2026 Winesett Labs</small>
   </footer>
+  <script type="module" id="foldwar-site-tools">
+    // Public guide routes only. Read the same published content visitors see.
+    const guides = Object.freeze({
+      overview: '/foldwar/',
+      iphone_duo: '/foldwar/iphone-duo/',
+      naval_duel: '/foldwar/naval-duel/',
+      tic_tac_toe: '/foldwar/tic-tac-toe/',
+      nearby_play: '/foldwar/nearby-play/',
+      support: '/foldwar/support/',
+      privacy: '/foldwar/privacy/'
+    });
+    const inputSchema = {
+      type: 'object',
+      properties: { topic: { type: 'string', enum: Object.keys(guides), description: 'The public Fold War page to read or open.' } },
+      required: ['topic'],
+      additionalProperties: false
+    };
+    const validInput = (input) => input && typeof input === 'object'
+      && Object.keys(input).length === 1 && typeof input.topic === 'string' && Object.hasOwn(guides, input.topic);
+    const invalidInput = () => ({ error: 'Choose one topic from the tool schema.' });
+    if (typeof document.modelContext?.registerTool === 'function') {
+      const tools = [{
+        name: 'read_foldwar_guide',
+        description: 'Read current public Fold War information: availability, iPhone Duo layout, game rules, nearby setup, support or privacy. Returns the published page text and links, including development limitations. Does not play the games or access device data.',
+        inputSchema,
+        annotations: { readOnlyHint: true },
+        execute: async (input, { signal } = {}) => {
+          if (!validInput(input)) return invalidInput();
+          const url = new URL(guides[input.topic], location.origin);
+          try {
+            let page = document;
+            if (url.pathname !== location.pathname) {
+              const response = await fetch(url, { signal, credentials: 'omit', redirect: 'error' });
+              if (!response.ok) return { error: 'The guide could not be loaded.', status: response.status, url: url.href };
+              page = new DOMParser().parseFromString(await response.text(), 'text/html');
+            }
+            const main = page.querySelector('main');
+            if (!main) return { error: 'The guide content is unavailable.', url: url.href };
+            const readable = main.cloneNode(true);
+            readable.querySelectorAll('br').forEach(node => node.replaceWith(' '));
+            readable.querySelectorAll('p, h1, h2, h3, h4, li, dt, dd, div, section, nav, figcaption, span, a').forEach(node => node.append(' '));
+            return {
+              title: page.title,
+              url: url.href,
+              text: readable.textContent.replace(/\s+/g, ' ').trim(),
+              links: [...main.querySelectorAll('a[href]')].map(link => ({
+                label: link.textContent.trim(), url: new URL(link.getAttribute('href'), url).href
+              }))
+            };
+          } catch {
+            return { error: signal?.aborted ? 'Reading was cancelled.' : 'The guide could not be loaded. Try opening its public URL.', url: url.href };
+          }
+        }
+      }, {
+        name: 'open_foldwar_guide',
+        description: 'Navigate this browser tab to a public Fold War page. Changes the visible page; does not download the app, send email or start a game.',
+        inputSchema,
+        annotations: { readOnlyHint: false },
+        execute: async (input) => {
+          if (!validInput(input)) return invalidInput();
+          location.assign(guides[input.topic]);
+          return { navigatingTo: new URL(guides[input.topic], location.origin).href };
+        }
+      }];
+      for (const tool of tools) {
+        try { await document.modelContext.registerTool(tool); }
+        catch { console.warn('Fold War site tool unavailable:', tool.name); }
+      }
+    }
+  </script>
 </body>
 </html>
