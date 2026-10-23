@@ -97,7 +97,7 @@ h2 { font-size: 1.35rem; line-height: 1.25; }
 /* Relay's homepage artwork; the product page keeps its own branding. */
 .featured-project + .featured-project { border-top: 0; }
 .relay-art { background: #f6f7f8; flex-direction: column; padding: 0; min-height: 300px; overflow: hidden; }
-.relay-card-wordmark { font-size: clamp(52px, 7.5vw, 88px); font-weight: 750; letter-spacing: -.085em; line-height: 1; color: #232f3e; white-space: nowrap; }
+.relay-card-wordmark { font-size: clamp(52px, 7.5vw, 88px); font-weight: 750; letter-spacing: -.085em; line-height: 1; color: #232f3e; white-space: nowrap; transform: translateY(-.18em); }
 .relay-card-wordmark > span { color: #ff6600; }
 .relay-art img { width: min(100%, 460px); margin-top: 12px; mix-blend-mode: multiply; }
 @media(max-width:760px) { .relay-art { min-height: 240px; } }
