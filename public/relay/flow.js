@@ -6,6 +6,7 @@
     if (!track) return;
 
     const stage = track.querySelector('.story-stage');
+    const labsNav = document.querySelector('.labs-nav');
     const label = document.getElementById('story-label');
     const agentsSection = document.getElementById('agents');
     const copies = [...track.querySelectorAll('.story-copy[data-chapter]')]
@@ -221,6 +222,7 @@
     const readStoryState = () => {
       const viewportHeight = window.visualViewport?.height || window.innerHeight;
       const rect = track.getBoundingClientRect();
+      document.documentElement.style.setProperty('--labs-nav-offset', `${Math.min(labsNav?.offsetHeight || 0, Math.max(0, window.scrollY))}px`);
       stage?.toggleAttribute('data-scrolled', rect.top < -0.5);
       return {
         progress: staticMode
@@ -298,7 +300,7 @@
       if (changed && wasVisible) {
         const rect = track.getBoundingClientRect();
         const viewportHeight = window.visualViewport?.height || window.innerHeight;
-        const headerHeight = document.querySelector('.site-header')?.getBoundingClientRect().height || 0;
+        const headerHeight = Math.max(0, document.querySelector('.site-header')?.getBoundingClientRect().bottom || 0);
         const top = staticMode
           ? window.scrollY + copies[savedChapter].getBoundingClientRect().top - headerHeight - 24
           : window.scrollY + rect.top + Math.max(0, rect.height - viewportHeight) * savedProgress;
