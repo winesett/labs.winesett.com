@@ -11,6 +11,7 @@ Amazon hackathon artwork identifies this independent submission project. Source:
 Amazon font package: https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/branding/Amazon_Typefaces_Complete_Font_Set_Mar2020.zip
 Grok Bot, Muse, Codex, GitHub, Amazon, Echo, and Alexa marks belong to their respective owners.
 
-Alexa+ logo artwork: Amazon, from its official Alexa+ introduction. Original image retained; displayed in a centered viewport without altering the logo.
-Source page: https://www.aboutamazon.com/news/devices/new-alexa-generative-artificial-intelligence
-Source image: https://assets.aboutamazon.com/99/97/449a770b40e9b852c1e558dba0f5/alexa-logo-1600x900-1.jpg
+Alexa+ logo, blue on transparent: https://seeklogo.com/vector-logo/613810/alexa
+Source image: https://images.seeklogo.com/logo-png/61/2/alexa-logo-png_seeklogo-613810.png
+Amazon brand reference: https://www.aboutamazon.com/news/devices/new-alexa-generative-artificial-intelligence
+The supplied transparent mark is retained unchanged and displayed on the light feature artwork.

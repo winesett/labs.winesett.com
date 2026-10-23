@@ -105,10 +105,7 @@ h2 { font-size: 1.35rem; line-height: 1.25; }
 .relay-submission-banner { align-self: stretch; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 16px; background: #232f3e; color: #fff; }
 .relay-art .relay-submission-banner img { width: min(72%, 340px); height: auto; margin: 0; mix-blend-mode: normal; }
 .relay-submission-banner > span { font-size: .7rem; line-height: 1.4; text-align: right; max-width: 80px; }
-.relay-card-product { display: flex; flex-direction: column; align-items: center; width: 100%; padding: 28px 24px; }
+.relay-card-product { position: relative; display: flex; flex-direction: column; align-items: center; width: 100%; padding: 88px 24px 28px; }
 
-.relay-card-heading { display: flex; align-items: center; justify-content: space-between; width: 100%; gap: 16px; margin: 20px 0 16px; }
-.relay-project .relay-card-heading h2 { margin: 0; }
-.relay-alexa-mark { position: relative; display: block; flex: 0 0 110px; width: 110px; height: 72px; overflow: hidden; background: #07111a; }
-.relay-alexa-mark img { position: absolute; width: 330px; height: auto; max-width: none; left: 50%; top: calc(50% - 6px); transform: translate(-50%, -50%); }
-@media(max-width:760px) { .relay-card-heading { margin: 14px 0; } }
+.relay-art .relay-alexa-mark { position: absolute; display: block; top: 12px; right: 20px; width: 108px; height: 62px; overflow: hidden; }
+.relay-art .relay-alexa-mark img { position: absolute; width: 120px; height: 120px; max-width: none; margin: 0; left: 50%; top: 50%; transform: translate(-50%, -50%); mix-blend-mode: normal; }
