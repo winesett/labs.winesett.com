@@ -103,3 +103,49 @@ test('product file allowlists reject traversal, unsafe types, duplicates, and ab
     assert.match(run(root, 'verify-site').stderr, /Invalid studio file allowlist/);
   }
 });
+
+test('presentation assets require an explicit opt-in and remain subject to exact-file verification', async (t) => {
+  const root = await fixture(t);
+  const { sitemapFor } = await import('../scripts/lib/studio-pages.mjs');
+  passes(run(root, 'new-product', 'presentation-test', 'Presentation'));
+  const registry = JSON.parse(await readFile(resolve(root, 'studio-pages.json'), 'utf8'));
+  const page = registry.pages.find((p) => p.slug === 'presentation-test');
+  page.files = ['index.html', 'scene.js', 'model.glb', 'font-license.pdf'];
+  page.presentation = { description: 'Reviewed product illustration only.', files: ['scene.js', 'model.glb'] };
+  for (const file of page.files.slice(1)) await writeFile(resolve(root, 'public/presentation-test', file), 'fixture');
+  await writeFile(resolve(root, 'studio-pages.json'), JSON.stringify(registry));
+  await writeFile(resolve(root, 'public/sitemap.xml'), sitemapFor(registry.pages));
+  passes(run(root, 'verify-site'));
+  await writeFile(resolve(root, 'public/presentation-test/unlisted.js'), 'extra');
+  assert.match(run(root, 'verify-site').stderr, /must match the explicit allowlist/);
+  await rm(resolve(root, 'public/presentation-test/unlisted.js'));
+  delete page.presentation;
+  await writeFile(resolve(root, 'studio-pages.json'), JSON.stringify(registry));
+  assert.match(run(root, 'verify-site').stderr, /Invalid studio file allowlist/);
+});
+
+test('presentation declarations reject unsafe, undeclared, duplicate, and non-product runtime files', async (t) => {
+  const root = await mkdtemp(resolve(tmpdir(), 'labs-presentation-test-'));
+  t.after(() => rm(root, { recursive: true, force: true }));
+  const { readStudioPages } = await import('../scripts/lib/studio-pages.mjs');
+  const base = { slug: 'product', title: 'Product', kind: 'product', files: ['index.html', 'scene.js'] };
+  const declared = { description: 'Product illustration.', files: ['scene.js'] };
+  const cases = [
+    { presentation: { ...declared, description: '' } },
+    { presentation: { ...declared, files: [] } },
+    { presentation: { ...declared, files: ['scene.js', 'scene.js'] } },
+    { presentation: { ...declared, files: ['../scene.js'] } },
+    { presentation: { ...declared, files: ['/scene.js'] } },
+    { presentation: { ...declared, files: ['missing.js'] } },
+    { presentation: { ...declared, files: ['server.mjs'] } },
+    { presentation: { ...declared, files: ['secret.key'] } },
+    { presentation: { ...declared, files: ['.hidden.js'] } },
+    { kind: 'collection', presentation: declared },
+    { files: undefined, presentation: declared },
+    { files: {}, presentation: declared },
+  ];
+  for (const change of cases) {
+    await writeFile(resolve(root, 'studio-pages.json'), JSON.stringify({ schemaVersion: 1, pages: [{ ...base, ...change }] }));
+    await assert.rejects(readStudioPages(root), /Invalid studio presentation allowlist/);
+  }
+});

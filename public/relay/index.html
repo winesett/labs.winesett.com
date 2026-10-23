@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#232f3e">
+  <meta name="description" content="Relay. Your voice, your agents. An early prototype for connecting your Echo to the agents you choose.">
+  <link rel="canonical" href="https://labs.winesett.com/relay/">
+  <meta property="og:url" content="https://labs.winesett.com/relay/">
+  <meta property="og:title" content="Relay — Your voice. Your agents.">
+  <meta property="og:description" content="A prototype for asking Grok, Muse, or Dot for help through your Echo. From Winesett Labs.">
+  <meta property="og:type" content="website">
+  <title>Relay — Your voice. Your agents.</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon-94290d98a6.svg">
+  <link rel="preload" href="assets/echo-dot/echo-dot-poster-c6e52f9887.jpg" as="image" fetchpriority="high">
+  <link rel="preload" href="assets/amazon/AmazonEmber_W_Rg-e65ef1192c.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/amazon/AmazonEmberDisplay_W_Bd-d47616fdef.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script><script src="flow.js" defer></script><script type="module" src="scene.js"></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="labs-nav" aria-label="Winesett Labs navigation">
+      <a class="labs-brand" href="/" aria-label="Winesett Labs home">Winesett <span class="labs-marker">Labs</span></a>
+      <a class="labs-portfolio" href="https://winesett.com/">Cody Winesett <span aria-hidden="true">↗</span></a>
+    </nav>
+    <a class="submission-banner" href="https://amazonappdev2026.devpost.com/" target="_blank" rel="noopener noreferrer" aria-label="Relay submission for Build, Ship, Shape: Amazon Developer Hackathon">
+      <picture class="hackathon-logo"><source media="(max-width: 760px)" srcset="assets/amazon/hackathon-square-221d52b1da.png"><img src="assets/amazon/hackathon-banner-c1c5e57f05.png" alt="Build, Ship, Shape — Amazon Developer Hackathon" width="1170" height="156"></picture>
+      <span class="submission-label"><strong>Relay submission</strong><span>Amazon Developer Hackathon</span></span>
+    </a>
+    <div class="header-nav">
+    <a class="wordmark" href="#top" aria-label="Relay home">relay<span>.</span></a>
+    <nav aria-label="Main navigation"><a href="#agents">Agents</a><a href="#try-it">How it works</a><a href="#build">Explore Relay</a><a class="github-link" href="https://github.com/winesett" target="_blank" rel="noopener noreferrer" aria-label="Cody Winesett on GitHub"><img src="assets/logos/github-693d7abe6f.svg" alt="" width="22" height="22"><span>GitHub</span></a></nav>
+    </div>
+  </header>
+  <main id="main">
+    <section id="relay-story" aria-label="Discover Relay">
+      <div class="story-stage">
+        <div class="hero-art" role="img" aria-label="An Echo Dot connected to Grok, Muse, and Dot">
+          <img class="speaker-fallback" data-scene-fallback src="assets/echo-dot/echo-dot-poster-c6e52f9887.jpg" width="460" height="160" alt="" aria-hidden="true" fetchpriority="high" decoding="sync"><canvas id="relay-scene" aria-hidden="true"></canvas>
+        </div>
+        <div class="story-copy story-opening" data-chapter="0" >
+
+          <h1>relay<span>.</span></h1>
+          <div class="opening-bottom"><p>Ask Grok, Muse, or Dot for help<br>through your Echo.</p><a class="text-link" href="#agents">Meet the agents</a></div>
+        </div>
+        <div class="story-copy story-thought" data-chapter="1"  aria-hidden="true" inert>
+          <div><h2>Say it to Alexa.</h2><p class="story-description">Name the agent and say what you need. Continue the conversation in its app.</p></div>
+        </div>
+        <div class="story-copy story-destination" data-chapter="2" aria-hidden="true" inert>
+          <section id="agents" aria-labelledby="agents-title">
+            <h2 id="agents-title">Alexa, relay <span id="agent-heading-name">Grok.</span></h2>
+      <div class="agent-selector" role="group" aria-label="Choose an agent">
+        <button type="button" data-agent="grok" aria-pressed="true"><span class="agent-logo-wrap"><span class="app-icon app-icon--grokbot"><img src="assets/logos/grokbot-original-ed98af275d.png" alt="Grok Bot app icon" width="84" height="84"></span></span><span class="agent-name">Grok</span><span class="agent-status connected">Connected</span></button>
+        <button type="button" data-agent="muse" aria-pressed="false"><span class="agent-logo-wrap"><span class="app-icon app-icon--muse"><img src="assets/logos/muse-73bdf6aed3.svg" alt="Muse logo" width="84" height="84"></span></span><span class="agent-name">Muse</span><span class="agent-status">In exploration</span></button>
+        <button type="button" data-agent="dot" aria-pressed="false"><span class="agent-logo-wrap"><span class="app-icon app-icon--codex"><img src="assets/logos/codex-de7d43f338.png" alt="Codex icon for Dot" width="84" height="84"></span></span><span class="agent-name">Dot</span><span class="agent-status">In progress</span></button>
+      </div>
+            <div class="agent-phrase" aria-live="polite" aria-atomic="true"><p id="agent-command">“Alexa, relay Grok to summarize my new X.com bookmarks.”</p><a class="text-link" href="#try-it">How Relay works</a></div>
+          </section>
+        </div>
+        <div class="story-bottom"><span id="story-label">Scroll ↓</span><div class="chapter-controls" aria-label="Story chapters"><button type="button" data-progress="0" aria-label="Introduction" aria-current="step"><span></span></button><button type="button" data-progress="0.38" aria-label="Your voice"><span></span></button><button type="button" data-progress="0.94" aria-label="Your agents"><span></span></button></div><button id="motion-toggle" type="button" aria-pressed="false"><span aria-hidden="true">Ⅱ</span> Pause motion</button></div>
+      </div>
+    </section>
+    <section class="demo-section" id="try-it" aria-labelledby="demo-title">
+      <div class="section-heading">
+        <h2 id="demo-title">From your Echo to your agents</h2>
+        <p class="section-intro">Tell Alexa who it’s for and what you need. Relay sends the request to that agent, so you can pick it up in their app.</p>
+      </div>
+      <div class="agent-examples">
+        <article class="agent-example">
+          <div class="example-agent"><span class="app-icon app-icon--grokbot"><img src="assets/logos/grokbot-original-ed98af275d.png" alt="Grok Bot app icon" width="48" height="48"></span><h3>Grok</h3><p class="example-status">Echo connection tested</p></div>
+          <div class="example-content"><blockquote>“Alexa, relay Grok to summarize my new X.com bookmarks.”</blockquote><p>Catch up on your latest saved posts with a summary in Grok.</p></div>
+        </article>
+        <article class="agent-example">
+          <div class="example-agent"><span class="app-icon app-icon--muse"><img src="assets/logos/muse-73bdf6aed3.svg" alt="Muse logo" width="48" height="48"></span><h3>Muse</h3><p class="example-status">In exploration</p></div>
+          <div class="example-content"><blockquote>“Alexa, relay Muse to look up new Echo devices on Marketplace.”</blockquote><p>Browse Echo listings and compare the options with Muse.</p></div>
+        </article>
+        <article class="agent-example">
+          <div class="example-agent"><span class="app-icon app-icon--codex"><img src="assets/logos/codex-de7d43f338.png" alt="Codex icon for Dot" width="48" height="48"></span><h3>Dot</h3><p class="example-status">Echo connection in progress</p></div>
+          <div class="example-content"><blockquote>“Alexa, relay Dot to pick up my project research.”</blockquote><p>Pick up project research, then continue the work with Dot.</p></div>
+        </article>
+      </div>
+    </section>
+    <section class="build-section" id="build" aria-labelledby="build-title">
+      <h2 id="build-title">Explore Relay</h2>
+      <div class="build-details">
+        <p>Relay is a prototype in development. Grok’s Echo connection has been tested; Muse and Dot are still taking shape. The hackathon demo uses a simulated Alexa+ interface with a live Dot mailbox. Physical Echo reply playback remains unverified. Follow the project or get in touch to learn more.</p>
+        <div class="source-links"><a class="text-link" href="https://github.com/winesett" target="_blank" rel="noopener noreferrer">Cody on GitHub</a><a class="text-link" href="mailto:codywinesett@gmail.com?subject=Relay">Ask about Relay</a></div>
+      </div>
+    </section>
+  </main>
+  <footer><a class="wordmark" href="#top" aria-label="Relay back to top">relay<span>.</span></a><span><a href="/">From Winesett Labs</a> · Cody Winesett</span><a href="https://winesett.com">winesett.com</a><p>Independent hackathon project. Amazon, Echo, Alexa, and all related logos are trademarks of Amazon.com, Inc. or its affiliates. Grok, Muse, and Codex marks belong to their respective owners.</p><p>Echo Dot 3 model by <a href="https://sketchfab.com/3d-models/alexa-echo-dot-6de75af706b84e1c806f8dccb03eae52">Marcos Silva</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Converted to GLB with resized textures.</p></footer>
+</body>
+</html>

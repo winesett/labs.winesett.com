@@ -1,0 +1,17 @@
+Relay presentation assets
+
+Echo Dot 3 by Marcos Silva (@marcosramone25), Creative Commons Attribution 4.0.
+Source: https://sketchfab.com/3d-models/alexa-echo-dot-6de75af706b84e1c806f8dccb03eae52
+License: https://creativecommons.org/licenses/by/4.0/
+Converted from the creator model to GLB; textures resized to 1024 pixels. The poster is a still of that model.
+
+Three.js is distributed under the MIT license; see vendor/THREE-LICENSE.txt.
+Amazon Ember fonts: see the included Amazon-Ember-Licensing-Guidelines PDF in assets/amazon/.
+Amazon hackathon artwork identifies this independent submission project. Source: https://amazonappdev2026.devpost.com/
+Amazon font package: https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/branding/Amazon_Typefaces_Complete_Font_Set_Mar2020.zip
+Grok Bot, Muse, Codex, GitHub, Amazon, Echo, and Alexa marks belong to their respective owners.
+
+Alexa+ logo, blue on transparent: https://seeklogo.com/vector-logo/613810/alexa
+Source image: https://images.seeklogo.com/logo-png/61/2/alexa-logo-png_seeklogo-613810.png
+Amazon brand reference: https://www.aboutamazon.com/news/devices/new-alexa-generative-artificial-intelligence
+The supplied transparent mark is retained unchanged and displayed on the light feature artwork.
