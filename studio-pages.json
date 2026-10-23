@@ -43,6 +43,52 @@
       "slug": "experiments",
       "title": "Earlier experiments",
       "kind": "collection"
+    },
+    {
+      "slug": "relay",
+      "title": "Relay",
+      "kind": "product",
+      "files": [
+        "app.js",
+        "assets/amazon/Amazon-Ember-Licensing-Guidelines-a4ce4137e9.pdf",
+        "assets/amazon/AmazonEmberDisplay_W_Bd-d47616fdef.woff2",
+        "assets/amazon/AmazonEmber_W_Bd-fae8d98921.woff2",
+        "assets/amazon/AmazonEmber_W_Rg-e65ef1192c.woff2",
+        "assets/amazon/hackathon-banner-c1c5e57f05.png",
+        "assets/amazon/hackathon-square-221d52b1da.png",
+        "assets/echo-dot/echo-dot-b3e185f026.glb",
+        "assets/echo-dot/echo-dot-poster-c6e52f9887.jpg",
+        "assets/favicon-94290d98a6.svg",
+        "assets/logos/codex-de7d43f338.png",
+        "assets/logos/github-693d7abe6f.svg",
+        "assets/logos/grokbot-original-ed98af275d.png",
+        "assets/logos/muse-73bdf6aed3.svg",
+        "credits.txt",
+        "echo-dot.js",
+        "flow.js",
+        "index.html",
+        "scene.js",
+        "styles.css",
+        "vendor/BufferGeometryUtils.js",
+        "vendor/GLTFLoader.js",
+        "vendor/THREE-LICENSE.txt",
+        "vendor/three.core.js",
+        "vendor/three.module.js"
+      ],
+      "presentation": {
+        "description": "Scroll-driven Echo Dot product illustration and agent selection on a marketing page; no agent execution, app demo, account access, or backend.",
+        "files": [
+          "app.js",
+          "assets/echo-dot/echo-dot-b3e185f026.glb",
+          "echo-dot.js",
+          "flow.js",
+          "scene.js",
+          "vendor/BufferGeometryUtils.js",
+          "vendor/GLTFLoader.js",
+          "vendor/three.core.js",
+          "vendor/three.module.js"
+        ]
+      }
     }
   ]
 }

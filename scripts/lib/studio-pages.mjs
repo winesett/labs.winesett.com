@@ -18,10 +18,25 @@ export async function readStudioPages(root) {
       || !['product', 'collection'].includes(page.kind)) {
       throw new Error(`Invalid studio page: ${page.slug}`);
     }
+    // Presentation enhancements are reviewed marketing visuals, not runnable app demos.
+    // Every executable/model asset must be declared here AND in the exact files allowlist.
+    const presentation = page.presentation;
+    const safePath = /^(?:[a-z0-9][a-z0-9-]*\/)*[a-zA-Z0-9][a-zA-Z0-9._-]*\.[a-z0-9]+$/;
+    if (presentation !== undefined && (page.kind !== 'product'
+      || !presentation || typeof presentation.description !== 'string' || !presentation.description.trim()
+      || !Array.isArray(page.files)
+      || !Array.isArray(presentation.files) || presentation.files.length === 0
+      || new Set(presentation.files).size !== presentation.files.length
+      || presentation.files.some((file) => typeof file !== 'string' || !safePath.test(file)
+        || file.includes('..') || !/\.(?:js|glb)$/.test(file) || !page.files?.includes(file)))) {
+      throw new Error(`Invalid studio presentation allowlist: ${page.slug}`);
+    }
+    const presentationFiles = new Set(presentation?.files ?? []);
     if (page.files !== undefined && (!Array.isArray(page.files)
       || !page.files.includes('index.html') || new Set(page.files).size !== page.files.length
       || page.files.some((file) => typeof file !== 'string'
-        || !/^(?:[a-z0-9][a-z0-9-]*\/)*[a-zA-Z0-9][a-zA-Z0-9._-]*\.(?:html|css|svg|png|jpg|webp|woff2|ttf|txt|zip|mp4|vtt)$/.test(file)
+        || (!/^(?:[a-z0-9][a-z0-9-]*\/)*[a-zA-Z0-9][a-zA-Z0-9._-]*\.(?:html|css|svg|png|jpg|webp|woff2|ttf|txt|zip|mp4|vtt|pdf)$/.test(file)
+          && !presentationFiles.has(file))
         || file.includes('..')))) {
       throw new Error(`Invalid studio file allowlist: ${page.slug}`);
     }
