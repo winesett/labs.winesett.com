@@ -97,15 +97,16 @@ h2 { font-size: 1.35rem; line-height: 1.25; }
 /* Relay's homepage artwork; the product page keeps its own branding. */
 .featured-project + .featured-project { border-top: 0; }
 .relay-art { background: #f6f7f8; flex-direction: column; padding: 0; min-height: 300px; overflow: hidden; }
-.relay-card-wordmark { font-size: clamp(80px, 11vw, 150px); font-weight: 750; letter-spacing: -.085em; line-height: 1; color: #232f3e; }
+.relay-card-wordmark { font-size: clamp(52px, 7.5vw, 88px); font-weight: 750; letter-spacing: -.085em; line-height: 1; color: #232f3e; white-space: nowrap; }
 .relay-card-wordmark > span { color: #ff6600; }
 .relay-art img { width: min(100%, 460px); margin-top: 12px; mix-blend-mode: multiply; }
-@media(max-width:760px) { .relay-art { min-height: 240px; } .relay-card-wordmark { font-size: 100px; } }
+@media(max-width:760px) { .relay-art { min-height: 240px; } }
 
 .relay-submission-banner { align-self: stretch; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 16px; background: #232f3e; color: #fff; }
 .relay-art .relay-submission-banner img { width: min(72%, 340px); height: auto; margin: 0; mix-blend-mode: normal; }
 .relay-submission-banner > span { font-size: .7rem; line-height: 1.4; text-align: right; max-width: 80px; }
-.relay-card-product { position: relative; display: flex; flex-direction: column; align-items: center; width: 100%; padding: 88px 24px 28px; }
+.relay-card-product { position: relative; display: flex; flex-direction: column; align-items: center; width: 100%; padding: 32px 24px 28px; }
 
-.relay-art .relay-alexa-mark { position: absolute; display: block; top: 12px; right: 20px; width: 108px; height: 62px; overflow: hidden; }
-.relay-art .relay-alexa-mark img { position: absolute; width: 120px; height: 120px; max-width: none; margin: 0; left: 50%; top: 50%; transform: translate(-50%, -50%); mix-blend-mode: normal; }
+.relay-card-brands { display: flex; align-items: center; justify-content: center; gap: clamp(18px, 2.3vw, 32px); width: 100%; }
+.relay-art .relay-alexa-mark { position: relative; display: block; flex: 0 0 40%; max-width: 156px; aspect-ratio: 1.75; overflow: hidden; }
+.relay-art .relay-alexa-mark img { position: absolute; width: 100%; height: auto; max-width: none; margin: 0; left: 50%; top: 50%; transform: translate(-50%, -50%); mix-blend-mode: normal; }
