@@ -107,6 +107,7 @@
         "assets/orikata-social-wide-v1.png",
         "assets/orikata-social-wide-v2.png",
         "assets/orikata-social-wide-v3.png",
+        "assets/orikata-social-wide-v4.png",
         "assets/paper-fiber-v1.webp",
         "assets/puppy-model-v1.svg",
         "assets/puppy-model-v2.svg",
@@ -117,6 +118,7 @@
         "assets/tulip-setup-v1.webp",
         "fold-geometry-v1.js",
         "fold-scene-v1.js",
+        "fold-scene-v2.js",
         "heart-motion-data-v1.js",
         "index.html",
         "orikata-v1.css",
@@ -125,6 +127,7 @@
         "orikata-v4.css",
         "orikata-v5.css",
         "orikata-v6.css",
+        "orikata-v7.css",
         "press/fact-sheet.txt",
         "press/index.html",
         "press/orikata-press-kit-v1.zip",
@@ -137,7 +140,8 @@
         "files": [
           "fold-scene-v1.js",
           "fold-geometry-v1.js",
-          "heart-motion-data-v1.js"
+          "heart-motion-data-v1.js",
+          "fold-scene-v2.js"
         ]
       }
     }
