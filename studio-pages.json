@@ -108,12 +108,14 @@
         "assets/tulip-setup-v1.webp",
         "index.html",
         "orikata-v1.css",
+        "orikata-v2.css",
+        "orikata-v3.css",
         "press/fact-sheet.txt",
         "press/index.html",
         "press/orikata-press-kit-v1.zip",
+        "press/orikata-press-kit-v2.zip",
         "privacy/index.html",
-        "support/index.html",
-        "orikata-v2.css"
+        "support/index.html"
       ]
     }
   ]

@@ -2,7 +2,7 @@
 
 Published under the existing Labs worker. Routes: `/orikata/`, `/orikata/support/`, `/orikata/privacy/`, `/orikata/press/`. Product files are exactly listed in `studio-pages.json`; all four HTML pages are in the sitemap.
 
-This is a truthful prelaunch site. It does not claim public App Store availability. Four lessons are planned; boat remains in development. Real development app captures show puppy, tulip and heart on an ordinary iPhone simulator. The crane icon is brand artwork, not a launch lesson.
+This is a truthful prelaunch site. It does not claim public App Store availability. Five lessons are planned; boat and traditional crane remain in development. Real development app captures show puppy, tulip and heart on an ordinary iPhone simulator. The crane icon is brand artwork, not proof of a completed lesson.
 
 Support uses the existing `support@winesett.com` route. No test email was sent by this work. No analytics or third-party scripts were added in source, but live browser verification found the existing Cloudflare Web Analytics beacon injected by the hosting configuration. The privacy policy discloses that website measurement separately from the app. No external fonts or mailing list were added. The public privacy policy distinguishes local app storage, optional system sharing, website delivery and voluntary email.
 
