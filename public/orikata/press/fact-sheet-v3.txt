@@ -1,0 +1,27 @@
+ORIKATA
+Origami for iPhone.
+Development press kit — 25 October 2026
+
+Orikata demonstrates each fold on your phone while you make it with real paper.
+The five-lesson launch collection includes puppy, tulip blossom, heart, boat, and traditional crane.
+All five lesson definitions are bundled in the current development candidate. Final device and real-paper acceptance remain in progress.
+
+Availability: In development. No public App Store download or release date announced.
+Launch price: Free; no ads, accounts, in-app purchases, or subscriptions planned.
+Platform: iPhone. A folding phone is not required. Final compatibility will be confirmed at release.
+Creator: Cody Winesett / From Winesett Labs.
+
+Website: https://labs.winesett.com/orikata/
+Support: https://labs.winesett.com/orikata/support/
+Privacy: https://labs.winesett.com/orikata/privacy/
+Press: https://labs.winesett.com/orikata/press/
+Contact: support@winesett.com
+
+CAPTURE PROVENANCE
+The four PNG screenshots are genuine, unedited iPhone simulator captures from development build 15, October 25, 2026 (1320 x 2868). Their visible screens were reconciled with build 18 during store preparation. They are not fresh captures of build 18 or proof of final release acceptance. The older shelf capture was excluded because it predates visible deletion controls. Boat and crane are not pictured.
+
+ARTWORK
+The three social images match the current website direction. The heart illustration is generated from lesson geometry; it is not a photograph of a physical fold. Editable SVG artwork is included in sources/. No font files are bundled; the sources use Georgia and Arial with standard fallbacks.
+
+USE
+Use these assets in coverage of Orikata. Credit Orikata / Winesett Labs where practical. Preserve the development-preview context. Do not imply public availability, Apple endorsement, or hardware compatibility beyond the stated facts.
