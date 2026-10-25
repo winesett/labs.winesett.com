@@ -115,19 +115,31 @@
         "assets/tulip-model-v1.svg",
         "assets/tulip-model-v2.svg",
         "assets/tulip-setup-v1.webp",
+        "fold-geometry-v1.js",
+        "fold-scene-v1.js",
+        "heart-motion-data-v1.js",
         "index.html",
         "orikata-v1.css",
         "orikata-v2.css",
         "orikata-v3.css",
         "orikata-v4.css",
         "orikata-v5.css",
+        "orikata-v6.css",
         "press/fact-sheet.txt",
         "press/index.html",
         "press/orikata-press-kit-v1.zip",
         "press/orikata-press-kit-v2.zip",
         "privacy/index.html",
         "support/index.html"
-      ]
+      ],
+      "presentation": {
+        "description": "Scroll-controlled 3D illustration of the heart folding sequence, with play/pause, reset and scrub controls. No lesson progress, app execution, account or backend. Reuses the existing Relay Three.js renderer modules.",
+        "files": [
+          "fold-scene-v1.js",
+          "fold-geometry-v1.js",
+          "heart-motion-data-v1.js"
+        ]
+      }
     }
   ]
 }
