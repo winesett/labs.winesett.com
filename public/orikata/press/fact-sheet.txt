@@ -1,0 +1,29 @@
+ORIKATA — PRESS KIT
+Development preview, October 25, 2026
+
+Fold something real.
+Orikata helps you fold real paper with clear interactive lessons, a choice of paper colors, and a personal shelf of completed creations.
+
+Creator: Cody Winesett / From Winesett Labs
+Status: In development. Not publicly available; no release date announced.
+Planned launch: four free lessons — puppy, heart, tulip blossom, boat.
+Boat is still in development and is absent from these captures.
+No ads, accounts, in-app purchases or subscriptions planned at launch.
+Platform: Coming to iPhone. Final compatibility will be confirmed with release.
+Use real paper beside the phone. Ordinary iPhones use touch controls.
+Folding-device interaction is additional development work, not required.
+
+Website: https://labs.winesett.com/orikata/
+Support: https://labs.winesett.com/orikata/support/
+Privacy: https://labs.winesett.com/orikata/privacy/
+Press: https://labs.winesett.com/orikata/press/
+Contact: support@winesett.com
+
+Cody Winesett makes apps, games and experiments through Winesett Labs.
+Orikata explores how clear digital guidance can help someone make a small physical object with their own hands.
+
+ASSET USE
+Use these assets in coverage of Orikata. Credit Orikata / Winesett Labs where practical. Preserve the development-preview context; do not imply public availability or unverified hardware support. The crane app icon is brand artwork, not a launch crane lesson.
+
+CAPTURES
+Real app UI from an isolated development build on an iPhone 18 Pro Max simulator, iOS 27.2, English, October 25, 2026. Puppy, tulip and heart flows passed the UI capture test. Press screenshots are uncropped JPEG exports of the originals; no invented UI. They must be refreshed against the final distribution candidate before store submission.

@@ -90,6 +90,30 @@
           "vendor/three.module.js"
         ]
       }
+    },
+    {
+      "slug": "orikata",
+      "title": "Orikata",
+      "kind": "product",
+      "files": [
+        "assets/app-icon-v1.png",
+        "assets/heart-complete-v1.webp",
+        "assets/heart-instruction-v1.webp",
+        "assets/orikata-social-square-v1.png",
+        "assets/orikata-social-vertical-v1.png",
+        "assets/orikata-social-wide-v1.png",
+        "assets/paper-fiber-v1.webp",
+        "assets/seal-v1.svg",
+        "assets/shelf-v1.webp",
+        "assets/tulip-setup-v1.webp",
+        "index.html",
+        "orikata-v1.css",
+        "press/fact-sheet.txt",
+        "press/index.html",
+        "press/orikata-press-kit-v1.zip",
+        "privacy/index.html",
+        "support/index.html"
+      ]
     }
   ]
 }
