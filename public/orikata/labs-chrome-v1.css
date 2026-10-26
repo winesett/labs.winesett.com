@@ -1,0 +1,8 @@
+/* Studio navigation sits above the product's own header. */
+.labs-chrome{height:56px;background:#fff;color:#1d1d1f;border-bottom:1px solid #e4e4e4;position:relative;z-index:4;font:13px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:0}
+.labs-chrome nav{width:min(1360px,calc(100% - 112px));height:100%;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.labs-chrome a{display:inline-flex;align-items:center;gap:4px;min-height:44px}.labs-chrome-link{color:#626262;font-size:12px}.labs-chrome a:focus-visible{outline:2px solid #1d1d1f;outline-offset:3px}
+.landing>.ori-header{top:56px}.landing .paper-stage{height:calc(100svh - 56px)}
+@media(max-width:1050px){.labs-chrome nav{width:calc(100% - 64px)}}
+@media(max-width:760px){.labs-chrome nav{width:calc(100% - 40px)}.labs-chrome{font-size:12px}.labs-chrome-link{font-size:11px}}
+@media print{.labs-chrome{display:none}}

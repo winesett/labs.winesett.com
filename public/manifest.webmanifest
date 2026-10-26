@@ -1,16 +1,25 @@
 {
   "name": "Winesett Labs",
   "short_name": "Labs",
-  "description": "Small immersive experiments that bend motion, scale, space, and presence.",
+  "description": "Apps, games, and experiments by Cody Winesett.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "orientation": "landscape",
-  "background_color": "#080b14",
-  "theme_color": "#0b1020",
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
   "icons": [
-    { "src": "/labs-icon-192.png", "type": "image/png", "sizes": "192x192", "purpose": "any" },
-    { "src": "/labs-icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "any" },
-    { "src": "/labs-icon-512-maskable.png", "type": "image/png", "sizes": "512x512", "purpose": "maskable" }
+    {
+      "src": "/labs-icon-v2-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/labs-icon-v2-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
   ]
 }
