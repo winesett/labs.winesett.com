@@ -146,7 +146,8 @@
         "assets/photo-crane-4859-v1.webp",
         "assets/photo-fold-4862-v1.webp",
         "assets/photo-fold-4861-v1.webp",
-        "assets/photo-heart-4866-v1.webp"
+        "assets/photo-heart-4866-v1.webp",
+        "fold-scene-v3.js"
       ],
       "presentation": {
         "description": "Scroll-controlled 3D illustration of the heart folding sequence, with play/pause, reset and scrub controls. No lesson progress, app execution, account or backend. Reuses the existing Relay Three.js renderer modules.",
@@ -154,7 +155,8 @@
           "fold-scene-v1.js",
           "fold-geometry-v1.js",
           "heart-motion-data-v1.js",
-          "fold-scene-v2.js"
+          "fold-scene-v2.js",
+          "fold-scene-v3.js"
         ]
       }
     }
