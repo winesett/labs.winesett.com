@@ -1,0 +1,17 @@
+@import url('./orikata-v10.css');
+.duo-stage{width:100%;max-width:560px;min-width:0}
+.duo-toggle{display:block;position:relative;width:100%;aspect-ratio:1.2;border:0;padding:0;background:none;color:inherit;perspective:1300px;cursor:pointer;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+.duo-toggle:disabled{cursor:default}.duo-toggle:focus-visible{outline:2px solid #f4f0e7;outline-offset:8px;border-radius:12px}
+.duo-device{position:absolute;inset:12% 3%;display:block;transform-style:preserve-3d;transform:rotateX(8deg) rotateY(-12deg) rotateZ(-5deg);transition:transform 1.15s cubic-bezier(.22,.7,.2,1)}
+.duo-panel{position:absolute;top:0;width:50%;height:100%;transform-style:preserve-3d;background:#171b19;border:2px solid #7c837d;box-shadow:8px 24px 35px #0d1e1950}
+.duo-right{left:50%;border-radius:0 28px 28px 0}.duo-left{left:0;border-radius:28px 0 0 28px;transform-origin:100% 50%;transition:transform 1.15s cubic-bezier(.22,.7,.2,1);transform:translateZ(1px) rotateY(0deg)}
+.duo-face{position:absolute;inset:6px;display:block;overflow:hidden;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:#f3eddf}
+.duo-left .duo-inside{right:0;border-radius:21px 0 0 21px}.duo-right .duo-inside{left:0;border-radius:0 21px 21px 0}
+.duo-inside img{position:absolute;top:0;width:200%;max-width:none;height:100%;object-fit:fill;display:block}.duo-right img{left:-100%}
+.duo-outside{transform:rotateY(180deg) translateZ(3px);border-radius:0 21px 21px 0}.duo-outside img{width:100%;height:100%;object-fit:fill;display:block}
+.duo-toggle[aria-pressed="true"] .duo-left{transform:translateZ(8px) rotateY(180deg)}
+.duo-toggle[aria-pressed="true"] .duo-device{transform:translateX(-24%) rotateX(4deg) rotateY(-8deg) rotateZ(3deg)}
+.duo-stage figcaption{display:flex;align-items:center;flex-direction:column;gap:10px;margin-top:8px;font-size:11px}.duo-action{color:#f4f0e7;font-size:14px;line-height:1.5}.duo-action[hidden]{display:none}.duo-stage figcaption a{color:#bdc8bd}
+@media(max-width:1050px) and (min-width:761px){.app-layout{grid-template-columns:.9fr 1.1fr;gap:30px}}
+@media(max-width:760px){.duo-stage{max-width:510px}.duo-toggle{aspect-ratio:1.15}.duo-device{inset:13% 3%}.duo-panel{border-width:1.5px}.duo-face{inset:4px}.duo-stage figcaption{margin-top:0}}
+@media(prefers-reduced-motion:reduce){.duo-device,.duo-left{transition:none}}
