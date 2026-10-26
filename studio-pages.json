@@ -139,7 +139,8 @@
         "support/index.html",
         "assets/heart-first-step-v2.webp",
         "press/orikata-press-kit-v4.zip",
-        "press/fact-sheet-v4.txt"
+        "press/fact-sheet-v4.txt",
+        "orikata-v9.css"
       ],
       "presentation": {
         "description": "Scroll-controlled 3D illustration of the heart folding sequence, with play/pause, reset and scrub controls. No lesson progress, app execution, account or backend. Reuses the existing Relay Three.js renderer modules.",
