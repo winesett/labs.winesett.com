@@ -1,0 +1,9 @@
+@import url('./orikata-v11.css');
+.duo-action{position:absolute;bottom:0;left:50%;transform:translateX(-50%);display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:44px;padding:10px 20px;border:1px solid #f4f0e75c;border-radius:999px;background:#f4f0e7;color:#26372f;font-size:14px;font-weight:600;line-height:1.2;white-space:nowrap;box-shadow:0 4px 18px #0d1e1920;transition:background .2s,box-shadow .2s}
+.duo-action[hidden]{display:none}
+.duo-stage figcaption{margin-top:20px}
+.duo-toggle:active .duo-action{background:#e4d5be}
+.duo-inviting:not([data-touched]) .duo-action{animation:duo-invite 2s ease-out 3}
+@keyframes duo-invite{0%,100%{box-shadow:0 0 0 0 #f4f0e700}35%{box-shadow:0 0 0 7px #f4f0e725}75%{box-shadow:0 0 0 15px #f4f0e700}}
+@media(hover:hover){.duo-toggle:hover .duo-action{background:#fffaf0;box-shadow:0 4px 22px #0d1e1940}}
+@media(prefers-reduced-motion:reduce){.duo-inviting:not([data-touched]) .duo-action{animation:none}.duo-action{transition:none}}
