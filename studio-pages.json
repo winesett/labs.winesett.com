@@ -148,7 +148,11 @@
         "assets/photo-fold-4861-v1.webp",
         "assets/photo-heart-4866-v1.webp",
         "fold-scene-v3.js",
-        "fold-scene-v4.js"
+        "fold-scene-v4.js",
+        "orikata-v11.css",
+        "duo-phone-v1.js",
+        "assets/duo-inner-v1.webp",
+        "assets/duo-outer-v1.webp"
       ],
       "presentation": {
         "description": "Scroll-controlled 3D illustration of the heart folding sequence, with play/pause, reset and scrub controls. No lesson progress, app execution, account or backend. Reuses the existing Relay Three.js renderer modules.",
@@ -158,7 +162,8 @@
           "heart-motion-data-v1.js",
           "fold-scene-v2.js",
           "fold-scene-v3.js",
-          "fold-scene-v4.js"
+          "fold-scene-v4.js",
+          "duo-phone-v1.js"
         ]
       }
     }
