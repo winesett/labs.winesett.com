@@ -1,0 +1,3 @@
+@import url('./orikata-v9.css');
+.photo-stories{gap:24px}.photo-stories a{display:block;overflow:hidden;border-radius:3px}.photo-stories img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover}.photo-stories figcaption{text-align:left;font-size:15px;margin-top:16px;font-weight:500}.photo-credit{font-size:11px;color:var(--muted);margin:26px 0 0}.photo-stories+.photo-credit+.collection-end{margin-top:35px}
+@media(max-width:760px){.photo-stories{grid-template-columns:1fr;gap:32px}.photo-stories img{aspect-ratio:3/4}.photo-stories figcaption{font-size:14px;margin-top:12px}.photo-credit{font-size:10px;line-height:1.6}}
