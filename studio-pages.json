@@ -36,7 +36,9 @@
         "press/index.html",
         "privacy/index.html",
         "support/index.html",
-        "tic-tac-toe/index.html"
+        "tic-tac-toe/index.html",
+        "assets/apple-touch-icon-v1.png",
+        "assets/social-card-v1.png"
       ]
     },
     {
@@ -152,7 +154,9 @@
         "orikata-v11.css",
         "duo-phone-v1.js",
         "assets/duo-inner-v1.webp",
-        "assets/duo-outer-v1.webp"
+        "assets/duo-outer-v1.webp",
+        "assets/apple-touch-icon-v1.png",
+        "labs-chrome-v1.css"
       ],
       "presentation": {
         "description": "Scroll-controlled 3D illustration of the heart folding sequence, with play/pause, reset and scrub controls. No lesson progress, app execution, account or backend. Reuses the existing Relay Three.js renderer modules.",
