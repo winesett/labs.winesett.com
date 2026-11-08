@@ -1,0 +1,4 @@
+@import url('./orikata-v12.css');
+.launch-actions{margin-top:22px}.orikata .launch-download{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:48px;padding:13px 20px;border-radius:8px;background:#27372f;color:#fffaf0;text-decoration:none;font:600 15px/1.4 Arial,sans-serif;box-sizing:border-box}.orikata .launch-download:hover{background:#17271f}.orikata .launch-download:focus-visible{outline:3px solid #bc452e;outline-offset:5px}.download-note{margin:10px 0 0;font:13px/1.5 Arial,sans-serif;color:#56564c}.collection-end .launch-actions{margin-top:22px}@media(max-width:600px){.orikata .launch-download{font-size:14px;padding:12px 16px}.launch-actions{margin-top:18px}}
+
+.launch-title .launch-download{pointer-events:auto}
